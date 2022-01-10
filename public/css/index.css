@@ -5,6 +5,188 @@
           box-sizing: border-box;
 }
 
+#banner {
+  width: 100vw;
+  height: 30vh;
+  background-image: url('./img/banner.jpg');
+  background-color: rgb(248, 170, 170);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#shop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#shop .shop {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#shop .shop h2 {
+  font-size: 3.125rem;
+}
+
+#shop .shop div {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#shop .shop div span {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+#shop .gray {
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  background: #999999;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#shop .gray h2 {
+  color: white;
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: relative;
+  top: 25%;
+  left: -40%;
+}
+
+#shop .shopping-item {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3.4375rem;
+  margin-left: 10rem;
+}
+
+#shop .shopping-item div {
+  margin-right: 3rem;
+}
+
+#shop .shopping-item div img {
+  width: 430px;
+  height: 430px;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+#shop .shopping-item div h3 {
+  margin-top: 1.5rem;
+}
+
+#shop a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.25rem;
+  position: absolute;
+  right: 10%;
+  display: inline-block;
+  margin-top: 10rem;
+}
+
+#shop a:hover {
+  color: #999999;
+}
+
+#blog {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blog .article {
+  width: 50%;
+}
+
+#blog .article div {
+  padding: 1.5rem 0rem;
+  border-bottom: 2px solid gray;
+}
+
+#blog .article div:first-child {
+  border-top: 2px solid gray;
+}
+
+#blog .article div:last-child {
+  margin-bottom: 6.25rem;
+}
+
+#blog .article div span {
+  color: #999999;
+}
+
+#blog .article div h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#blog .article a {
+  display: inline-block;
+  margin-top: 6.25rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+#blog .article a:hover {
+  color: #999999;
+}
+
+#blog .new {
+  width: 30%;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  width: 100vw;
+  height: 100vh;
+}
+
 footer .container {
   margin: 0 6.875rem;
 }
@@ -91,12 +273,16 @@ footer .container .footer-up .img {
   width: 700px;
 }
 
+footer .container .footer-up .img img {
+  width: 60%;
+}
+
 footer .container .footer-up .img iframe {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 footer .footer-mid {
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,6 +338,11 @@ footer .footer-down .top {
   left: 0;
 }
 
+footer .footer-down .top:hover {
+  border: 2px solid #ffaf7b;
+  color: #ffaf7b;
+}
+
 footer .footer-down h3 {
   color: white;
 }
@@ -191,5 +382,18 @@ footer .footer-down .follow a i {
   margin-right: 2rem;
   font-size: 1.875rem;
   color: #898F9E;
+}
+
+footer .footer-down .follow a i.fa-facebook-square:hover {
+  color: #0675E8;
+}
+
+footer .footer-down .follow a i.fa-instagram:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+  background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+  background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 /*# sourceMappingURL=index.css.map */

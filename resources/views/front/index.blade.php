@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="team project">
-    <meta name="author" content="">
+    <meta name="author" content="Ray ma">
     <title>電腦版前端</title>
     <!-- google font  -->
 
@@ -15,7 +15,62 @@
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
 </head>
 <body>
-    {{-- footer hi  --}}
+    <section id="banner" ></section>
+    <section id="shop">
+        <div class="shop">
+            <h2>Shop</h2>
+            <div >
+                <span><i class="fas fa-chevron-left"></i></span>
+                <span><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="gray"><h2>INSTAGRAM</h2></div>
+        <div class="shopping-item">
+            <div>
+                <img src="{{asset('img/shop-item-01.jpg')}}" alt="shopping item">
+                <h3>Hastable 甘納許甜點蠟燭證書課程</h3>
+            </div>
+            <div>
+                <img src="{{asset('img/shop-item-02.jpg')}}" alt="shopping item">
+                <h3>TINGS Candle 蜜蠟花進階課程</h3>
+            </div>
+            <div>
+                <img src="{{asset('img/shop-item-03.jpg')}}" alt="shopping item">
+                <h3>『線上影片課程』墨飾Inkazari酒精墨水畫</h3>
+            </div>
+            <div>
+                <img src="{{asset('img/shop-item-04.jpg')}}" alt="shopping item">
+                <h3>韓國SDCA捏塑石膏香氛證書課程</h3>
+            </div>
+        </div>
+            <a href="">VIEW ALL  <i class="fas fa-arrow-right"></i></a>
+    </section>
+    <section id="blog">
+        <div class="article">
+            <div>
+                <span>2021.12.31</span>
+                <h2>2021年的最後一天</h2>
+                <p>白日依山盡，黃河入海流，欲窮千里目，更上一層樓</p>
+            </div>
+            <div>
+                <span>2021.12.29</span>
+                <h2>調香體驗不只能做香水</h2>
+                <p>哎呀~早上的早餐真是可口，像極了香水，香噴噴的氣息，勾引者我身上每個細胞，雙手抓住漢堡，大力地咬一口，啊哈!就是這個滋味!</p>
+            </div>
+            <div>
+                <span>2021.12.26</span>
+                <h2>再過幾天就要迎接過年</h2>
+                <p>千門明月，
+                    天如水，正是人間佳節。
+                    開盡小梅春氣透，花燭家家羅列。
+                    來往綺羅，喧闐簫鼓，達旦何曾歇。
+                    少年當此，風光真是殊絕。
+                </p>
+            </div>
+            <a href="">VIEW ALL  <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="new">News</div>
+    </section>
     <footer>
         <div class="container">
             <div class="footer-up">
@@ -48,7 +103,7 @@
                     <p>下車站: 忠明國小或科博館</p>
                 </div>
                 <div class="img">
-                    <img src="" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
+                    <img src="{{asset('img/LINE_ALBUM_IMG_220109_1.jpg')}}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
                     <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw" 
                     width="465" 
@@ -69,14 +124,14 @@
         </div>
         <div class="footer-down">
             <a class="top" href="#">Top <i class="fas fa-arrow-up"></i></a>
-            <h3>Copyright 2022 - TINGS Aroma | 網頁設計:XX行銷</h3>
+            <h3>Copyright 2022 - TINGS Aroma | 網頁設計:老師最帥對不對</h3>
             <div class="follow">
                 <h4>Follow us</h4>
-                <a href="https://www.facebook.com/tingscandle"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tingscandle" title="facebook link"><i class="fab fa-facebook-square" ></i></a>
+                <a href="https://www.instagram.com/tingscandle/" title="instagram link"><i class="fab fa-instagram" ></i></a>
             </div>
         </div>
     </footer>
-    <script src="#"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
