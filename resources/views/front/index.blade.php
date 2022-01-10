@@ -1,50 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="team project">
-    <meta name="author" content="Ray ma">
-    <title>電腦版前端</title>
-    <!-- google font  -->
+@extends('layouts.template')
 
-    <!-- fontawesome cdn  -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!-- css core  -->
-    <link rel="stylesheet" href="{{asset('css/index.css')}}">
-</head>
-<body>
-    <section id="banner" ></section>
+@section('title', 'TINGS Aroma')
+
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+@endsection
+
+@section('main')
+    <!-- home -->
+    <div id="home">
+        <!-- imgs -->
+        <div class="imgs">
+            <div class="left">
+                <div class="img"></div>
+            </div>
+            <div class="right">
+                <div class="top-img"></div>
+                <div class="bottom-block">
+                    <div class="text">Select Your Course</div>
+                    <div class="bottom-carousel">
+                        <div class="imgs"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 文案 -->
+        <div class="texts">
+            <div class="big-text">TINGS</div>
+            <div class="small-texts">
+                <span>Warm</span>
+                <span>Scented</span>
+                <span>Handmade</span>
+            </div>
+            <div class="scroll-to-discover">
+                <span><i class="fas fa-chevron-down icon"></i> Scroll to Discover</span>
+                <!-- <span>Scroll to Discover</span> -->
+            </div>
+        </div>
+    </div>
+    <!-- site content -->
+    <div class="site-content">
+        <!-- about us -->
+        <div id="about-us">
+            <div class="left-img"></div>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <div class="intro">
+                    <div class="title">介紹</div>
+                    <div class="content">
+                        <span>因中英韓口譯工作而接觸到手作香氛蠟燭，</span>
+                        <span>目前與各領域韓師合作將課程引進台灣並進行各類師資培訓課程。</span>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="title">服務項目</div>
+                    <div class="content">
+                        <span>蠟燭實作課程</span>
+                        <span>師資證書培訓課程</span>
+                        <span>蠟燭用品材料販售</span>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="title">資歷</div>
+                    <div class="content">
+                        <span><span class="english">HASTABLE</span> 台灣唯一合作教室</span>
+                        <span><span class="english">HASTABLE Master Class</span> 大師課程師資</span>
+                        <span><span class="english">HASTABLE</span> 甘納許甜點蠟燭 <span class="english">Level</span>
+                            <span class="numbers">1+2</span>
+                            師資</span>
+                        <span><span class="english">KCCA</span> 韓國蠟燭工藝協會香氛蠟燭證書師資</span>
+                        <span>韓國 <span class="english">PROLEADER</span> 協會 天然保養品手工皂證書</span>
+                        <span><span class="english">KNDA</span> 韓國天然設計協會 大豆蠟裱花/<span class="english">Soy
+                                P</span>/蜜蠟花證書師資</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-img"></div>
+        </div>
+        <!-- courses large title -->
+        <div id="courses">
+            <div class="colour-block"></div>
+            <h2>Courses</h2>
+        </div>
+        <!-- course card -->
+        <div id="course-info">
+            <div class="course">
+                <div class="course-content">
+                    <div class="course-title">
+                        <span class="english">Hastable</span> 甘納許甜點蠟燭證書課程
+                    </div>
+                    <div class="course-texts">
+                        <span style="margin-bottom: 1.5rem;">此課程整合甘納許經典技法、集結麵包/蛋糕發泡技法，無論放多久都能切片。</span>
+                        <span>自製巧克力裝飾也是課程中重要的技法，另外包含了真實甜點會用到的裝飾技巧，是市面上內容最豐富的甜點蠟燭證書課程。</span>
+                    </div>
+                    <div class="course-fee">實體課程費用: $<span class="numbers">13,000</span> / <span
+                            class="numbers">2</span>天
+                    </div>
+                    <a href="" class="add-to-cart">
+                        <span>加入購物車</span>
+                        <i class="fas fa-cart-plus icon"></i>
+                    </a>
+                </div>
+                <div class="course-img"></div>
+                <a href="" class="learn-more">
+                    Learn more
+                    <i class="fas fa-chevron-right icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- shop -->
     <section id="shop">
         <div class="shop">
             <h2>Shop</h2>
-            <div >
+            <div>
                 <span><i class="fas fa-chevron-left"></i></span>
                 <span><i class="fas fa-chevron-right"></i></span>
             </div>
         </div>
-        <div class="gray"><h2>INSTAGRAM</h2></div>
+        <div class="gray">
+            <h2>INSTAGRAM</h2>
+        </div>
         <div class="shopping-item">
             <div>
-                <img src="{{asset('img/shop-item-01.jpg')}}" alt="shopping item">
+                <img src="{{ asset('img/shop-item-01.jpg') }}" alt="shopping item">
                 <h3>Hastable 甘納許甜點蠟燭證書課程</h3>
             </div>
             <div>
-                <img src="{{asset('img/shop-item-02.jpg')}}" alt="shopping item">
+                <img src="{{ asset('img/shop-item-02.jpg') }}" alt="shopping item">
                 <h3>TINGS Candle 蜜蠟花進階課程</h3>
             </div>
             <div>
-                <img src="{{asset('img/shop-item-03.jpg')}}" alt="shopping item">
+                <img src="{{ asset('img/shop-item-03.jpg') }}" alt="shopping item">
                 <h3>『線上影片課程』墨飾Inkazari酒精墨水畫</h3>
             </div>
             <div>
-                <img src="{{asset('img/shop-item-04.jpg')}}" alt="shopping item">
+                <img src="{{ asset('img/shop-item-04.jpg') }}" alt="shopping item">
                 <h3>韓國SDCA捏塑石膏香氛證書課程</h3>
             </div>
         </div>
-            <a href="">VIEW ALL  <i class="fas fa-arrow-right"></i></a>
+        <a href="">VIEW ALL <i class="fas fa-arrow-right"></i></a>
     </section>
+    <!-- blog -->
     <section id="blog">
         <div class="article">
             <div>
@@ -67,71 +164,12 @@
                     少年當此，風光真是殊絕。
                 </p>
             </div>
-            <a href="">VIEW ALL  <i class="fas fa-arrow-right"></i></a>
+            <a href="">VIEW ALL <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="new">News</div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="footer-up">
-                <div class="contact">
-                    <h3>Information</h3> 
-                    <h2>聯絡資訊</h2>
-                    <p>0955-779-166</p>
-                    <p>tingscandle@gmail.com</p>
-                    <p>Line ID /@goifprby</p>
-                </div>
-                <div class="address">
-                    <h3>Address</h3>
-                    <h2>TINGS Aroma</h2>
-                    <p><b>台中市西區<br>華美西街一段<br>142號1樓</b></p>
-                    <br>
-                    <p>tingscandle@gmail.com</p>
-                </div>
-                <div class="transport">
-                    <h3>Transportation</h3>
-                    <h2>高鐵台中站</h2>
-                    <p>159高鐵臺中站-中國醫藥大學-臺中公園: 於科學博物館-植物園下車,<br>路線及時刻表請參考《高鐵快捷公車臺中站》。</p>
-                    <h4>臺中火車站周圍轉乘公車</h4>
-                    <p>台中客運: 11綠能街車、35、70、71、304、307、309、310、323、324、325</p>
-                    <p>仁友客運: 45</p>
-                    <p>統聯客運: 18、77、159、301、303、308、326</p>
-                    <p>巨業交通: 300、305、306</p>
-                    <p>豐榮客運: 48</p>
-                    <p>中台灣客運: 37、302</p>
-                    <br>
-                    <p>下車站: 忠明國小或科博館</p>
-                </div>
-                <div class="img">
-                    <img src="{{asset('img/LINE_ALBUM_IMG_220109_1.jpg')}}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
-                    <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw" 
-                    width="465" 
-                    height="260" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="footer-mid">
-                <h4>Open time</h4>
-                <h3>營業時間</h3>
-                <p>周一~周五:1000~1900 /週六、日:請來信留言</p>
-            </div>
-        </div>
-        <div class="footer-down">
-            <a class="top" href="#">Top <i class="fas fa-arrow-up"></i></a>
-            <h3>Copyright 2022 - TINGS Aroma | 網頁設計:老師最帥對不對</h3>
-            <div class="follow">
-                <h4>Follow us</h4>
-                <a href="https://www.facebook.com/tingscandle" title="facebook link"><i class="fab fa-facebook-square" ></i></a>
-                <a href="https://www.instagram.com/tingscandle/" title="instagram link"><i class="fab fa-instagram" ></i></a>
-            </div>
-        </div>
-    </footer>
-    <script src="./js/index.js"></script>
-</body>
-</html>
+@endsection
+
+@section('js')
+
+@endsection
