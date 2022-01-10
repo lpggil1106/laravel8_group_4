@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1.25rem 6.25rem;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+header img {
+  width: 4vw;
+}
+
+header .navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar li {
+  list-style: none;
+  margin-left: 2.5rem;
+}
+
+header .navbar li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.9375rem;
+  color: #242426;
+  letter-spacing: 0.0313rem;
+}
+
+header .navbar li .nav-item:after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.0625rem;
+  width: 0;
+}
+
+header .navbar li .nav-item:hover:after {
+  width: 100%;
+}
+
+header .navbar li .icon {
+  font-size: 1.3rem;
+}
+
+header .navbar li .user {
+  margin-left: 11.4375rem;
+}
+
+header .navbar li .cart {
+  margin-right: 0.9375rem;
+}
+
+main {
+  background-color: #f7f7f7;
+}
+
+main .section1 {
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+main .title {
+  font-weight: 600;
+  font-size: 2rem;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: mixed;
+  padding: 9.375rem 11.875rem;
+  letter-spacing: 0.1rem;
+  color: #242426;
+}
+
+main .title h1 {
+  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main .title .english {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+main .banner {
+  position: absolute;
+  right: 0;
+  bottom: -0.5625rem;
+  width: 52.6875rem;
+  height: 31.8125rem;
+  background-image: url(/img/candle-making.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+main .small-img {
+  position: absolute;
+  right: 46.5%;
+  bottom: -19%;
+  width: 19.75rem;
+  height: 15.75rem;
+  background-image: url(/img/freepik3.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+main #course {
+  min-height: 140vh;
+}
+
+main #course .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  margin-top: 14rem;
+  margin-bottom: 4rem;
+  padding: 0.625rem 6.25rem;
+}
+
+main #course .tabs a {
+  text-decoration: none;
+  color: #242426;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.0313rem;
+  font-size: 1.2rem;
+}
+
+main #course .tabs .tab {
+  margin-left: 4rem;
+}
+
+main #course .tabs .tab:after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.0625rem;
+  width: 0;
+}
+
+main #course .tabs .tab:hover:after {
+  width: 100%;
+}
+
+main #course .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 6.25rem;
+}
+
+main #course .cards .card {
+  margin-bottom: 4rem;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.0313rem;
+  color: #242426;
+}
+
+main #course .cards .card .img {
+  width: 18.3125rem;
+  height: 18.3125rem;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem;
+          box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem;
+}
+
+main #course .cards .card .text-muted {
+  color: #999999;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+main #course .cards .card .course-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+main #course .cards .card .fee-and-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+main #course .cards .card .fee-and-cart i {
+  cursor: pointer;
+}
+/*# sourceMappingURL=course-list.css.map */
