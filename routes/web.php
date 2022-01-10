@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
 Route::get('/course-list', [FrontController::class, 'courseList'])->name('front.course-list');
+Route::get('/shop-list', [FrontController::class, 'shopList'])->name('front.shop-list');

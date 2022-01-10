@@ -15,4 +15,9 @@ class FrontController extends Controller
     {
         return view('front.course-list');
     }
+
+    public function shopList()
+    {
+        return view('front.shop-list');
+    }
 }
