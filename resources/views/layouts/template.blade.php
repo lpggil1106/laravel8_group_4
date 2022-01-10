@@ -41,7 +41,7 @@
             <div class="footer-up">
                 <div class="contact">
                     <h3>Information</h3>
-                    <h2>聯絡資訊</h2>
+                    {{-- <h2>聯絡資訊</h2> --}}
                     <p>0955-779-166</p>
                     <p>tingscandle@gmail.com</p>
                     <p>Line ID /@goifprby</p>
@@ -49,16 +49,14 @@
                 <div class="address">
                     <h3>Address</h3>
                     <h2>TINGS Aroma</h2>
-                    <p><b>台中市西區<br>華美西街一段<br>142號1樓</b></p>
-                    <br>
-                    <p>tingscandle@gmail.com</p>
+                    <p>台中市西區<br>華美西街一段142號1樓</p>
                 </div>
                 <div class="transport">
                     <h3>Transportation</h3>
                     <h2>高鐵台中站</h2>
-                    <p>159高鐵臺中站-中國醫藥大學-臺中公園: 於科學博物館-植物園下車,<br>路線及時刻表請參考《高鐵快捷公車臺中站》。</p>
-                    <h4>臺中火車站周圍轉乘公車</h4>
-                    <p>台中客運: 11綠能街車、35、70、71、304、307、309、310、323、324、325</p>
+                    <p>159 高鐵臺中站-中國醫藥大學-臺中公園: 於科學博物館-植物園下車,路線及時刻表請參考《高鐵快捷公車臺中站》。</p>
+                    <h2 class="train">臺中火車站周圍轉乘公車</h2>
+                    <p>台中客運: 11 綠能街車、35、70、71、304、307、309、310、323、324、325</p>
                     <p>仁友客運: 45</p>
                     <p>統聯客運: 18、77、159、301、303、308、326</p>
                     <p>巨業交通: 300、305、306</p>
@@ -79,9 +77,10 @@
         </div>
         <div class="container">
             <div class="footer-mid">
-                <h4>Open time</h4>
-                <h3>營業時間</h3>
-                <p>周一~周五:1000~1900 /週六、日:請來信留言</p>
+                <h3>Opening hours</h3>
+                {{-- <h3>營業時間</h3> --}}
+                <p>週一～週五 10am - 7pm</p>
+                <p class="weekends">週六、日請來信留言</p>
             </div>
         </div>
         <div class="footer-down">
@@ -89,10 +88,12 @@
             <h3>Copyright 2022 - TINGS Aroma | 網頁設計:老師最帥對不對</h3>
             <div class="follow">
                 <h4>Follow us</h4>
-                <a href="https://www.facebook.com/tingscandle" title="facebook link"><i
-                        class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/tingscandle/" title="instagram link"><i
-                        class="fab fa-instagram"></i></a>
+                <div class="icons">
+                    <a href="https://www.facebook.com/tingscandle" title="facebook link"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/tingscandle/" title="instagram link"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>

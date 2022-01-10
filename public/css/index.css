@@ -553,11 +553,11 @@ header .navbar li .cart {
 
 #blog .article div {
   padding: 1.5rem 0rem;
-  border-bottom: 2px solid gray;
+  border-bottom: 0.125rem solid gray;
 }
 
 #blog .article div:first-child {
-  border-top: 2px solid gray;
+  border-top: 0.125rem solid gray;
 }
 
 #blog .article div:last-child {
@@ -589,7 +589,7 @@ header .navbar li .cart {
   width: 30%;
   font-size: 3rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,6 +605,7 @@ footer {
   width: 100vw;
   height: 100vh;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 footer .container {
@@ -613,7 +614,7 @@ footer .container {
 
 footer .container .footer-up {
   width: 100%;
-  height: 650px;
+  height: 40.625rem;
   margin-top: 5rem;
   padding: 4.9375rem 0;
   display: -webkit-box;
@@ -629,20 +630,24 @@ footer .container .footer-up .contact {
 
 footer .container .footer-up .contact h3 {
   font-family: sans-serif;
-  font-size: 0.9375rem;
+  font-size: 0.8rem;
   color: #242426;
   letter-spacing: 0.0313rem;
   font-weight: 500;
+  margin-bottom: 5rem;
 }
 
 footer .container .footer-up .contact h2 {
-  margin: 8rem 0rem 1.35rem;
+  margin: 5rem 0rem 1.4rem;
   font-size: 1.25rem;
 }
 
 footer .container .footer-up .contact p {
-  font-size: 0.625rem;
-  color: #797979;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.0375rem;
+  color: #242426;
+  font-family: sans-serif;
 }
 
 footer .container .footer-up .address {
@@ -653,19 +658,26 @@ footer .container .footer-up .address {
 
 footer .container .footer-up .address h3 {
   font-family: sans-serif;
-  font-size: 0.9375rem;
+  font-size: 0.8rem;
   color: #242426;
   letter-spacing: 0.0313rem;
   font-weight: 500;
 }
 
 footer .container .footer-up .address h2 {
-  margin: 8rem 0rem 1.35rem;
-  font-size: 1.25rem;
+  margin: 5rem 0rem 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Cormorant Garamond", serif;
 }
 
 footer .container .footer-up .address p {
-  font-size: 0.625rem;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.0375rem;
+  color: #242426;
+  font-family: sans-serif;
+  font-weight: 500;
 }
 
 footer .container .footer-up .transport {
@@ -676,35 +688,48 @@ footer .container .footer-up .transport {
 
 footer .container .footer-up .transport h3 {
   font-family: sans-serif;
-  font-size: 0.9375rem;
+  font-size: 0.8rem;
   color: #242426;
   letter-spacing: 0.0313rem;
   font-weight: 500;
 }
 
 footer .container .footer-up .transport h2 {
-  margin: 8rem 0rem 1.35rem;
-  font-size: 1.25rem;
+  margin: 5rem 0rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+footer .container .footer-up .transport .train {
+  margin: 3.5rem 0rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: sans-serif;
 }
 
 footer .container .footer-up .transport p {
-  font-size: 0.625rem;
-  font-weight: 600;
-}
-
-footer .container .footer-up .transport h4 {
-  margin: 1.875rem 0rem 1rem;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.0375rem;
+  color: #242426;
+  font-family: sans-serif;
+  font-weight: 500;
+  width: 14.3125rem;
 }
 
 footer .container .footer-up .img {
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2;
-  width: 700px;
+  width: 43.75rem;
 }
 
 footer .container .footer-up .img img {
-  width: 60%;
+  width: 23%;
+  position: absolute;
+  top: 8%;
+  right: 17.5%;
 }
 
 footer .container .footer-up .img iframe {
@@ -718,26 +743,40 @@ footer .footer-mid {
   display: flex;
 }
 
-footer .footer-mid h4 {
-  -webkit-box-flex: 1;
+footer .footer-mid h3 {
+  /* -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1;
-  font-size: 0.625rem;
-  color: #636363;
+  flex: 1; */
+  color: #242426;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.0375rem;
+  color: #242426;
+  font-family: sans-serif;
 }
 
 footer .footer-mid h3 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  /* -webkit-box-flex: 1;
+  -ms-flex: 1; */
+  /* display: flex; */
 }
 
 footer .footer-mid p {
-  -webkit-box-flex: 4;
+  /* -webkit-box-flex: 4;
   -ms-flex: 4;
-  flex: 4;
-  font-size: 0.625rem;
-  font-weight: 600;
+  flex: 4; */
+  margin-left: 7.4rem;
+  color: #242426;
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.0375rem;
+  color: #242426;
+  font-family: sans-serif;
+}
+
+footer .footer-mid .weekends {
+  margin-left: 3.8125rem;
 }
 
 footer .footer-down {
@@ -778,8 +817,8 @@ footer .footer-down h3 {
 }
 
 footer .footer-down .follow {
-  width: 550px;
-  height: 230px;
+  width: 30.3125rem;
+  height: 14.375rem;
   background-color: #FBFBFB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -796,20 +835,29 @@ footer .footer-down .follow {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  /* padding: 0 100px; */
 }
 
 footer .footer-down .follow h4 {
-  margin-right: 2rem;
-  font-size: 1.875rem;
-  color: #898F9E;
+  /* margin-right: 2rem;
+  margin-left: 7.4rem; */
+  color: #242426;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
+  color: #242426;
+  font-family: sans-serif;
 }
 
 footer .footer-down .follow a {
   text-decoration: none;
+  margin-left: 3.125rem;
 }
 
 footer .footer-down .follow a i {
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   font-size: 1.875rem;
   color: #898F9E;
 }
