@@ -17,8 +17,8 @@ body {
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 100vw;
   padding: 1.25rem 6.25rem;
   z-index: 10000;
@@ -41,19 +41,33 @@ header img {
   width: 4.5vw;
 }
 
-header .navbar {
+header .navbar-middle {
+  /* position: relative; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navbar-right {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .navbar li {
+header .navbar-middle li {
   list-style: none;
   margin-left: 2.5rem;
 }
 
-header .navbar li a {
+header .navbar-right li {
+  list-style: none;
+  margin-left: 2.5rem;
+}
+
+header .navbar-middle li a {
+  display: block;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 0.8rem;
@@ -61,7 +75,15 @@ header .navbar li a {
   letter-spacing: 0.0313rem;
 }
 
-header .navbar li .nav-item:after {
+header .navbar-right li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: #242426;
+  letter-spacing: 0.0313rem;
+}
+
+header .navbar-middle li .nav-item:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -71,22 +93,29 @@ header .navbar li .nav-item:after {
   width: 0;
 }
 
-header .navbar li .nav-item:hover:after {
+header .navbar-middle li .nav-item:hover:after {
   width: 100%;
 }
 
-header .navbar li .icon {
+header .navbar-right li .nav-item:after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.0625rem;
+  width: 0;
+}
+
+header .navbar-right li .nav-item:hover:after {
+  width: 100%;
+}
+
+header .navbar-right li .icon {
   font-size: 1.3rem;
 }
 
-header .navbar li .user {
-  margin-left: 11.9rem;
-}
-
-header .navbar li .cart {
-  margin-right: 1.4rem;
-}
-
+/* home */
 #home {
   min-height: 100vh;
   background-color: #e7e7e7;
@@ -207,6 +236,7 @@ header .navbar li .cart {
   margin-right: 0.4375rem;
 }
 
+/* about us */
 #about-us {
   min-height: 100vh;
   position: relative;
@@ -289,6 +319,7 @@ header .navbar li .cart {
   font-size: 1.4rem;
 }
 
+/* courses */
 #courses {
   min-height: 33vh;
   position: relative;
@@ -487,7 +518,7 @@ header .navbar li .cart {
   letter-spacing: 0.1rem;
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  margin-left: 100px;
+  margin-left: 6.25rem;
   position: absolute;
   font-weight: 600;
   top: 10rem;
@@ -589,10 +620,10 @@ header .navbar li .cart {
 
 #shop a i {
   font-size: 0.8rem;
-  margin-left: 5px;
+  margin-left: 0.3125rem;
   color: #242426;
   font-size: 0.8rem;
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }
 
 #shop a:after {
@@ -629,7 +660,7 @@ header .navbar li .cart {
   width: 23rem;
   height: 30rem;
   position: absolute;
-  bottom: -28px;
+  bottom: -1.75rem;
   left: 0;
   background-image: url(/img/vase-and-candles.jpeg);
   background-position: 50% 99%;
@@ -692,7 +723,7 @@ header .navbar li .cart {
   display: inline-block;
   color: #242426;
   font-size: 0.8rem;
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }
 
 #blog .article a:after {
@@ -743,8 +774,7 @@ footer .container {
 footer .container .footer-up {
   width: 100%;
   height: 40.625rem;
-  margin-top: 5rem;
-  padding: 4.9375rem 0;
+  padding: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,8 +895,7 @@ footer .container .footer-up .img iframe {
 }
 
 footer .footer-mid {
-  padding: 2rem 0;
-  margin-bottom: 3rem;
+  padding: 2rem 0 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,7 +907,6 @@ footer .footer-mid h3 {
   font-size: 0.8rem;
   line-height: 1.2rem;
   letter-spacing: 0.0375rem;
-  color: #242426;
   font-family: sans-serif;
 }
 
@@ -888,7 +916,6 @@ footer .footer-mid p {
   font-weight: 500;
   font-size: 0.7rem;
   letter-spacing: 0.0375rem;
-  color: #242426;
   font-family: sans-serif;
 }
 
@@ -915,7 +942,7 @@ footer .footer-down {
 
 footer .footer-down .top {
   margin: 5rem 0rem 0rem 6.875rem;
-  border: 0.5px solid #FFFFFF;
+  border: 0.0313rem solid #FFFFFF;
   border-radius: 50%;
   text-decoration: none;
   color: #FFFFFF;
@@ -971,7 +998,6 @@ footer .footer-down .follow h4 {
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.0375rem;
-  color: #242426;
   font-family: sans-serif;
 }
 

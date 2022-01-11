@@ -25,7 +25,7 @@ main #news-header h1 {
 
 main #news-header .scroll {
   position: absolute;
-  left: 1150px;
+  left: 71.875rem;
   bottom: 0;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -35,9 +35,9 @@ main #news-header .scroll {
 main #news-header .scroll span::after {
   content: '';
   display: inline-block;
-  margin-top: 7px;
-  height: 60px;
-  width: 1px;
+  margin-top: 0.4375rem;
+  height: 3.75rem;
+  width: 0.0625rem;
   background-color: #222;
 }
 
@@ -67,12 +67,12 @@ main #news-header .content .photo-full {
 }
 
 main #news-header .content .photo-full .top {
-  width: 272px;
+  width: 17rem;
 }
 
 main #news-header .content .photo-full .photo {
-  width: 272px;
-  height: 938px;
+  width: 17rem;
+  height: 58.625rem;
   background-image: url(../img/candle5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,7 +90,7 @@ main #news-header .content .description {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 274px 182px 0 0;
+  padding: 17.125rem 11.375rem 0 0;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -114,20 +114,20 @@ main #news-header .content .description span:nth-last-child(1) {
 }
 
 main #news-header .background-logo {
-  width: 576px;
-  height: 216.5px;
+  width: 36rem;
+  height: 13.5313rem;
   background-image: url(../img/tingsLogo.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  bottom: 430px;
-  right: 220px;
+  bottom: 26.875rem;
+  right: 13.75rem;
   opacity: 0.2;
 }
 
 main #news-list {
   width: 100vw;
-  min-height: calc(100vh + 614.5824px);
+  min-height: calc(100vh + 38.4114rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +159,7 @@ main #news-list .news {
 main #news-list .news .news-item {
   width: 74rem;
   height: 11rem;
-  padding: 40px 0;
+  padding: 2.5rem 0;
   border-top: 0.1rem solid #242426;
 }
 
@@ -198,7 +198,7 @@ main #news-list .button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 150px 0 130px;
+  margin: 9.375rem 0 8.125rem;
 }
 
 main #news-list .button a {
@@ -224,8 +224,8 @@ main #news-list .button a::after {
   height: 0.1rem;
   width: 0;
   position: absolute;
-  top: 28px;
-  left: -17.5px;
+  top: 1.75rem;
+  left: -1.0938rem;
 }
 
 main #news-list .button a:nth-last-child(1)::after {
@@ -237,8 +237,8 @@ main #news-list .button a:nth-last-child(1)::after {
   height: 0.1rem;
   width: 0;
   position: absolute;
-  top: 28px;
-  left: -70px;
+  top: 1.75rem;
+  left: -4.375rem;
 }
 
 main #news-list .button a:hover::after {
