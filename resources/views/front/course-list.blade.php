@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.template')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TINGS Courses</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/course-list.css">
-</head>
+@section('title', 'TINGS Courses')
 
-<body>
-    <!-- header -->
-    <header>
-        <a href="#home" class="logo">
-            <img src="/img/logo.png" alt="">
-        </a>
-        <ul class="navbar">
-            <li><a href="" class="nav-item middle-nav">About Us</a></li>
-            <li><a href="" class="nav-item middle-nav">Courses</a></li>
-            <li><a href="" class="nav-item middle-nav">Store</a></li>
-            <li><a href="" class="nav-item middle-nav">News</a></li>
-            <li><a href="" class="icon" style="margin-left: 183px;"><i class="far fa-user-circle"></i></a></li>
-            <li><a href="" class="icon" style="margin-right: 15px;"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="" class="nav-item">Contact Us</a></li>
-        </ul>
-    </header>
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/course-list.css') }}">
+@endsection
 
-    <main>
+@section('main')
         <div class="section1">
             <div class="title">
                 <h1>課程</h1>
@@ -95,18 +72,13 @@
                 </div>
             </div>
         </div>
-    </main>
+@endsection
 
-    <!-- JS -->
+@section('js')
     <script>
-        // window.addEventListener('scroll', function () {
-        //     const headerElement = document.querySelector('header');
-        //     headerElement.classList.toggle('sticky', window.scrollY > 0);
-        // });
-
         // hides header when scrolling down; shows header when up
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
+        window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.querySelector('header').style.top = "0";
@@ -116,6 +88,4 @@
             prevScrollpos = currentScrollPos;
         }
     </script>
-</body>
-
-</html>
+@endsection

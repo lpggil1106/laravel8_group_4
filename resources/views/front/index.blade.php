@@ -112,9 +112,9 @@
     <!-- shop -->
     <section id="shop">
         <div class="title">
-            <h2>Store</h2>
+            <h2>Shop</h2>
         </div>
-        {{-- <h2>Store</h2> --}}
+        {{-- <h2>Shop</h2> --}}
         {{-- <div class="shop">
             <div>
                 <span><i class="fas fa-chevron-left"></i></span>

@@ -23,7 +23,7 @@
         <ul class="navbar">
             <li><a href="#about-us" class="nav-item middle-nav">About Us</a></li>
             <li><a href="#courses" class="nav-item middle-nav">Courses</a></li>
-            <li><a href="#shop" class="nav-item middle-nav">Store</a></li>
+            <li><a href="#shop" class="nav-item middle-nav">Shop</a></li>
             <li><a href="#blog" class="nav-item middle-nav">News</a></li>
             <li><a href="#" class="nav-item middle-nav">Notice</a></li>
             <li><a href="" class="user icon"><i class="far fa-user-circle"></i></a></li>
