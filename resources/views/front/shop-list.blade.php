@@ -7,16 +7,17 @@
 @endsection
 
 @section('main')
+<div id="shop-list">
     <div class="section1">
         <div class="title">
-            <h1>商店</h1>
+            <span>商店</span>
             <div class="english">Shop</div>
         </div>
         <div class="banner"></div>
-        <div class="small-img"></div>
     </div>
-    <!-- store -->
-    <div id="store">
+    <div class="small-img"></div>
+    <!-- shop -->
+    <div class="shop">
         <ul class="tabs">
             <li class="tab"><a href="">酒精墨水藝術</a></li>
             <li class="tab"><a href="">手工香氛蠟燭</a></li>
@@ -24,50 +25,45 @@
         <!-- cards -->
         <div class="cards">
             <div class="card">
+                <div class="img" style="background-image: url(/img/candles1.jpeg);"></div>
+                <div class="text-muted">證書課程</div>
+                <div class="shop-title">Hastable 甘納許甜點蠟燭</div>
+                <div class="fee-and-cart">
+                    <span class="fee">$13,000</span>
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+            <div class="card">
                 <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
                 <div class="text-muted">酒精墨水藝術</div>
-                <div class="product-title">酒精墨水藝術用紙</div>
-                <div class="description">強韌耐熱 防水合成紙 A4 10張</div>
+                <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
                     <i class="fas fa-cart-plus icon"></i>
                 </div>
             </div>
             <div class="card">
-                <div class="img"></div>
+                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
                 <div class="text-muted">酒精墨水藝術</div>
-                <div class="product-title">酒精墨水藝術用紙</div>
-                <div class="description">強韌耐熱 防水合成紙 A4 10張</div>
+                <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
                     <i class="fas fa-cart-plus icon"></i>
                 </div>
             </div>
             <div class="card">
-                <div class="img"></div>
+                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
                 <div class="text-muted">酒精墨水藝術</div>
-                <div class="product-title">酒精墨水藝術用紙</div>
-                <div class="description">強韌耐熱 防水合成紙 A4 10張</div>
+                <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
                     <i class="fas fa-cart-plus icon"></i>
                 </div>
             </div>
             <div class="card">
-                <div class="img"></div>
-                <div class="text-muted">hehe</div>
-                <div class="product-title">酒精墨水藝術用紙</div>
-                <div class="description">強韌耐熱 防水合成紙 A4 10張</div>
-                <div class="fee-and-cart">
-                    <span class="fee">$4,800</span>
-                    <i class="fas fa-cart-plus icon"></i>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img"></div>
-                <div class="text-muted">hehe</div>
-                <div class="product-title">酒精墨水藝術用紙</div>
-                <div class="description">強韌耐熱 防水合成紙 A4 10張</div>
+                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="text-muted">酒精墨水藝術</div>
+                <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
                     <i class="fas fa-cart-plus icon"></i>
@@ -75,6 +71,7 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
 
 @section('js')

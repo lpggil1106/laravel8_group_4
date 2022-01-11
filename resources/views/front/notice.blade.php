@@ -29,7 +29,7 @@
             <span>訂購前請登入會員，以便獲得會員折扣。</span>
         </div>
         <div class="products">
-            <div class="title">商品 / 材料類</div>
+            <div class="title">1. 商品 / 材料類</div>
             <div class="content">
                 <span class="description">訂單送出後，請稍待確認信函聯繫，最終結帳內容及金額以確認信息為準，待確認訂單內容及運費後，個別依付款方式結帳，匯款經確認無誤三日內寄發出貨 (國定假日及週一不寄送)。
                     商品/材料類交易，一經售出概不退換。</span>
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="online-courses">
-            <div class="title">線上課程類</div>
+            <div class="title">2. 線上課程類</div>
             <div class="content">
                 <span>訂單送出並完成結帳後，即可開通課程閱覽權限。</span>
                 <span>線上課程類交易，一經結帳完成並開通課程閱覽權限後概不退換。</span>
@@ -47,14 +47,14 @@
             </div>
         </div>
         <div class="in-class-courses">
-            <div class="title">實體課程類</div>
+            <div class="title">3. 實體課程類</div>
             <div class="content">
                 <span>訂單送出後，須透過粉絲頁聯繫預約上課日期、課程須知及付款方式。</span>
                 <span>實體課程由於材料教材需提前預備，於開課三日前既不接受退費。</span>
             </div>
         </div>
         <div class="payment">
-            <div class="title">結帳方式</div>
+            <div class="title">4. 結帳方式</div>
             <div class="content">
                 <span>匯款：永豐銀行營業部分 (銀行代號807)</span>
                 <span>帳戶：16801800497513</span>
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="overseas">
-            <div class="title">海外顧客購買方式</div>
+            <div class="title">5. 海外顧客購買方式</div>
             <div class="content">
                 <span>非台灣境內顧客請聯絡客服下單。</span>
                 <span>所有商品價格須加 4% 海外刷卡手續費。</span>

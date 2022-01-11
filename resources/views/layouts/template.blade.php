@@ -1,6 +1,7 @@
 {{-- 前台頁面 --}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +26,7 @@
             <li><a href="#courses" class="nav-item middle-nav">Courses</a></li>
             <li><a href="#shop" class="nav-item middle-nav">Shop</a></li>
             <li><a href="#blog" class="nav-item middle-nav">News</a></li>
-            <li><a href="{{route('front.notice')}}" class="nav-item middle-nav">Notice</a></li>
+            <li><a href="{{ route('front.notice') }}" class="nav-item middle-nav">Notice</a></li>
         </ul>
         <ul class="navbar-right">
             <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
