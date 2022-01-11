@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main #news-header {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+main #news-header h1 {
+  position: absolute;
+  left: -0.5rem;
+  bottom: 11rem;
+  font-weight: 600;
+  font-size: 16.625rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  color: #242426;
+}
+
+main #news-header .scroll {
+  position: absolute;
+  left: 1150px;
+  bottom: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+main #news-header .scroll span::after {
+  content: '';
+  display: inline-block;
+  margin-top: 7px;
+  height: 60px;
+  width: 1px;
+  background-color: #222;
+}
+
+main #news-header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100vh;
+}
+
+main #news-header .content .photo-full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main #news-header .content .photo-full .top {
+  width: 272px;
+}
+
+main #news-header .content .photo-full .photo {
+  width: 272px;
+  height: 938px;
+  background-image: url(../img/candle5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+main #news-header .content .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 274px 182px 0 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 0.1rem;
+}
+
+main #news-header .content .description span {
+  margin-left: 2rem;
+}
+
+main #news-header .content .description span:nth-child(3) {
+  margin-top: 4.375rem;
+}
+
+main #news-header .content .description span:nth-child(4) {
+  margin-top: 9.875rem;
+}
+
+main #news-header .content .description span:nth-last-child(1) {
+  margin-top: 13.25rem;
+}
+
+main #news-header .background-logo {
+  width: 576px;
+  height: 216.5px;
+  background-image: url(../img/tingsLogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 430px;
+  right: 220px;
+  opacity: 0.2;
+}
+
+main #news-content {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main #news-content .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #news-content .news .title {
+  padding-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main #news-content .news .date {
+  padding-bottom: 48px;
+  font-size: 1.125rem;
+  color: #999999;
+}
+
+main #news-content .news .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125rem;
+}
+
+main #news-content .news .content p {
+  padding-bottom: 48px;
+}
+
+main #news-content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 82.6rem;
+  margin: 150px 0 130px;
+}
+
+main #news-content .button a {
+  position: relative;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+main #news-content .button a:nth-child(1)::after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.1rem;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  left: -17.5px;
+}
+
+main #news-content .button a:nth-child(2)::after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.1rem;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  left: -35px;
+}
+
+main #news-content .button a:nth-last-child(1)::after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.1rem;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  left: -17.5px;
+}
+
+main #news-content .button a:hover::after {
+  width: 200%;
+}
+/*# sourceMappingURL=news-content.css.map */

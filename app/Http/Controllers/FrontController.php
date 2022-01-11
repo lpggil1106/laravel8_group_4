@@ -20,4 +20,14 @@ class FrontController extends Controller
     {
         return view('front.shop-list');
     }
+
+    public function newsList()
+    {
+        return view('front.news-list');
+    }
+
+    public function newsContent()
+    {
+        return view('front.news-content');
+    }
 }
