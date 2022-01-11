@@ -23,8 +23,9 @@
         <ul class="navbar">
             <li><a href="#about-us" class="nav-item middle-nav">About Us</a></li>
             <li><a href="#courses" class="nav-item middle-nav">Courses</a></li>
-            <li><a href="#store" class="nav-item middle-nav">Store</a></li>
-            <li><a href="#news" class="nav-item middle-nav">News</a></li>
+            <li><a href="#shop" class="nav-item middle-nav">Store</a></li>
+            <li><a href="#blog" class="nav-item middle-nav">News</a></li>
+            <li><a href="#" class="nav-item middle-nav">Notice</a></li>
             <li><a href="" class="user icon"><i class="far fa-user-circle"></i></a></li>
             <li><a href="" class="cart icon"><i class="fas fa-shopping-cart"></i></a></li>
             <li><a href="" class="nav-item">Contact Us</a></li>
@@ -44,7 +45,7 @@
                     {{-- <h2>聯絡資訊</h2> --}}
                     <p>0955-779-166</p>
                     <p>tingscandle@gmail.com</p>
-                    <p>Line ID /@goifprby</p>
+                    <p>Line @goifprby</p>
                 </div>
                 <div class="address">
                     <h3>Address</h3>
@@ -85,7 +86,7 @@
         </div>
         <div class="footer-down">
             <a class="top" href="#home">Top <i class="fas fa-chevron-up"></i></a>
-            <h3>Copyright 2022 - TINGS Aroma | 網頁設計:老師最帥對不對</h3>
+            <h3>© TINGS Aroma 2022 | 第四組 - 老師最帥對不隊</h3>
             <div class="follow">
                 <h4>Follow us</h4>
                 <div class="icons">
@@ -110,6 +111,112 @@
             }
             prevScrollpos = currentScrollPos;
         }
+
+        [{
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#f5f5f5"
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#616161"
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "color": "#f5f5f5"
+            }]
+        }, {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#bdbdbd"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#eeeeee"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#757575"
+            }]
+        }, {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#e5e5e5"
+            }]
+        }, {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#9e9e9e"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#ffffff"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#757575"
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#dadada"
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#616161"
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#9e9e9e"
+            }]
+        }, {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#e5e5e5"
+            }]
+        }, {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#eeeeee"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#c9c9c9"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#9e9e9e"
+            }]
+        }]
     </script>
     @yield('js')
 </body>
