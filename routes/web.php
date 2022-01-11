@@ -34,3 +34,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::prefix('/admin')->group(function(){
+
+    Route::prefix('/news')->group(function(){
+        Route::get('/',[NewsController::class,'index'])->name('news.index');
+        Route::get('/create',[NewsController::class,'create'])->name('news.create');
+        Route::post('/add',[NewsController::class,'add'])->name('news.add');
+        Route::delete('/{id}',[NewsController::class,'delete'])->name('news.delete');
+        Route::get('/edit/{id}',[NewsController::class,'edit'])->name('news.edit');
+        Route::post('/edit/modify/{id}',[NewsController::class,'modify'])->name('news.modify');
+    });
+});
