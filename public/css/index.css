@@ -52,7 +52,7 @@ header .navbar li {
 header .navbar li a {
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 0.9375rem;
+  font-size: 0.8rem;
   color: #242426;
   letter-spacing: 0.0313rem;
 }
@@ -76,11 +76,11 @@ header .navbar li .icon {
 }
 
 header .navbar li .user {
-  margin-left: 11.4375rem;
+  margin-left: 11.9rem;
 }
 
 header .navbar li .cart {
-  margin-right: 0.9375rem;
+  margin-right: 1.4rem;
 }
 
 #home {
@@ -149,7 +149,7 @@ header .navbar li .cart {
   left: 22%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 162px;
+  font-size: 10.125rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   letter-spacing: 0.5rem;
@@ -187,6 +187,11 @@ header .navbar li .cart {
   left: 35%;
   font-family: sans-serif;
   letter-spacing: 0.0313rem;
+}
+
+#home .texts .scroll-to-discover span i {
+  color: #888888;
+
 }
 
 #home .texts .scroll-to-discover .icon {
@@ -297,6 +302,7 @@ header .navbar li .cart {
   font-weight: bolder;
   font-size: 4rem;
   margin-bottom: 1.8rem;
+  letter-spacing: 0.0313rem;
 }
 
 #course-info {
@@ -397,7 +403,7 @@ header .navbar li .cart {
 
 #course-info .course .learn-more {
   position: absolute;
-  right: 10%;
+  right: 8%;
   bottom: 10%;
   text-decoration: none;
   font-family: sans-serif;
@@ -435,13 +441,17 @@ header .navbar li .cart {
   box-sizing: border-box;
 }
 
+/* shop */
 #shop {
   width: 100vw;
   height: 100vh;
   position: relative;
+  /* background-color: #E7E7E7; */
+  /* display: flex;
+  align-items: center; */
 }
 
-#shop .shop {
+/* #shop .shop {
   margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,27 +463,36 @@ header .navbar li .cart {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+} */
+
+#shop .title h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin-left: 100px;
+  position: absolute;
+  font-weight: 600;
+  top: 10rem;
+  color: #242426;
 }
 
-#shop .shop h2 {
-  font-size: 3.125rem;
-}
-
-#shop .shop div {
+/* #shop .shop div {
   position: absolute;
   top: 50%;
   right: 5%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
-}
+} */
 
-#shop .shop div span {
+/* #shop .shop div span {
   font-size: 1.25rem;
   padding: 1rem;
-}
+} */
 
-#shop .gray {
+/* #shop .gray {
   width: 25%;
   height: 100vh;
   position: absolute;
@@ -482,9 +501,9 @@ header .navbar li .cart {
   background: #999999;
   opacity: 0.3;
   z-index: -1;
-}
+} */
 
-#shop .gray h2 {
+/* #shop .gray h2 {
   color: white;
   font-size: 6rem;
   font-weight: 600;
@@ -494,45 +513,86 @@ header .navbar li .cart {
   position: relative;
   top: 25%;
   left: -40%;
-}
+} */
 
 #shop .shopping-item {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 3.4375rem;
-  margin-left: 10rem;
+  justify-content: flex-end;
+  /* align-items: center; */
+  position: absolute;
+  right: 0;
+  top: 10rem;
 }
 
 #shop .shopping-item div {
-  margin-right: 3rem;
+  margin-left: 0.2rem;
 }
 
-#shop .shopping-item div img {
-  width: 430px;
-  height: 430px;
-  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
+/* #shop .shopping-item div img {
+  width: 26.875rem;
+  height: 26.875rem;
+  width: 19.0362rem;
+  height: 19.0362rem;
+  box-shadow: 0rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+} */
+
+#shop .shopping-item div .img {
+  width: 26.875rem;
+  height: 26.875rem;
+  width: 19.0362rem;
+  height: 19.0362rem;
+  background-position: center;
+  background-size: cover;
 }
 
 #shop .shopping-item div h3 {
   margin-top: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-family: "Cormorant Garamond", serif; */
+  font-weight: 100;
+  letter-spacing: 0.0563rem;
+  font-size: 1.0625rem;
+  padding-left: 0.3125rem;
 }
 
 #shop a {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.25rem;
-  position: absolute;
-  right: 10%;
   display: inline-block;
-  margin-top: 10rem;
+  position: absolute;
+  bottom: 10rem;
+  color: #242426;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.0313rem;
+  margin-left: 12.8rem;
 }
 
-#shop a:hover {
-  color: #999999;
+#shop a i {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  color: #242426;
+  font-size: 0.8rem;
+  margin-left: 5px;
 }
 
+#shop a:after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.0625rem;
+  width: 0;
+}
+
+#shop a:hover:after {
+  width: 100%;
+}
+
+/* news */
 #blog {
   width: 100vw;
   height: 100vh;
@@ -548,16 +608,19 @@ header .navbar li .cart {
 }
 
 #blog .article {
-  width: 50%;
+  width: 50rem;
+  height: 27rem;
+  font-family: sans-serif;
+  letter-spacing: 0.0313rem;
 }
 
 #blog .article div {
-  padding: 1.5rem 0rem;
-  border-bottom: 0.125rem solid gray;
+  padding: 2.5rem 0rem;
+  border-bottom: 0.1rem solid #242426;
 }
 
 #blog .article div:first-child {
-  border-top: 0.125rem solid gray;
+  border-top: 0.1rem solid #242426;
 }
 
 #blog .article div:last-child {
@@ -565,31 +628,61 @@ header .navbar li .cart {
 }
 
 #blog .article div span {
-  color: #999999;
+  color: #242426;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
 }
 
 #blog .article div h2 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+#blog .article div p {
+  font-weight: 300;
+}
+
+#blog .article div:hover {
+  color: #777777;
 }
 
 #blog .article a {
   display: inline-block;
-  margin-top: 6.25rem;
-  color: #000;
+  margin-top: 5.25rem;
+  color: #242426;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.0313rem;
 }
 
-#blog .article a:hover {
-  color: #999999;
+#blog .article i {
+  display: inline-block;
+  color: #242426;
+  font-size: 0.8rem;
+  margin-left: 5px;
 }
 
-#blog .new {
+#blog .article a:after {
+  content: "";
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #424242;
+  display: block;
+  height: 0.0625rem;
+  width: 0;
+}
+
+#blog .article a:hover:after {
+  width: 100%;
+}
+
+#blog .news {
+  margin-top: -22rem;
   width: 30%;
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 0.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,12 +691,18 @@ header .navbar li .cart {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: 4rem;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.0313rem;
+  color: #242426;
 }
 
+/* footer */
 footer {
   width: 100vw;
-  height: 100vh;
+  height: 102vh;
   background-color: #FFFFFF;
   position: relative;
 }
@@ -738,15 +837,13 @@ footer .container .footer-up .img iframe {
 
 footer .footer-mid {
   padding: 2rem 0;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 footer .footer-mid h3 {
-  /* -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; */
   color: #242426;
   font-weight: 500;
   font-size: 0.8rem;
@@ -756,17 +853,8 @@ footer .footer-mid h3 {
   font-family: sans-serif;
 }
 
-footer .footer-mid h3 {
-  /* -webkit-box-flex: 1;
-  -ms-flex: 1; */
-  /* display: flex; */
-}
-
 footer .footer-mid p {
-  /* -webkit-box-flex: 4;
-  -ms-flex: 4;
-  flex: 4; */
-  margin-left: 7.4rem;
+  margin-left: 6.4rem;
   color: #242426;
   font-weight: 500;
   font-size: 0.7rem;
@@ -776,13 +864,13 @@ footer .footer-mid p {
 }
 
 footer .footer-mid .weekends {
-  margin-left: 3.8125rem;
+  margin-left: 3.9rem;
 }
 
 footer .footer-down {
   width: 100%;
-  height: 240px;
-  background-color: #636363;
+  height: 15rem;
+  background-color: #161616;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,31 +881,41 @@ footer .footer-down {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  letter-spacing: 0.0313rem;
 }
 
 footer .footer-down .top {
   margin: 5rem 0rem 0rem 6.875rem;
-  border: 2px solid white;
-  border-radius: 50% / 50%;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 50%;
   text-decoration: none;
-  color: white;
-  padding: 1.25rem 2.25rem;
+  color: #FFFFFF;
+  padding: 1.25rem 1.25rem;
   position: absolute;
   top: 0;
   left: 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
 }
 
-footer .footer-down .top:hover {
-  border: 2px solid #ffaf7b;
-  color: #ffaf7b;
+footer .footer-down .top i {
+  margin-left: 0.1rem;
+  font-size: 0.8rem;
+}
+
+footer .footer-down .top i:hover {
+  color: #B5B5B5;
 }
 
 footer .footer-down h3 {
-  color: white;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
 }
 
 footer .footer-down .follow {
-  width: 30.3125rem;
+  width: 26.3125rem;
   height: 14.375rem;
   background-color: #FBFBFB;
   display: -webkit-box;
@@ -830,19 +928,16 @@ footer .footer-down .follow {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: -4rem;
-  right: 7rem;
+  top: -3.5rem;
+  right: 8rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
   display: flex;
   justify-content: center;
-  /* padding: 0 100px; */
 }
 
 footer .footer-down .follow h4 {
-  /* margin-right: 2rem;
-  margin-left: 7.4rem; */
   color: #242426;
   font-weight: 500;
   font-size: 0.8rem;
@@ -857,22 +952,23 @@ footer .footer-down .follow a {
 }
 
 footer .footer-down .follow a i {
-  /* margin-right: 2rem; */
   font-size: 1.875rem;
-  color: #898F9E;
+  color: #888888;
 }
 
 footer .footer-down .follow a i.fa-facebook-square:hover {
-  color: #0675E8;
+  color: #424242;
+  /* color: #3b5998; */
 }
 
 footer .footer-down .follow a i.fa-instagram:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+  /* background: -webkit-gradient(linear, left bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
   background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
   background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
+  color: #424242;
 }
 
 /*# sourceMappingURL=index.css.map */
