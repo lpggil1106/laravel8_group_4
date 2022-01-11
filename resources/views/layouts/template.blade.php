@@ -20,14 +20,16 @@
         <a href="#home" class="logo">
             <img src="/img/logo.png" alt="">
         </a>
-        <ul class="navbar">
+        <ul class="navbar-middle">
             <li><a href="#about-us" class="nav-item middle-nav">About Us</a></li>
             <li><a href="#courses" class="nav-item middle-nav">Courses</a></li>
             <li><a href="#shop" class="nav-item middle-nav">Shop</a></li>
             <li><a href="#blog" class="nav-item middle-nav">News</a></li>
             <li><a href="#" class="nav-item middle-nav">Notice</a></li>
-            <li><a href="" class="user icon"><i class="far fa-user-circle"></i></a></li>
-            <li><a href="" class="cart icon"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
+            <li><a href="" class="icon"><i class="fas fa-shopping-cart"></i></a></li>
             <li><a href="" class="nav-item">Contact Us</a></li>
         </ul>
     </header>
