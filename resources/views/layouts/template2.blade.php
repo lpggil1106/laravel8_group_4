@@ -1,6 +1,7 @@
 {{-- 前台頁面 --}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,15 +18,14 @@
 <body>
     <!-- header -->
     <header>
-        <a href="#home" class="logo">
+        <a href="{{ route('front.index') }}" class="logo">
             <img src="/img/logo.png" alt="">
         </a>
         <ul class="navbar-middle">
-            <li><a href="#about-us" class="nav-item middle-nav">About Us</a></li>
-            <li><a href="#courses" class="nav-item middle-nav">Courses</a></li>
-            <li><a href="#shop" class="nav-item middle-nav">Shop</a></li>
-            <li><a href="#blog" class="nav-item middle-nav">News</a></li>
-            <li><a href="{{route('front.notice')}}" class="nav-item middle-nav">Notice</a></li>
+            <li><a href="{{ route('front.course-list') }}" class="nav-item middle-nav">Courses</a></li>
+            <li><a href="{{ route('front.shop-list') }}" class="nav-item middle-nav">Shop</a></li>
+            <li><a href="{{ route('front.news-list') }}" class="nav-item middle-nav">News</a></li>
+            <li><a href="{{ route('front.notice') }}" class="nav-item middle-nav">Notice</a></li>
         </ul>
         <ul class="navbar-right">
             <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
@@ -39,6 +39,7 @@
         @yield('main')
     </main>
 
+    <!-- footer -->
     <footer>
         <div class="container">
             <div class="footer-up">
