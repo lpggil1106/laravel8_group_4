@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< Updated upstream
-use App\Http\Controllers\FrontController;
-=======
 use Illuminate\Support\Facades\Auth;
->>>>>>> Stashed changes
 use Illuminate\Support\Facades\Route;
 
 /*
