@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< Updated upstream
 use App\Http\Controllers\FrontController;
+=======
+use Illuminate\Support\Facades\Auth;
+>>>>>>> Stashed changes
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +18,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [FrontController::class, 'index'])->name('front.index');
-Route::get('/course-list', [FrontController::class, 'courseList'])->name('front.course-list');
-Route::get('/shop-list', [FrontController::class, 'shopList'])->name('front.shop-list');
+
+Route::get('/', function () {
+    return view('.front.index');
+});
+
+Route::get('/admin', function () {
+    return view('.admin.index.index');
+});
+
+Route::get('/admin/login', function () {
+    return view('.layouts.master');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
