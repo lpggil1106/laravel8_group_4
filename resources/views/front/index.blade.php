@@ -17,7 +17,7 @@
             <div class="right">
                 <div class="top-img"></div>
                 <div class="bottom-block">
-                    <div class="text">Select Your Course</div>
+                    {{-- <div class="text">Select Your Course</div> --}}
                     <div class="bottom-carousel">
                         <div class="imgs"></div>
                     </div>
@@ -108,6 +108,7 @@
             </div>
         </div>
     </div>
+    {{-- <div class="banner"></div> --}}
     <!-- shop -->
     <section id="shop">
         <div class="title">
@@ -153,6 +154,7 @@
     </section>
     <!-- blog -->
     <section id="blog">
+        <div class="colour-block"></div>
         <div class="news">News</div>
         <div class="article">
             <div>

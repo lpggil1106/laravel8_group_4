@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -38,7 +38,7 @@ header {
 }
 
 header img {
-  width: 4vw;
+  width: 4.5vw;
 }
 
 header .navbar {
@@ -128,23 +128,28 @@ header .navbar li .cart {
   top: 38%;
   width: 31.5rem;
   height: 20.5644rem;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 }
 
-#home .imgs .right .bottom-block .text {
+/* #home .imgs .right .bottom-block .text {
   height: 18vh;
   padding: 2.5rem 3.625rem;
   letter-spacing: 0.0313rem;
   font-size: 1rem;
   color: #424242;
   font-family: sans-serif;
-}
+} */
 
 #home .imgs .right .bottom-block .bottom-carousel .imgs {
   position: absolute;
+  right: 0;
+  bottom: -10.75rem;
   width: 35vw;
-  height: 22.7rem;
-  background-color: #f7f7f7;
+  height: 31.3rem;
+  /* background-color: #f7f7f7; */
+  background-image: url(/img/shop-item1.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 
 #home .texts .big-text {
@@ -296,12 +301,20 @@ header .navbar li .cart {
   width: 36rem;
   height: 15.7568rem;
   background-color: #e8e8e8;
+
+  /* position: absolute;
+  top: 4rem;
+  width: 43.5rem;
+  height: 44.7568rem;
+  background-color: #e8e8e8;
+  margin-left: -6.5rem; */
 }
 
 #courses h2 {
   position: absolute;
   top: 50%;
   left: 20.5%;
+  /* left: 14.8%; */
   font-family: "Cormorant Garamond", serif;
   font-weight: bolder;
   font-size: 4rem;
@@ -438,12 +451,11 @@ header .navbar li .cart {
 /*# sourceMappingURL=index.css.map */
 
 /* 聖筑的 index css */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/* .banner {
+  width: 100vw;
+  height: 30vh;
+  background-color: grey;
+} */
 
 /* shop */
 #shop {
@@ -554,12 +566,13 @@ header .navbar li .cart {
 
 #shop .shopping-item div h3 {
   margin-top: 1.5rem;
-  font-family: 'Times New Roman', Times, serif;
-  /* font-family: "Cormorant Garamond", serif; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: "Cormorant Garamond", serif;
   font-weight: 100;
   letter-spacing: 0.0563rem;
   font-size: 1.0625rem;
   padding-left: 0.3125rem;
+  color: #242426;
 }
 
 #shop a {
@@ -609,6 +622,18 @@ header .navbar li .cart {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+}
+
+#blog .colour-block {
+  width: 23rem;
+  height: 30rem;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  background-image: url(/img/vase-and-candles.jpeg);
+  background-position: 50% 99%;
+  background-size: cover;
 }
 
 #blog .article {
