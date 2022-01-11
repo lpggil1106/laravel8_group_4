@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
 </head>
 <body>
     <div id="app">
@@ -40,10 +41,10 @@
                                     最新消息
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="{{route('news-categories.index')}}">
                                         消息類別管理
                                     </a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="{{route('news.index')}}">
                                         最新消息管理
                                     </a>
                                 </div>
@@ -109,7 +110,12 @@
 
         <main class="py-4">
             @yield('content')
+            @yield('main')
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.8/sweetalert2.min.js%22%3E"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    @yield('js')
 </body>
 </html>

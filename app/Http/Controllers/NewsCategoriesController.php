@@ -37,41 +37,19 @@ class NewsCategoriesController extends Controller
     public function store(Request $request)
     {
         NewCategories::create($request->all());
-        return redirect(route('news.store'));
+        return redirect('admin/news-categories');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
-        //
+        $news_categories = NewCategories::find($id);
+        return view('admin.news_categories.edit', compact('news_categories'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
+        NewCategories::find($id)->update($request->all());
+        return redirect('admin/news-categories');
     }
 
     /**
@@ -82,6 +60,25 @@ class NewsCategoriesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        NewCategories::find($id)->delete();
+        return redirect('admin/news-categories');
+        $news_categories = NewCategories::with('news')->find($id);
+        if($news_categories->news->count()){
+            return redirect()
+            ->route('news-categories.index')
+            ->with([
+                'message'=> $news_categories->name.'類別尚存'.$news_categories->count().'個產品，無法刪除',
+                'color' => 'alert-danger',
+                'icon' => 'error',
+            ]);
+        }
+        NewCategories::find($id)->delete();
+        return redirect()
+        ->route('categories.index')
+        ->with([
+            'message'=>'刪除成功!!',
+            'color' => 'alert-success',
+            'icon' => 'success',
+        ]);
     }
 }

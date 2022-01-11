@@ -22,27 +22,27 @@
             <div class="card">
                 <h2 class="card-header pt-2">產品類別管理</h2>
                 <div class="form-group pt-4 px-3 m-0">
-                    <a href="{{route('categories.create')}}" class="btn btn-success">新增產品類別</a>
+                    <a href="{{route('news-categories.create')}}" class="btn btn-success">新增產品類別</a>
                 </div>
                 <hr>
                 <div class="card-body">
                     <table id="my-table" class="table table-bordered table-striped table-hover">
                         <thead>
                             <tr>
-                                <th>類別ID</th>
-                                <th width="250">類別名稱</th>
-                                <th width="120">操作</th>
+                                <th width="120">類別ID</th>
+                                <th>類別名稱</th>
+                                <th width="150">操作</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($categories as $item)
+                            @foreach ($news_categories as $item)
                                 <tr>
                                     <td>{{$item->id}}</td>
                                     <td>{{$item->name}}</td>
                                     <td>
-                                        <a href="{{route('categories.edit',['id'=> $item->id])}}" class="btn btn-primary">編輯</a>
+                                        <a href="{{route('news-categories.edit',['id'=> $item->id])}}" class="btn btn-primary">編輯</a>
                                         <button class="btn btn-danger delete-btn">刪除</button>
-                                        <form class="d-none" action="{{route('categories.destroy',['id' => $item->id])}}" method="post">
+                                        <form class="d-none" action="{{route('news-categories.destroy',['id' => $item->id])}}" method="post">
                                             @csrf
                                             @method('DELETE')
                                         </form>
@@ -63,29 +63,38 @@
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.min.js" integrity="sha512-GDiDlK2vvO6nYcNorLUit0DSRvcfd7Vc0VRg7e3PuZcsTwQrJQKp5hf8bCaad+BNoBq7YMH6QwWLPQO3Xln0og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+
+
     $(document).ready( function () {
         $('#my-table').DataTable();
     });
-
     const deleteElements = document.querySelectorAll('.delete-btn');
     deleteElements.forEach(function(deleteElement){
         deleteElement.addEventListener('click', function(){
             Swal.fire({
-                title: 'Do you want to save the changes?',
-                showDenyButton: true,
+                title: '你確定嗎?',
+                text: "不能後悔囉!",
+                icon: 'warning',
                 showCancelButton: true,
-                confirmButtonText: 'Save',
-                denyButtonText: `Don't save`,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '刪除!',
+                cancelButtonText:'取消',
                 }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    Swal.fire('Saved!', '', 'success')
-                } else if (result.isDenied) {
-                    Swal.fire('Changes are not saved', '', 'info')
+                    Swal.fire(
+                    '刪除成功!',
+                    '此類別已成功刪除',
+                    ).then((result)=>{
+                        if(result.isConfirmed){
+                            this.nextElementSibling.submit();
+                        }
+                    })
                 }
             })
         })
     })
+
 </script>
 
 @endsection

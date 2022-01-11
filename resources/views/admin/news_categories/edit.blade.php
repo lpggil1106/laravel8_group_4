@@ -18,12 +18,12 @@
                 <h2 class="card-header pt-3 pb-2">最新消息 - 新增</h2>
 
                 <div class="card-body">
-                    <form method="POST" action="{{route('categories.update',['id' => $categories->id])}}">
+                    <form method="POST" action="{{route('news-categories.update',['id' => $news_categories->id])}}">
                         @csrf
                         <div class="form-group row py-2">
                             <label for="name" class="col-sm-2 col-form-label">類別名稱</label>
                             <div class="col-sm-10">
-                                <input value="{{$categories->name}}" type="text" class="form-control" id="name" name="name" required>
+                                <input value="{{$news_categories->name}}" type="text" class="form-control" id="name" name="name" required>
                             </div>
                         </div>
                         <div class="form-group row py-2">
