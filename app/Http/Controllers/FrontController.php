@@ -30,4 +30,9 @@ class FrontController extends Controller
     {
         return view('front.news-content');
     }
+
+    public function notice()
+    {
+        return view('front.notice');
+    }
 }

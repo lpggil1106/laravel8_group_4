@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#notice {
+  background: #e7e7e7;
+  color: #242426;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Cormorant Garamond", serif;
+  padding: 10.25rem 6.25rem 7rem 6.25rem;
+}
+
+#notice .row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#notice .row .col30 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: mixed;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+  padding: 6.25rem;
+}
+
+#notice .row .col30 span {
+  font-size: 1rem;
+}
+
+#notice .row .col30 .english {
+  font-size: 3rem;
+}
+
+#notice .col70 .img {
+  background-image: url(/img/black-candles.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 60vw;
+  height: 40vh;
+}
+
+#notice .summary {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.8rem;
+}
+
+#notice .summary .bullet-points {
+  margin-bottom: 0.5rem;
+}
+
+#notice .summary .bullet-points span {
+  margin-right: 0.5rem;
+}
+
+#notice .products {
+  margin-bottom: 0.5rem;
+  border-bottom: solid 0.0625rem #242426;
+  padding: 2rem 0;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+#notice .products .title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#notice .products .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#notice .products .content .description {
+  margin-bottom: 1rem;
+}
+
+#notice .online-courses {
+  margin-bottom: 0.5rem;
+  border-bottom: solid 0.0625rem #242426;
+  padding: 2rem 0;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+#notice .online-courses .title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#notice .online-courses .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#notice .in-class-courses {
+  margin-bottom: 0.5rem;
+  border-bottom: solid 0.0625rem #242426;
+  padding: 2rem 0;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+#notice .in-class-courses .title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#notice .in-class-courses .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#notice .payment {
+  margin-bottom: 0.5rem;
+  border-bottom: solid 0.0625rem #242426;
+  padding: 2rem 0;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+#notice .payment .title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#notice .payment .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#notice .payment .additional-info {
+  margin-top: 1rem;
+}
+
+#notice .overseas {
+  margin-bottom: 0.5rem;
+  padding: 2rem 0;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+#notice .overseas .title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#notice .overseas .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=notice.css.map */
