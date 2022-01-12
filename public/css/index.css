@@ -70,7 +70,7 @@ header .navbar-middle li a {
   display: block;
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #242426;
   letter-spacing: 0.0313rem;
 }
@@ -78,7 +78,7 @@ header .navbar-middle li a {
 header .navbar-right li a {
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #242426;
   letter-spacing: 0.0313rem;
 }
@@ -117,84 +117,43 @@ header .navbar-right li .icon {
 
 /* home */
 #home {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #e7e7e7;
-  position: relative;
 }
 
 #home .imgs {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 #home .imgs .left .img {
-  display: inline-block;
-  width: 22.6875rem;
+  width: 26vw;
   height: 90vh;
-  background-color: grey;
   background-image: url(/img/xmas_tree.jpeg);
   background-size: cover;
   background-position: center;
-  -webkit-transition: 5s;
+  /* -webkit-transition: 5s;
   transition: 5s;
   -webkit-transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
-  transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
+  transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1); */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#home .imgs .right .top-img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20.6992rem;
-  height: 13.8311rem;
-  background-image: url(/img/white-candle.jpeg);
-  background-size: cover;
-  background-position: 50% 19%;
-}
-
-#home .imgs .right .bottom-block {
-  position: absolute;
-  right: 0;
-  top: 38%;
-  width: 31.5rem;
-  height: 20.5644rem;
-  /* background-color: #f7f7f7; */
-}
-
-/* #home .imgs .right .bottom-block .text {
-  height: 18vh;
-  padding: 2.5rem 3.625rem;
-  letter-spacing: 0.0313rem;
-  font-size: 1rem;
-  color: #424242;
-  font-family: sans-serif;
-} */
-
-#home .imgs .right .bottom-block .bottom-carousel .imgs {
-  position: absolute;
-  right: 0;
-  bottom: -10.75rem;
-  width: 35vw;
-  height: 31.3rem;
-  /* background-color: #f7f7f7; */
-  background-image: url(/img/shop-item1.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-
-#home .texts .big-text {
-  position: absolute;
-  top: 35%;
-  left: 22%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-size: 10.125rem;
+#home .imgs .left .img .big-text {
+  font-size: 12rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   letter-spacing: 0.5rem;
   color: #242426;
+  /* position: absolute;
+  left: 89%;
+  top: 27%; */
 }
 
-#home .texts .small-texts {
+#home .imgs .left .img .small-texts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,80 +161,96 @@ header .navbar-right li .icon {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: absolute;
-  top: 57%;
-  left: 35%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   font-size: 2.4rem;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0625rem;
   line-height: 2.5rem;
   color: #242426;
+  /* position: absolute;
+  left: 89%;
+  top: 27%; */
 }
 
-#home .texts .scroll-to-discover {
-  position: relative;
-}
-
-#home .texts .scroll-to-discover span {
-  position: absolute;
+#home .imgs .left .img .scroll-to-discover {
+  margin-top: 4rem;
   color: #424242;
-  top: -7.75rem;
-  left: 35%;
   font-family: sans-serif;
   letter-spacing: 0.0313rem;
+  /* position: absolute;
+  left: 89%;
+  top: 27%; */
 }
 
-#home .texts .scroll-to-discover span i {
+#home .imgs .left .img .scroll-to-discover span i {
   color: #888888;
-
 }
 
-#home .texts .scroll-to-discover .icon {
+#home .imgs .left .img .scroll-to-discover .icon {
   margin-right: 0.4375rem;
+}
+
+#home .imgs .right {
+  position: relative;
+  height: 100vh;
+}
+
+#home .imgs .right .top-img {
+  width: 23vw;
+  height: 30vh;
+  background-image: url(/img/white-candle.jpeg);
+  background-size: cover;
+  background-position: 50% 19%;
+  position: absolute;
+  right: 0;
+}
+
+#home .imgs .right .bottom-img {
+  width: 35vw;
+  height: 60vh;
+  background-image: url(/img/shop-item1.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /* about us */
 #about-us {
-  min-height: 100vh;
-  position: relative;
+  height: 100vh;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #about-us .left-img {
-  position: absolute;
-  bottom: 1%;
-  width: 13.0119rem;
-  height: 21.1875rem;
+  width: 13vw;
+  height: 28vh;
   background-image: url(/img/glass-vase.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #about-us .right-img {
-  position: absolute;
-  bottom: -9%;
-  right: 14%;
-  width: 19.1875rem;
-  height: 24.8125rem;
+  width: 17vw;
+  height: 34vh;
   background-image: url(/img/pink-flower.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #about-us .about-us {
-  position: absolute;
-  top: 54%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 47.5rem;
-  height: 40rem;
+  width: 51rem;
+  height: 42rem;
   background-color: #e8e8e8;
-  padding: 3.625rem 4.6875rem;
   font-family: "Times New Roman", Times, serif;
   color: #242426;
   letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem;
 }
 
 #about-us .about-us h2 {
@@ -292,20 +267,18 @@ header .navbar-right li .icon {
 }
 
 #about-us .about-us .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   font-size: 0.9rem;
   line-height: 1.4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #about-us .about-us .intro,
-#about-us .about-us .services {
+#about-us .about-us .services,
+#about-us .about-us .skills {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #about-us .about-us .english {
@@ -320,41 +293,28 @@ header .navbar-right li .icon {
 }
 
 /* courses */
-#courses {
-  min-height: 33vh;
-  position: relative;
-  padding: 1.25rem 6.25rem;
-}
-
 #courses .colour-block {
-  position: absolute;
-  top: 4rem;
-  width: 36rem;
-  height: 15.7568rem;
-  background-color: #e8e8e8;
-
-  /* position: absolute;
-  top: 4rem;
-  width: 43.5rem;
-  height: 44.7568rem;
-  background-color: #e8e8e8;
-  margin-left: -6.5rem; */
+  width: 30vw;
 }
 
-#courses h2 {
-  position: absolute;
-  top: 50%;
-  left: 20.5%;
-  /* left: 14.8%; */
+#courses .colour-block .block {
+  width: 30vw;
+  height: 25vh;
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#courses .colour-block .block span {
   font-family: "Cormorant Garamond", serif;
-  font-weight: bolder;
   font-size: 4rem;
-  margin-bottom: 1.8rem;
-  letter-spacing: 0.0313rem;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
 }
 
 #course-info {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,23 +326,24 @@ header .navbar-right li .icon {
 
 #course-info .course {
   position: relative;
-  width: 76.75rem;
-  height: 41rem;
+  width: 68vw;
+  height: 64vh;
   background-color: #c4cbda;
 }
 
 #course-info .course .course-content {
-  width: 35rem;
-  height: 34rem;
+  width: 29vw;
+  max-height: 64vh;
   padding: 5.25rem 3.75rem 2.1875rem 5.6875rem;
   font-size: 1rem;
   font-family: "Times New Roman", Times, serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
   color: #242426;
   letter-spacing: 0.1rem;
 }
 
 #course-info .course .course-content .course-title {
-  font-weight: bolder;
   font-size: 1.5rem;
   margin-bottom: 3.5rem;
 }
@@ -439,8 +400,8 @@ header .navbar-right li .icon {
 }
 
 #course-info .course .course-img {
-  width: 42.2119rem;
-  height: 32.8rem;
+  width: 37vw;
+  height: 49vh;
   background-image: url(/img/master-class.jpeg);
   background-size: cover;
   background-position: center;
@@ -491,11 +452,11 @@ header .navbar-right li .icon {
 /* shop */
 #shop {
   width: 100vw;
-  height: 100vh;
-  position: relative;
-  /* background-color: #E7E7E7; */
-  /* display: flex;
-  align-items: center; */
+  height: 60vh;
+}
+
+.shop {
+  display: flex;
 }
 
 /* #shop .shop {
@@ -512,19 +473,6 @@ header .navbar-right li .icon {
   position: relative;
 } */
 
-#shop .title h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 4rem;
-  letter-spacing: 0.1rem;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  margin-left: 6.25rem;
-  position: absolute;
-  font-weight: 600;
-  top: 10rem;
-  color: #242426;
-}
-
 /* #shop .shop div {
   position: absolute;
   top: 50%;
@@ -539,16 +487,38 @@ header .navbar-right li .icon {
   padding: 1rem;
 } */
 
-/* #shop .gray {
-  width: 25%;
-  height: 100vh;
-  position: absolute;
-  left: 0;
-  bottom: -5%;
-  background: #999999;
-  opacity: 0.3;
+#shop .shop .left {
+  width: 20.5vw;
+  height: 60vh;
+}
+
+#shop .shop .left .gray {
+  width: 20.5vw;
+  height: 60vh;
+  background: #DDDEDE;
   z-index: -1;
-} */
+}
+
+#shop .shop .right {
+  width: 80vw;
+  height: 60vh;
+}
+
+#shop .shop .right-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop .right .right-center .title h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #242426;
+  margin: 0rem 0 2rem 0;
+  margin-top: 0.5rem;
+}
 
 /* #shop .gray h2 {
   color: white;
@@ -560,70 +530,64 @@ header .navbar-right li .icon {
   position: relative;
   top: 25%;
   left: -40%;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin-left: 6.25rem;
+  position: absolute;
+  font-weight: 600;
+  top: 10rem;
+  color: #242426;
 } */
 
-#shop .shopping-item {
-  /* overflow: hidden; */
+#shop .shopping-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
-  /* align-items: center; */
-  position: absolute;
-  right: 0;
-  top: 10rem;
 }
 
-#shop .shopping-item div {
-  margin-left: 0.2rem;
+#shop .shopping-items .shopping-item {
+  margin-left: 1rem;
+  margin-bottom: 4rem;
 }
 
-/* #shop .shopping-item div img {
-  width: 26.875rem;
-  height: 26.875rem;
-  width: 19.0362rem;
-  height: 19.0362rem;
-  box-shadow: 0rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.5);
-} */
-
-#shop .shopping-item div .img {
-  width: 26.875rem;
-  height: 26.875rem;
-  width: 19.0362rem;
-  height: 19.0362rem;
+#shop .shopping-items div .img {
+  width: 19vw;
+  height: 29vh;
   background-position: center;
   background-size: cover;
 }
 
-#shop .shopping-item div h3 {
+#shop .shopping-items div h3 {
   margin-top: 1.5rem;
-  /* font-family: 'Times New Roman', Times, serif; */
   font-family: "Cormorant Garamond", serif;
   font-weight: 100;
   letter-spacing: 0.0563rem;
-  font-size: 1.0625rem;
-  padding-left: 0.3125rem;
+  font-size: 1rem;
   color: #242426;
+}
+
+#shop .shop .right-left {
+  margin-left: 1rem;
 }
 
 #shop a {
   display: inline-block;
-  position: absolute;
-  bottom: 10rem;
   color: #242426;
   text-decoration: none;
   font-size: 1.3rem;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0313rem;
-  margin-left: 12.8rem;
 }
 
 #shop a i {
   font-size: 0.8rem;
   margin-left: 0.3125rem;
   color: #242426;
-  font-size: 0.8rem;
-  margin-left: 0.3125rem;
 }
 
 #shop a:after {
@@ -647,29 +611,33 @@ header .navbar-right li .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+  font-family: "Cormorant Garamond", serif;
 }
 
-#blog .colour-block {
-  width: 23rem;
-  height: 30rem;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 0;
+#blog .left {
+  width: 20vw;
+  height: 46vh;
+}
+
+#blog .right {
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#blog .left .img {
+  width: 21vw;
+  height: 51vh;
   background-image: url(/img/vase-and-candles.jpeg);
   background-position: 50% 99%;
   background-size: cover;
 }
 
 #blog .article {
-  width: 50rem;
-  height: 27rem;
+  width: 42vw;
+  height: 40vh;
   font-family: sans-serif;
   letter-spacing: 0.0313rem;
 }
@@ -740,23 +708,12 @@ header .navbar-right li .icon {
   width: 100%;
 }
 
-#blog .news {
-  margin-top: -22rem;
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  font-family: "Cormorant Garamond", serif;
+#blog .right .news {
   font-weight: bolder;
   font-size: 4rem;
-  margin-bottom: 1.8rem;
   letter-spacing: 0.0313rem;
   color: #242426;
+  padding: 0 2rem;
 }
 
 /* footer */

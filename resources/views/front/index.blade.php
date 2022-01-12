@@ -12,28 +12,21 @@
         <!-- imgs -->
         <div class="imgs">
             <div class="left">
-                <div class="img"></div>
-            </div>
-            <div class="right">
-                <div class="top-img"></div>
-                <div class="bottom-block">
-                    {{-- <div class="text">Select Your Course</div> --}}
-                    <div class="bottom-carousel">
-                        <div class="imgs"></div>
+                <div class="img">
+                    <div class="big-text">TINGS</div>
+                    <div class="small-texts">
+                        <span>Warm</span>
+                        <span>Scented</span>
+                        <span>Handmade</span>
+                    </div>
+                    <div class="scroll-to-discover">
+                        <span><i class="fas fa-chevron-down icon"></i> Scroll to Discover</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 文案 -->
-        <div class="texts">
-            <div class="big-text">TINGS</div>
-            <div class="small-texts">
-                <span>Warm</span>
-                <span>Scented</span>
-                <span>Handmade</span>
-            </div>
-            <div class="scroll-to-discover">
-                <span><i class="fas fa-chevron-down icon"></i> Scroll to Discover</span>
+            <div class="right">
+                <div class="top-img"></div>
+                <div class="bottom-img"></div>
             </div>
         </div>
     </div>
@@ -78,8 +71,11 @@
         </div>
         <!-- courses large title -->
         <div id="courses">
-            <div class="colour-block"></div>
-            <h2>Courses</h2>
+            <div class="colour-block">
+                <div class="block">
+                    <span>Courses</span>
+                </div>
+            </div>
         </div>
         <!-- course card -->
         <div id="course-info">
@@ -101,7 +97,7 @@
                     </a>
                 </div>
                 <div class="course-img"></div>
-                <a href="" class="learn-more">
+                <a href="{{ route('front.course-list') }}" class="learn-more">
                     Learn more
                     <i class="fas fa-chevron-right icon"></i>
                 </a>
@@ -111,73 +107,92 @@
     {{-- <div class="banner"></div> --}}
     <!-- shop -->
     <section id="shop">
-        <div class="title">
-            <h2>Shop</h2>
+        <div class="shop">
+            <div class="left">
+                <div class="gray">
+                    {{-- <h2>Shop</h2> --}}
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-center">
+                    <div class="title">
+                        <h2>Shop</h2>
+                    </div>
+                    <div class="shopping-items">
+                        <div class="shopping-item">
+                            <div class="img" style="background-image: url({{ asset('img/shop-item1.jpeg') }})"
+                                alt="shopping item"></div>
+                            {{-- <img src="{{ asset('img/shop-item-01.jpg') }}" alt="shopping item"> --}}
+                            <h3>經典紓壓香氛蠟燭</h3>
+                        </div>
+                        <div class="shopping-item">
+                            <div class="img" style="background-image: url({{ asset('img/shop-item2.jpeg') }})"
+                                alt="shopping item"></div>
+                            {{-- <img src="{{ asset('img/shop-item-02.jpg') }}" alt="shopping item"> --}}
+                            <h3>純白簡約柱狀蠟燭禮盒</h3>
+                        </div>
+                        <div class="shopping-item">
+                            <div class="img"
+                                style="background-image: url({{ asset('img/shop-item3-1.jpeg') }})" alt="shopping item">
+                            </div>
+                            {{-- <img src="{{ asset('img/shop-item-03.jpg') }}" alt="shopping item"> --}}
+                            <h3>金屬質感香氛小茶蠟4入組</h3>
+                        </div>
+                        <div class="shopping-item">
+                            <div class="img" style="background-image: url({{ asset('img/shop-item4.jpeg') }})"
+                                alt="shopping item"></div>
+                            {{-- <img src="{{ asset('img/shop-item-04.jpg') }}" alt="shopping item"> --}}
+                            <h3>酒精墨水藝術材料包</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-left">
+                    <div class="link">
+                        <a href="{{ route('front.shop-list') }}">View all<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        {{-- <h2>Shop</h2> --}}
+        {{-- <div class="title">
+            <h2>Shop</h2>
+        </div> --}}
         {{-- <div class="shop">
             <div>
                 <span><i class="fas fa-chevron-left"></i></span>
                 <span><i class="fas fa-chevron-right"></i></span>
             </div>
         </div> --}}
-        {{-- <div class="gray">
-            <h2>INSTAGRAM</h2>
-        </div> --}}
-        <div class="shopping-item">
-            <div>
-                <div class="img" style="background-image: url({{ asset('img/shop-item1.jpeg') }})"
-                    alt="shopping item"></div>
-                {{-- <img src="{{ asset('img/shop-item-01.jpg') }}" alt="shopping item"> --}}
-                <h3>經典紓壓香氛蠟燭</h3>
-            </div>
-            <div>
-                <div class="img" style="background-image: url({{ asset('img/shop-item2.jpeg') }})"
-                    alt="shopping item"></div>
-                {{-- <img src="{{ asset('img/shop-item-02.jpg') }}" alt="shopping item"> --}}
-                <h3>純白簡約柱狀蠟燭禮盒</h3>
-            </div>
-            <div>
-                <div class="img" style="background-image: url({{ asset('img/shop-item3-1.jpeg') }})"
-                    alt="shopping item"></div>
-                {{-- <img src="{{ asset('img/shop-item-03.jpg') }}" alt="shopping item"> --}}
-                <h3>金屬質感香氛小茶蠟4入組</h3>
-            </div>
-            <div>
-                <div class="img" style="background-image: url({{ asset('img/shop-item4.jpeg') }})"
-                    alt="shopping item"></div>
-                {{-- <img src="{{ asset('img/shop-item-04.jpg') }}" alt="shopping item"> --}}
-                <h3>酒精墨水藝術材料包</h3>
-            </div>
-        </div>
-        <a href="">View all<i class="fas fa-chevron-right"></i></a>
     </section>
     <!-- blog -->
     <section id="blog">
-        <div class="colour-block"></div>
-        <div class="news">News</div>
-        <div class="article">
-            <div>
-                <span>2021.12.31</span>
-                <h2>2021年的最後一天</h2>
-                {{-- <p>白日依山盡，黃河入海流，欲窮千里目，更上一層樓</p> --}}
-            </div>
-            <div>
-                <span>2021.12.29</span>
-                <h2>調香體驗不只能做香水</h2>
-                {{-- <p>哎呀~早上的早餐真是可口，像極了香水，香噴噴的氣息，勾引者我身上每個細胞，雙手抓住漢堡，大力地咬一口，啊哈!就是這個滋味！</p> --}}
-            </div>
-            <div>
-                <span>2021.12.26</span>
-                <h2>再過幾天就要迎接過年</h2>
-                {{-- <p>千門明月，
+        <div class="left">
+            <div class="img"></div>
+        </div>
+        <div class="right">
+            <div class="news">News</div>
+            <div class="article">
+                <div>
+                    <span>2021.12.31</span>
+                    <h2>2021年的最後一天</h2>
+                    {{-- <p>白日依山盡，黃河入海流，欲窮千里目，更上一層樓</p> --}}
+                </div>
+                <div>
+                    <span>2021.12.29</span>
+                    <h2>調香體驗不只能做香水</h2>
+                    {{-- <p>哎呀~早上的早餐真是可口，像極了香水，香噴噴的氣息，勾引者我身上每個細胞，雙手抓住漢堡，大力地咬一口，啊哈!就是這個滋味！</p> --}}
+                </div>
+                <div>
+                    <span>2021.12.26</span>
+                    <h2>再過幾天就要迎接過年</h2>
+                    {{-- <p>千門明月，
                     天如水，正是人間佳節。
                     開盡小梅春氣透，花燭家家羅列。
                     來往綺羅，喧闐簫鼓，達旦何曾歇。
                     少年當此，風光真是殊絕。
                 </p> --}}
+                </div>
+                <a href="">View all<i class="fas fa-chevron-right"></i></a>
             </div>
-            <a href="">View all<i class="fas fa-chevron-right"></i></a>
         </div>
     </section>
 @endsection
