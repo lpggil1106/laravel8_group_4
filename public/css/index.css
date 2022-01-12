@@ -719,19 +719,17 @@ header .navbar-right li .icon {
 /* footer */
 footer {
   width: 100vw;
-  height: 102vh;
+  height: 100vh;
   background-color: #FFFFFF;
-  position: relative;
+  /* position: relative; */
 }
 
 footer .container {
-  margin: 0 6.25rem;
+  padding: 0 6.25rem;
 }
 
 footer .container .footer-up {
-  width: 100%;
-  height: 40.625rem;
-  padding: 5rem 0;
+  padding: 6rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,16 +743,11 @@ footer .container .footer-up .contact {
 
 footer .container .footer-up .contact h3 {
   font-family: sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #242426;
   letter-spacing: 0.0313rem;
   font-weight: 500;
   margin-bottom: 5rem;
-}
-
-footer .container .footer-up .contact h2 {
-  margin: 5rem 0rem 1.4rem;
-  font-size: 1.25rem;
 }
 
 footer .container .footer-up .contact p {
@@ -773,14 +766,15 @@ footer .container .footer-up .address {
 
 footer .container .footer-up .address h3 {
   font-family: sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #242426;
   letter-spacing: 0.0313rem;
   font-weight: 500;
+  margin-bottom: 5rem;
 }
 
 footer .container .footer-up .address h2 {
-  margin: 5rem 0rem 0.8rem;
+  margin: 0 0 0.8rem;
   font-size: 1.3rem;
   font-weight: 500;
   font-family: "Cormorant Garamond", serif;
@@ -803,14 +797,15 @@ footer .container .footer-up .transport {
 
 footer .container .footer-up .transport h3 {
   font-family: sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #242426;
   letter-spacing: 0.0313rem;
   font-weight: 500;
+  margin-bottom: 5rem;
 }
 
 footer .container .footer-up .transport h2 {
-  margin: 5rem 0rem 0.8rem;
+  margin: 0 0 0.8rem;
   font-size: 1rem;
   font-weight: 400;
   font-family: sans-serif;
@@ -830,45 +825,43 @@ footer .container .footer-up .transport p {
   color: #242426;
   font-family: sans-serif;
   font-weight: 500;
-  width: 14.3125rem;
+  width: 14rem;
 }
 
 footer .container .footer-up .img {
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2;
-  width: 43.75rem;
 }
 
 footer .container .footer-up .img img {
-  width: 23%;
-  position: absolute;
-  top: 8%;
-  right: 17.5%;
+  width: 23vw;
 }
 
 footer .container .footer-up .img iframe {
-  margin-top: 6rem;
+  margin-top: 5rem;
+  width: 23vw;
+  height: 26vh;
 }
 
 footer .footer-mid {
-  padding: 2rem 0 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2rem 0 6rem 0;
+  width: 45vw;
 }
 
 footer .footer-mid h3 {
-  color: #242426;
-  font-weight: 500;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  letter-spacing: 0.0375rem;
   font-family: sans-serif;
+  font-size: 1rem;
+  color: #242426;
+  letter-spacing: 0.0313rem;
+  font-weight: 500;
+  flex: 1;
 }
 
 footer .footer-mid p {
-  margin-left: 6.4rem;
   color: #242426;
   font-weight: 500;
   font-size: 0.7rem;
@@ -876,29 +869,27 @@ footer .footer-mid p {
   font-family: sans-serif;
 }
 
+footer .footer-mid .weekdays {
+  flex: 1;
+}
+
 footer .footer-mid .weekends {
-  margin-left: 3.9rem;
+  flex: 1;
 }
 
 footer .footer-down {
-  width: 100%;
-  height: 15rem;
+  width: 100vw;
+  height: 30vh;
   background-color: #161616;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   letter-spacing: 0.0313rem;
+  padding: 0 6.25rem;
 }
 
 footer .footer-down .top {
-  margin: 5rem 0rem 0rem 6.875rem;
   border: 0.0313rem solid #FFFFFF;
   border-radius: 50%;
   text-decoration: none;
@@ -909,6 +900,7 @@ footer .footer-down .top {
   left: 0;
   font-family: sans-serif;
   font-size: 0.9rem;
+  margin: 8rem 0 0 6.25rem;
 }
 
 footer .footer-down .top i {
@@ -924,30 +916,20 @@ footer .footer-down h3 {
   color: #FFFFFF;
   font-family: sans-serif;
   font-weight: 400;
-  font-size: 0.8125rem;
+  font-size: 1rem;
 }
 
 footer .footer-down .follow {
-  width: 26.3125rem;
-  height: 14.375rem;
+  width: 26vw;
+  height: 23vh;
   background-color: #FBFBFB;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  position: absolute;
-  top: -3.5rem;
-  right: 8rem;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 1;
-  display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 6.5rem;
+  right: 8rem;
+  transform: translateY(-50%);
 }
 
 footer .footer-down .follow h4 {

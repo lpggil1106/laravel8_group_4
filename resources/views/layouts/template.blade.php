@@ -70,11 +70,10 @@
                     <p>下車站: 忠明國小或科博館</p>
                 </div>
                 <div class="img">
-                    <img src="{{ asset('img/LINE_ALBUM_IMG_220109_1.jpg') }}" alt="TINGS AROMA LOGO"
-                        title="TINGS AROMA LOGO">
+                    <img src="{{ asset('img/logo.jpg') }}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw"
-                        width="465" height="260" style="border:0;" allowfullscreen="" loading="lazy">
+                        style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
@@ -82,8 +81,7 @@
         <div class="container">
             <div class="footer-mid">
                 <h3>Opening hours</h3>
-                {{-- <h3>營業時間</h3> --}}
-                <p>週一～週五 10am - 7pm</p>
+                <p class="weekdays">週一～週五 10am - 7pm</p>
                 <p class="weekends">週六、日請來信留言</p>
             </div>
         </div>
