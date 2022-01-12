@@ -13,9 +13,11 @@
             <span>課程</span>
             <div class="english">Courses</div>
         </div>
-        <div class="banner"></div>
+        <div class="image">
+            <div class="banner"></div>
+            <div class="small-img"></div>
+        </div>
     </div>
-    <div class="small-img"></div>
     <!-- course -->
     <div class="course">
         <ul class="tabs">
@@ -32,6 +34,33 @@
                 <div class="course-title">Hastable 甘納許甜點蠟燭</div>
                 <div class="fee-and-cart">
                     <span class="fee">$13,000</span>
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="text-muted">酒精墨水藝術</div>
+                <div class="course-title">酒精墨水藝術用紙</div>
+                <div class="fee-and-cart">
+                    <span class="fee">$4,800</span>
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="text-muted">酒精墨水藝術</div>
+                <div class="course-title">酒精墨水藝術用紙</div>
+                <div class="fee-and-cart">
+                    <span class="fee">$4,800</span>
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="text-muted">酒精墨水藝術</div>
+                <div class="course-title">酒精墨水藝術用紙</div>
+                <div class="fee-and-cart">
+                    <span class="fee">$4,800</span>
                     <i class="fas fa-cart-plus icon"></i>
                 </div>
             </div>
