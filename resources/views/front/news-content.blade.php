@@ -9,22 +9,25 @@
 @section('main')
     <!-- News 首頁 -->
     <section id="news-header">
-        <h1>NEWS</h1>
-        <div class="scroll"><span>SCROLL</span></div>
-        <div class="content">
-            <h3 class="description">
-                <span>以自製香氛，</span>
-                <span>開啟2022年度。</span>
-                <span>讓整年度，</span>
-                <span>都充滿迷人香氣。</span>
-                <span>TINGS Candle 香氛•蠟燭•台中手作教室。</span>
-            </h3>
-            <div class="photo-full">
-                <div class="top"></div>
-                <div class="photo"></div>
+        <div class="nav"></div>
+        <div class="container">
+            <h1>NEWS</h1>
+            <div class="content">
+                <h3 class="description">
+                    <span>以自製香氛，</span>
+                    <span>開啟2022年度。</span>
+                    <span>讓整年度，</span>
+                    <span>都充滿迷人香氣。</span>
+                    <span>TINGS Candle 香氛•蠟燭•台中手作教室。</span>
+                    <span class="scroll">SCROLL</span>
+                </h3>
+                <div class="photo-full">
+                    <div class="top"></div>
+                    <div class="photo"></div>
+                </div>
             </div>
+            <div class="background-logo"></div>
         </div>
-        <div class="background-logo"></div>
     </section>
     
     <!-- News content -->

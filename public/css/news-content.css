@@ -12,48 +12,49 @@ main #news-header {
   position: relative;
 }
 
-main #news-header h1 {
-  position: absolute;
-  left: -0.5rem;
-  bottom: 11rem;
+main #news-header .nav {
+  width: 100%;
+  height: 130.4px;
+}
+
+main #news-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: calc(100vh - 130.4px);
+}
+
+main #news-header .container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: -1rem;
+  padding-bottom: 11rem;
   font-weight: 600;
   font-size: 16.625rem;
   font-style: italic;
-  letter-spacing: 0.1rem;
   color: #242426;
 }
 
-main #news-header .scroll {
-  position: absolute;
-  left: 71.875rem;
-  bottom: 0;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-main #news-header .scroll span::after {
-  content: '';
-  display: inline-block;
-  margin-top: 0.4375rem;
-  height: 3.75rem;
-  width: 0.0625rem;
-  background-color: #222;
-}
-
-main #news-header .content {
+main #news-header .container .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: 100vh;
 }
 
-main #news-header .content .photo-full {
+main #news-header .container .content .photo-full {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,13 +67,13 @@ main #news-header .content .photo-full {
           justify-content: flex-end;
 }
 
-main #news-header .content .photo-full .top {
-  width: 17rem;
+main #news-header .container .content .photo-full .top {
+  width: 272px;
 }
 
-main #news-header .content .photo-full .photo {
-  width: 17rem;
-  height: 58.625rem;
+main #news-header .container .content .photo-full .photo {
+  width: 272px;
+  height: 938px;
   background-image: url(../img/candle5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,7 +81,7 @@ main #news-header .content .photo-full .photo {
   z-index: 1;
 }
 
-main #news-header .content .description {
+main #news-header .container .content .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,38 +91,60 @@ main #news-header .content .description {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 17.125rem 11.375rem 0 0;
+  padding: 136px 182px 0 0;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   letter-spacing: 0.1rem;
 }
 
-main #news-header .content .description span {
+main #news-header .container .content .description span {
   margin-left: 2rem;
 }
 
-main #news-header .content .description span:nth-child(3) {
+main #news-header .container .content .description span:nth-child(3) {
   margin-top: 4.375rem;
 }
 
-main #news-header .content .description span:nth-child(4) {
+main #news-header .container .content .description span:nth-child(4) {
   margin-top: 9.875rem;
 }
 
-main #news-header .content .description span:nth-last-child(1) {
+main #news-header .container .content .description span:nth-last-child(2) {
   margin-top: 13.25rem;
 }
 
-main #news-header .background-logo {
-  width: 36rem;
-  height: 13.5313rem;
+main #news-header .container .content .description .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.5rem;
+}
+
+main #news-header .container .content .description .scroll::after {
+  content: '';
+  display: inline-block;
+  margin-top: 7px;
+  height: 60px;
+  width: 1px;
+  background-color: #222;
+}
+
+main #news-header .container .background-logo {
+  width: 576px;
+  height: 216.5px;
   background-image: url(../img/tingsLogo.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  bottom: 26.875rem;
-  right: 13.75rem;
+  bottom: 430px;
+  right: 220px;
   opacity: 0.2;
 }
 
@@ -157,13 +180,13 @@ main #news-content .news {
 }
 
 main #news-content .news .title {
-  padding-bottom: 1.5rem;
+  padding-bottom: 24px;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 main #news-content .news .date {
-  padding-bottom: 3rem;
+  padding-bottom: 48px;
   font-size: 1.125rem;
   color: #999999;
 }
@@ -186,7 +209,7 @@ main #news-content .news .content {
 }
 
 main #news-content .news .content p {
-  padding-bottom: 3rem;
+  padding-bottom: 48px;
 }
 
 main #news-content .button {
@@ -200,7 +223,7 @@ main #news-content .button {
       -ms-flex-align: center;
           align-items: center;
   width: 82.6rem;
-  margin: 9.375rem 0 8.125rem;
+  margin: 150px 0 130px;
 }
 
 main #news-content .button a {
@@ -218,8 +241,8 @@ main #news-content .button a:nth-child(1)::after {
   height: 0.1rem;
   width: 0;
   position: absolute;
-  top: 1.75rem;
-  left: -1.0938rem;
+  top: 28px;
+  left: -17.5px;
 }
 
 main #news-content .button a:nth-child(2)::after {
@@ -231,8 +254,8 @@ main #news-content .button a:nth-child(2)::after {
   height: 0.1rem;
   width: 0;
   position: absolute;
-  top: 1.75rem;
-  left: -2.1875rem;
+  top: 28px;
+  left: -35px;
 }
 
 main #news-content .button a:nth-last-child(1)::after {
@@ -244,8 +267,8 @@ main #news-content .button a:nth-last-child(1)::after {
   height: 0.1rem;
   width: 0;
   position: absolute;
-  top: 1.75rem;
-  left: -1.0938rem;
+  top: 28px;
+  left: -17.5px;
 }
 
 main #news-content .button a:hover::after {
