@@ -28,7 +28,8 @@
                     <table id="my-table" class="table table-bordered table-striped table-hover">
                         <thead>
                             <tr>
-                                <th>標題</th>
+                                <th width="120">類別</th>
+                                <th width="120">標題</th>
                                 <th>日期</th>
                                 <th width="250">圖片</th>
                                 <th width="120">操作</th>
@@ -37,13 +38,14 @@
                         <tbody>
                             @foreach ($news as $item)
                                 <tr>
+                                    <td>{{$item->newsCategories->name}}</td>
                                     <td>{{$item->title}}</td>
                                     <td>{{$item->date}}</td>
-                                    <td><img src="{{$item->image_url}}" alt="" width="200"></td>
+                                    <td><img src="{{Storage::url($item->image_url)}}" alt="" width="200"></td>
                                     <td>
                                         <a href="./news/edit/{{$item->id}}" class="btn btn-primary">編輯</a>
                                         <button class="btn btn-danger delete-btn">刪除</button>
-                                        <form class="d-none" action="{{route('news.delete',['id' => $item->id])}}" method="post">
+                                        <form class="d-none" action="{{route('news.destroy',['id' => $item->id])}}" method="post">
                                             @csrf
                                             @method('DELETE')
                                         </form>
@@ -66,13 +68,31 @@
     $(document).ready( function () {
         $('#my-table').DataTable();
     });
-
     const deleteElements = document.querySelectorAll('.delete-btn');
     deleteElements.forEach(function(deleteElement){
         deleteElement.addEventListener('click', function(){
-            if(confirm('你確定要刪除這筆資料嗎?')){
-                this.nextElementSibling.submit();
-            }
+            console.log(1);
+            Swal.fire({
+                title: '你確定嗎?',
+                text: "不能後悔囉!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '刪除!',
+                cancelButtonText:'取消',
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                    '刪除成功!',
+                    '此類別已成功刪除',
+                    ).then((result)=>{
+                        if(result.isConfirmed){
+                            this.nextElementSibling.submit();
+                        }
+                    })
+                }
+            })
         })
     })
 </script>

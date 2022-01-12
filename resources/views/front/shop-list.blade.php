@@ -16,8 +16,8 @@
         <div class="banner"></div>
     </div>
     <div class="small-img"></div>
-    <!-- shop -->
-    <div class="shop">
+    <!-- shop list -->
+    <div class="shop-list">
         <ul class="tabs">
             <li class="tab"><a href="">酒精墨水藝術</a></li>
             <li class="tab"><a href="">手工香氛蠟燭</a></li>
