@@ -68,13 +68,31 @@
     $(document).ready( function () {
         $('#my-table').DataTable();
     });
-
     const deleteElements = document.querySelectorAll('.delete-btn');
     deleteElements.forEach(function(deleteElement){
         deleteElement.addEventListener('click', function(){
-            if(confirm('你確定要刪除這筆資料嗎?')){
-                this.nextElementSibling.submit();
-            }
+            console.log(1);
+            Swal.fire({
+                title: '你確定嗎?',
+                text: "不能後悔囉!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '刪除!',
+                cancelButtonText:'取消',
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                    '刪除成功!',
+                    '此類別已成功刪除',
+                    ).then((result)=>{
+                        if(result.isConfirmed){
+                            this.nextElementSibling.submit();
+                        }
+                    })
+                }
+            })
         })
     })
 </script>

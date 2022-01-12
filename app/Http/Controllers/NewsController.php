@@ -52,7 +52,7 @@ class NewsController extends Controller
     {
         $news_categories = NewCategories::get();
         $news = News::find($id);
-        return view('admin.products.edit', compact('news','news_categories'));
+        return view('admin.news.edit', compact('news','news_categories'));
     }
 
     /**

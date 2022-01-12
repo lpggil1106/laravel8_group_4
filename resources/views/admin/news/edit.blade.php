@@ -29,7 +29,7 @@
                         <div class="form-group row py-2">
                             <label for="new_categories_id" class="col-sm-2 col-form-label">類別</label>
                             <div class="col-sm-10" >
-                                <select class="form-select" aria-label="Default select example" name="new_categories_id" id="new_categories_id">
+                                <select class="form-select" aria-label="Default select example" name="new_categories_id" id="new_categories_id" required>
                                     <option value="{{$news->news_categories_id}}" hidden>請選擇類別</option>
                                     @foreach($news_categories as $item)
                                     <option value="{{$item->id}}">{{$item->name}}</option>
@@ -46,13 +46,13 @@
                         <div class="form-group row py-2">
                             <label for="image_url" class="col-sm-2 col-form-label">目前圖片</label>
                             <div class="col-sm-10">
-                                <img src="{{Storage::url($item->image_url)}}" alt="" width="200">
+                                <img src="{{Storage::url($news->image_url)}}" alt="" width="200">
                             </div>
                         </div>
                         <div class="form-group row py-2">
                             <label for="image_url" class="col-sm-2 col-form-label">圖片</label>
                             <div class="col-sm-10">
-                                <input type="file" accept="image/*" class="form-control" id="image_url" name="image_url" required>
+                                <input type="file" accept="image/*" class="form-control" id="image_url" name="image_url">
                             </div>
                         </div>
                         <div class="form-group row py-2">
