@@ -18,12 +18,23 @@
                 <h2 class="card-header pt-3 pb-2">最新消息 - 新增</h2>
 
                 <div class="card-body">
-                    <form method="POST" action="{{route('news.add')}}">
+                    <form method="POST" action="{{route('news.store')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row py-2">
                             <label for="title" class="col-sm-2 col-form-label">標題</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="title" name="title" required>
+                            </div>
+                        </div>
+                        <div class="form-group row py-2">
+                            <label for="new_categories_id" class="col-sm-2 col-form-label">類別</label>
+                            <div class="col-sm-10" >
+                                <select class="form-select" aria-label="Default select example" name="new_categories_id" id="new_categories_id">
+                                    <option value="" hidden>請選擇類別</option>
+                                    @foreach($news_categories as $item)
+                                    <option value="{{$item->id}}">{{$item->name}}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row py-2">
@@ -33,9 +44,9 @@
                             </div>
                         </div>
                         <div class="form-group row py-2">
-                            <label for="img" class="col-sm-2 col-form-label">圖片</label>
+                            <label for="image_url" class="col-sm-2 col-form-label">圖片</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="img" name="image_url" required>
+                                <input type="file" accept="image/*" class="form-control" id="image_url" name="image_url" required>
                             </div>
                         </div>
                         <div class="form-group row py-2">
