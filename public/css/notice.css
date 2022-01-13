@@ -13,7 +13,7 @@
   width: 100vw;
   min-height: 100vh;
   font-family: "Cormorant Garamond", serif;
-  padding: 10.25rem 6.25rem 7rem 6.25rem;
+  padding: 14.25rem 6.25rem 7rem 6.25rem;
 }
 
 #notice .row {
@@ -25,35 +25,52 @@
   justify-content: space-between;
 }
 
-#notice .row .col30 {
+#notice .row .col {
+  width: 100vw;
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   letter-spacing: 0.1rem;
   font-weight: 100;
-  padding: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#notice .row .col30 span {
-  font-size: 1rem;
+#notice .row .col .texts {
+  padding-right: 5rem;
 }
 
-#notice .row .col30 .english {
-  font-size: 3rem;
+#notice .row .col span {
+  font-size: 1.5rem;
 }
 
-#notice .col70 .img {
+#notice .row .col .english {
+  font-size: 4rem;
+}
+
+#notice .row .col .img {
+  background-image: url(/img/black-candles.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 63vw;
+  height: 40vh;
+  transition: 5s;
+  transition-timing-function: cubic-bezier(0,0,.58,1);
+}
+
+/* #notice .col70 .img {
   background-image: url(/img/black-candles.jpeg);
   background-position: center;
   background-size: cover;
   width: 60vw;
   height: 40vh;
-}
+} */
 
 #notice .summary {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +90,13 @@
 
 #notice .summary .bullet-points span {
   margin-right: 0.5rem;
+}
+
+#notice .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 17rem;
 }
 
 #notice .products {
