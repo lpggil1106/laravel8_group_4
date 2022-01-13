@@ -9,16 +9,17 @@
 
 main {
   background: #e7e7e7;
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
 }
 
 #course-list {
-  position: relative;
+  /* position: relative; */
 }
 
 main .section1 {
   width: 100vw;
+  /* min-height: 100vh; */
   height: calc(100vh + 8.5rem);
   display: flex;
   justify-content: space-between;
@@ -34,8 +35,8 @@ main .title {
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  padding-top: 8.625rem;
-  padding-left: 17.5rem;
+  padding-top: 19rem;
+  padding-left: 16.5rem;
   letter-spacing: 0.1rem;
   color: #242426;
   font-weight: 100;
@@ -43,11 +44,12 @@ main .title {
 }
 
 main .title span {
-  font-size: 3.75vw;
+  font-size: 2vw;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 main .title .english {
-  font-size: 5.21vw;
+  font-size: 5vw;
 }
 
 main .image {
@@ -86,7 +88,9 @@ main .course .tabs {
   -ms-flex-pack: end;
   justify-content: flex-end;
   list-style: none;
-  padding: 12.5rem 8.5rem 5.5rem;
+  margin-top: 14rem;
+  /* margin-bottom: 5rem; */
+  padding: 0 7vw;
 }
 
 main .course .tabs a {
@@ -94,7 +98,7 @@ main .course .tabs a {
   color: #242426;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0313rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 main .course .tabs .tab {
@@ -116,36 +120,51 @@ main .course .tabs .tab:hover:after {
 }
 
 main .course .cards {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  /* justify-content: space-between; */
-  padding: 0 8.5rem;
+  justify-content: center;
+  padding: 5rem 0;
+  width: 100vw; */
+  padding: 5rem 6.25rem;
+
+}
+
+.course .cards .row {
+  /* display: flex; */
+  /* width: 100vw; */
+  
+}
+
+.course .cards .row .col {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* width: 100vw; */
+  /* padding: 0 6.25rem; */
 }
 
 main .course .cards .card {
+  width: 28vw;
+  height: 47vh;
   margin-right: 1.4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10em;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0313rem;
   color: #242426;
 }
 
-main .course .cards .card:nth-child(4) {
-  margin-right: 0;
-}
-
-main .course .cards .card:nth-last-child(1) {
+main .course .cards .row .card:last-child {
   margin-right: 0;
 }
 
 main .course .cards .card .img {
-  width: 20.58vw;
-  height: 38.52vh;
+  width:28vw;
+  height: 41vh;
   background-position: center;
   background-size: cover;
   /* -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem; */
@@ -175,7 +194,7 @@ main .course .cards .card .fee-and-cart {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -184,11 +203,12 @@ main .course .cards .card .fee-and-cart {
 }
 
 main .course .cards .card .fee-and-cart span {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  margin-right: 1rem;
 }
 
 main .course .cards .card .fee-and-cart i {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 main .course .cards .card .fee-and-cart i {

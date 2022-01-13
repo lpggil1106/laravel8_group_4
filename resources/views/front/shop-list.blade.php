@@ -13,10 +13,12 @@
             <span>商店</span>
             <div class="english">Shop</div>
         </div>
-        <div class="banner"></div>
+        <div class="image">
+            <div class="banner"></div>
+            <div class="small-img"></div>
+        </div>
     </div>
-    <div class="small-img"></div>
-    <!-- shop list -->
+    <!-- shop -->
     <div class="shop-list">
         <ul class="tabs">
             <li class="tab"><a href="">酒精墨水藝術</a></li>
@@ -25,7 +27,7 @@
         <!-- cards -->
         <div class="cards">
             <div class="card">
-                <div class="img" style="background-image: url(/img/candles1.jpeg);"></div>
+                <div class="img" style="background-image: url(/img/shop-item1.jpeg);"></div>
                 <div class="text-muted">證書課程</div>
                 <div class="shop-title">Hastable 甘納許甜點蠟燭</div>
                 <div class="fee-and-cart">
@@ -34,7 +36,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="img" style="background-image: url(/img/shop-item2.jpeg);"></div>
                 <div class="text-muted">酒精墨水藝術</div>
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
@@ -43,7 +45,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="img" style="background-image: url(/img/shop-item3-1.jpeg);"></div>
                 <div class="text-muted">酒精墨水藝術</div>
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
@@ -52,7 +54,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="img" style="background-image: url(/img/shop-item4.jpeg);"></div>
                 <div class="text-muted">酒精墨水藝術</div>
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
@@ -61,7 +63,34 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(/img/croissant.jpeg);"></div>
+                <div class="img" style="background-image: url(/img/shop-item-paper.jpeg);"></div>
+                <div class="text-muted">酒精墨水藝術</div>
+                <div class="shop-title">強韌耐熱 防水合成紙 A4 10張</div>
+                <div class="fee-and-cart">
+                    <span class="fee">$400</span>
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url(/img/shop-item-04.jpg);"></div>
+                <div class="text-muted">酒精墨水藝術</div>
+                <div class="shop-title">酒精墨水藝術用紙 強韌耐熱 防水合成紙 A4 10張</div>
+                <div class="fee-and-cart">
+                    <span class="fee">$400</span>
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url(/img/flower.jpg);"></div>
+                <div class="text-muted">酒精墨水藝術</div>
+                <div class="shop-title">酒精墨水藝術用紙</div>
+                <div class="fee-and-cart">
+                    <span class="fee">$4,800</span>
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url(/img/bath-candle.jpeg);"></div>
                 <div class="text-muted">酒精墨水藝術</div>
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">

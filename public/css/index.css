@@ -313,16 +313,17 @@ header .navbar-right li .icon {
 }
 
 /* courses */
-#index-course {
+#courses {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-#index-course .container .block {
-  width: 30vw;
-  height: 25vh;
+#courses .container .block {
+  width: 35vw;
+  height: 27vh;
   background-color: #e8e8e8;
   display: flex;
   justify-content: center;
@@ -332,21 +333,17 @@ header .navbar-right li .icon {
   font-size: 4rem;
   letter-spacing: 0.1rem;
   font-weight: bolder;
+  position: absolute;
+  left: 29.5rem;
+  top: 7rem;
+  z-index: -1;
 }
-
-/* #courses .block span {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 4rem;
-  letter-spacing: 0.1rem;
-  font-weight: bolder;
-} */
 
 .course-info {
   width: 100vw;
   height: 64vh;
   display: flex;
-  justify-content: space-between;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
 }
 
 .course-info .course {

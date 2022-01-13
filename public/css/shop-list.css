@@ -13,23 +13,30 @@ main {
   min-height: 100vh;
 }
 
-#shop-list {
+#course-list {
   position: relative;
 }
 
 main .section1 {
+  width: 100vw;
+  /* min-height: 100vh; */
+  height: calc(100vh + 8.5rem);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10.25rem 0 0 6.25rem;
+  align-items: flex-start;
+  /* padding: 10.25rem 0 0 6.25rem; */
+
 }
 
 main .title {
+  display: flex;
+  flex-direction: column;
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  padding: 6.25rem;
+  padding-top: 19rem;
+  padding-left: 16.5rem;
   letter-spacing: 0.1rem;
   color: #242426;
   font-weight: 100;
@@ -37,27 +44,37 @@ main .title {
 }
 
 main .title span {
-  font-size: 1rem;
+  font-size: 2vw;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 main .title .english {
-  font-size: 3rem;
+  font-size: 5vw;
 }
 
-main .banner {
-  width: 52rem;
-  height: 32rem;
+main .image {
+  display: flex;
+  flex-direction: column;
+  padding-top: 22.4rem;
+}
+
+main .image .banner {
+  width: 60.83vw;
+  height: 66.66vh;
   background-image: url(/img/candle-products.jpeg);
   background-position: center;
   background-size: cover;
 }
 
-main .small-img {
-  width: 19.75rem;
-  height: 15.75rem;
+main .image .small-img {
+  width: 23.5vw;
+  height: 34vh;
+  margin-left: -17.5rem;
+  margin-top: -9.5rem;
   background-image: url(/img/pumpkin.jpeg);
   background-position: center;
   background-size: cover;
+  z-index: 1;
   /* position: absolute;
   left: 33%;
   bottom: 59%; */
@@ -66,14 +83,14 @@ main .small-img {
 main .shop-list .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
-  /* display: flex; */
+  display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   list-style: none;
   margin-top: 14rem;
-  margin-bottom: 4rem;
-  padding: 0.625rem 6.25rem;
+  /* margin-bottom: 5rem; */
+  padding: 0 7vw;
 }
 
 main .shop-list .tabs a {
@@ -81,7 +98,7 @@ main .shop-list .tabs a {
   color: #242426;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0313rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 main .shop-list .tabs .tab {
@@ -110,24 +127,34 @@ main .shop-list .cards {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 6.25rem;
+  justify-content: center;
+  padding: 5rem 0;
 }
 
 main .shop-list .cards .card {
-  margin-bottom: 4rem;
+  margin-right: 1.4rem;
+  margin-bottom: 5rem;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0313rem;
   color: #242426;
+  width: 21vw;
 }
 
+/* main .shop-list .cards .card:nth-child(4) {
+  margin-right: 0;
+}
+
+main .shop-list .cards .card:nth-last-child(1) {
+  margin-right: 0;
+} */
+
 main .shop-list .cards .card .img {
-  width: 18.3125rem;
-  height: 18.3125rem;
+  width: 20.58vw;
+  height: 38.52vh;
   background-position: center;
   background-size: cover;
-  /* -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0.25rem 0.75rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0.25rem 0.75rem; */
+  /* -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem; */
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem; */
 }
 
 main .shop-list .cards .card .text-muted {
@@ -136,19 +163,14 @@ main .shop-list .cards .card .text-muted {
   margin-top: 1rem;
 }
 
-main .shop-list .cards .card .product-title {
+main .shop-list .cards .card .shop-list-title {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1rem;
   cursor: pointer;
 }
 
-main .shop-list .cards .card .product-title:hover {
-  color: #424242;
-}
-
-main .shop-list .cards .card .description {
-  font-size: 1rem;
+main .shop-list .cards .card .shop-list-title:hover {
   color: #424242;
 }
 
@@ -163,6 +185,7 @@ main .shop-list .cards .card .fee-and-cart {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 1rem;
+  font-size: 1.3rem;
 }
 
 main .shop-list .cards .card .fee-and-cart span {
