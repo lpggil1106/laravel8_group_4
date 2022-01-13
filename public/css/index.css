@@ -126,34 +126,40 @@ header .navbar-right li .icon {
   justify-content: space-between;
 }
 
+#home .imgs .left {
+  display: flex;
+}
+
+#home .imgs .left .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #home .imgs .left .img {
   width: 26vw;
   height: 90vh;
   background-image: url(/img/xmas_tree.jpeg);
   background-size: cover;
   background-position: center;
-  /* -webkit-transition: 5s;
+  -webkit-transition: 5s;
   transition: 5s;
   -webkit-transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
-  transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1); */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
 }
 
-#home .imgs .left .img .big-text {
+#home .imgs .left .big-text {
   font-size: 12rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   letter-spacing: 0.5rem;
   color: #242426;
-  /* position: absolute;
-  left: 89%;
-  top: 27%; */
+  width: 36vw;
+  margin-left: -3.5rem;
+  margin-top: -6rem;
 }
 
-#home .imgs .left .img .small-texts {
+#home .imgs .left .small-texts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,31 +167,27 @@ header .navbar-right li .icon {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0625rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   color: #242426;
-  /* position: absolute;
-  left: 89%;
-  top: 27%; */
+  margin-left: 10rem;
 }
 
-#home .imgs .left .img .scroll-to-discover {
-  margin-top: 4rem;
+#home .imgs .left .scroll-to-discover {
+  margin-top: 5rem;
+  margin-left: 10rem;
   color: #424242;
   font-family: sans-serif;
   letter-spacing: 0.0313rem;
-  /* position: absolute;
-  left: 89%;
-  top: 27%; */
 }
 
-#home .imgs .left .img .scroll-to-discover span i {
+#home .imgs .left .scroll-to-discover span i {
   color: #888888;
 }
 
-#home .imgs .left .img .scroll-to-discover .icon {
+#home .imgs .left .scroll-to-discover .icon {
   margin-right: 0.4375rem;
 }
 
@@ -218,10 +220,23 @@ header .navbar-right li .icon {
 /* about us */
 #about-us {
   height: 100vh;
-  /* position: relative; */
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+}
+
+#about-us .container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about-us .about-us {
+  width: 73vw;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 #about-us .left-img {
@@ -230,6 +245,60 @@ header .navbar-right li .icon {
   background-image: url(/img/glass-vase.jpg);
   background-size: cover;
   background-position: center;
+  margin-top: 31rem;
+}
+
+#about-us .about-us .right-container {
+  width: 44vw;
+  height: 67vh;
+  background-color: #e8e8e8;
+  font-family: "Times New Roman", Times, serif;
+  color: #242426;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 7.5rem;
+  margin-top: 3rem;
+}
+
+#about-us .about-us .right-container h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+
+#about-us .about-us .right-container .title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#about-us .about-us .right-container .content {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us .about-us .right-container .intro,
+#about-us .about-us .right-container .services,
+#about-us .about-us .right-container .skills {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us .about-us .right-container .english {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+#about-us .about-us .right-container .numbers {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
 }
 
 #about-us .right-img {
@@ -238,117 +307,81 @@ header .navbar-right li .icon {
   background-image: url(/img/pink-flower.jpg);
   background-size: cover;
   background-position: center;
-}
-
-#about-us .about-us {
-  width: 51rem;
-  height: 42rem;
-  background-color: #e8e8e8;
-  font-family: "Times New Roman", Times, serif;
-  color: #242426;
-  letter-spacing: 0.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6rem;
-}
-
-#about-us .about-us h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bolder;
-  font-size: 2.5rem;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.05rem;
-}
-
-#about-us .about-us .title {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-}
-
-#about-us .about-us .content {
-  font-size: 0.9rem;
-  line-height: 1.4rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#about-us .about-us .intro,
-#about-us .about-us .services,
-#about-us .about-us .skills {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#about-us .about-us .english {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  letter-spacing: 0.05rem;
-}
-
-#about-us .about-us .numbers {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.4rem;
+  z-index: 1;
+  margin-top: 32rem;
+  margin-left: 5rem;
 }
 
 /* courses */
-#courses .colour-block {
-  width: 30vw;
+#index-course {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-#courses .colour-block .block {
+#index-course .container .block {
   width: 30vw;
   height: 25vh;
   background-color: #e8e8e8;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#courses .colour-block .block span {
+  margin-top: -8rem;
   font-family: "Cormorant Garamond", serif;
   font-size: 4rem;
   letter-spacing: 0.1rem;
   font-weight: bolder;
 }
 
-#course-info {
-  height: 100vh;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* #courses .block span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+} */
+
+.course-info {
+  width: 100vw;
+  height: 64vh;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
 }
 
-#course-info .course {
-  position: relative;
+.course-info .course {
   width: 68vw;
   height: 64vh;
   background-color: #c4cbda;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: space-between;
 }
 
-#course-info .course .course-content {
+.course-info .course .course-content {
   width: 29vw;
   max-height: 64vh;
   padding: 5.25rem 3.75rem 2.1875rem 5.6875rem;
   font-size: 1rem;
-  font-family: "Times New Roman", Times, serif;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   color: #242426;
   letter-spacing: 0.1rem;
 }
 
-#course-info .course .course-content .course-title {
+.course-info .course .column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.course-info .course .course-content .course-title {
   font-size: 1.5rem;
   margin-bottom: 3.5rem;
 }
 
-#course-info .course .course-content .course-texts {
+.course-info .course .course-content .course-texts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,25 +393,25 @@ header .navbar-right li .icon {
   line-height: 1.5rem;
 }
 
-#course-info .course .course-content .course-fee {
+.course-info .course .course-content .course-fee {
   font-size: 1.1rem;
 }
 
-#course-info .course .course-content .english,
-#course-info .course .course-content .numbers {
+.course-info .course .course-content .english,
+.course-info .course .course-content .numbers {
   font-family: "Cormorant Garamond", serif;
 }
 
-#course-info .course .course-content .numbers {
+.course-info .course .course-content .numbers {
   font-size: 1.3rem;
 }
 
-#course-info .course .course-content a {
+.course-info .course .course-content a {
   text-decoration: none;
   color: #242426;
 }
 
-#course-info .course .course-content .add-to-cart {
+.course-info .course .course-content .add-to-cart {
   margin-top: 3.5rem;
   background: #242426;
   display: inline-block;
@@ -391,42 +424,38 @@ header .navbar-right li .icon {
   color: #f7f7f7;
 }
 
-#course-info .course .course-content .add-to-cart .icon {
+.course-info .course .course-content .add-to-cart .icon {
   margin-left: 2rem;
 }
 
-#course-info .course .course-content .add-to-cart:hover {
+.course-info .course .course-content .add-to-cart:hover {
   letter-spacing: 0.1875rem;
 }
 
-#course-info .course .course-img {
+.course-info .course .course-img {
   width: 37vw;
   height: 49vh;
   background-image: url(/img/master-class.jpeg);
   background-size: cover;
   background-position: center;
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-bottom: 3rem;
 }
 
-#course-info .course .learn-more {
-  position: absolute;
-  right: 8%;
-  bottom: 10%;
+.course-info .course .learn-more {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 1.3rem;
   color: #242426;
   letter-spacing: 0.0313rem;
   font-family: "Cormorant Garamond", serif;
+  margin-right: 6rem;
 }
 
-#course-info .course .learn-more .icon {
+.course-info .course .learn-more .icon {
   font-size: 0.8rem;
 }
 
-#course-info .course .learn-more:after {
+.course-info .course .learn-more:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -436,7 +465,7 @@ header .navbar-right li .icon {
   width: 0;
 }
 
-#course-info .course .learn-more:hover:after {
+.course-info .course .learn-more:hover:after {
   width: 100%;
 }
 
