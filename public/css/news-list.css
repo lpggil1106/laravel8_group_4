@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap");
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -22,11 +23,11 @@ main #news-header .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   width: 100%;
   height: calc(100vh - 130.4px);
 }
@@ -36,14 +37,16 @@ main #news-header .container h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-left: -1rem;
-  padding-bottom: 11rem;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-bottom: 9.5rem;
+  margin-left: 1rem;
   font-weight: 600;
-  font-size: 16.625rem;
+  font-size: 16rem;
   font-style: italic;
   color: #242426;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
 }
 
 main #news-header .container .content {
@@ -51,7 +54,7 @@ main #news-header .container .content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 main #news-header .container .content .photo-full {
@@ -60,11 +63,11 @@ main #news-header .container .content .photo-full {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 main #news-header .container .content .photo-full .top {
@@ -72,8 +75,8 @@ main #news-header .container .content .photo-full .top {
 }
 
 main #news-header .container .content .photo-full .photo {
-  width: 272px;
-  height: 938px;
+  width: 19vw;
+  height: 100vh;
   background-image: url(../img/candle5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,32 +89,47 @@ main #news-header .container .content .description {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 136px 182px 0 0;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* padding: 8.5rem 11.375rem 0 0; */
+  /* padding: 16rem 22rem 0 0; */
+  padding: 12.5rem 12rem 0 0;
   -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
   letter-spacing: 0.1rem;
+  color: #242426;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+
+main #news-header .container .content .description .numbers,
+main #news-header .container .content .description .english {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
 }
 
 main #news-header .container .content .description span {
   margin-left: 2rem;
 }
 
+main #news-header .container .content .description span:nth-child(2) {
+  margin-top: 3rem;
+}
+
 main #news-header .container .content .description span:nth-child(3) {
-  margin-top: 4.375rem;
+  margin-top: 5.375rem;
 }
 
 main #news-header .container .content .description span:nth-child(4) {
-  margin-top: 9.875rem;
+  margin-top: 8rem;
 }
 
 main #news-header .container .content .description span:nth-last-child(2) {
-  margin-top: 13.25rem;
+  margin-top: 11rem;
 }
 
 main #news-header .container .content .description .scroll {
@@ -119,32 +137,34 @@ main #news-header .container .content .description .scroll {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.5rem;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #242426;
 }
 
 main #news-header .container .content .description .scroll::after {
   content: '';
   display: inline-block;
-  margin-top: 7px;
-  height: 60px;
+  margin-top: 6px;
+  height: 3.5rem;
   width: 1px;
-  background-color: #222;
+  background-color: #242426;
 }
 
 main #news-header .container .background-logo {
-  width: 576px;
-  height: 216.5px;
+  width: 30vw;
+  height: 21vh;
   background-image: url(../img/tingsLogo.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  bottom: 430px;
-  right: 220px;
+  bottom: 25rem;
+  right: 18.75rem;
   opacity: 0.2;
 }
 
@@ -156,11 +176,11 @@ main #news-list {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 main #news-list .news {
@@ -169,42 +189,55 @@ main #news-list .news {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main #news-list .news .news-item {
   width: 74rem;
   height: 11rem;
-  padding: 40px 0;
+  padding: 2rem 0;
   border-top: 0.1rem solid #242426;
+  font-family: sans-serif;
+  color: #242426;
+  letter-spacing: 0.5px;
+}
+
+main #news-list .news .news-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #242426;
+  cursor: pointer;
+}
+
+main #news-list .news .news-item a:hover {
+  color: #777777;
 }
 
 main #news-list .news .news-item .date {
-  padding-bottom: 0.6rem;
-  font-size: 1.125rem;
-  color: #999999;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #242426;
 }
 
 main #news-list .news .news-item .title {
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
 
 main #news-list .news .news-item .title a {
   text-decoration: none;
-  color: black;
+  color: #242426;
 }
 
 main #news-list .news .news-item .content {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
 }
 
 main #news-list .news .news-item:nth-last-child(1) {
@@ -216,12 +249,14 @@ main #news-list .button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 150px 0 130px;
+  font-family: sans-serif;
+  color: #242426;
 }
 
 main #news-list .button a {
@@ -235,7 +270,7 @@ main #news-list .button .btn1 {
 }
 
 main #news-list .button .btn2 {
-  margin-right: 8.3rem;
+  margin-right: 5rem;
 }
 
 main #news-list .button a::after {
@@ -244,27 +279,29 @@ main #news-list .button a::after {
   transition: all ease-in-out 0.2s;
   background: none repeat scroll 0 0 #424242;
   display: block;
-  height: 0.1rem;
+  height: 0.0625rem;
   width: 0;
-  position: absolute;
+  /* position: absolute;
   top: 28px;
-  left: -17.5px;
+  left: -17.5px; */
 }
 
-main #news-list .button a:nth-last-child(1)::after {
+main #news-list .button a:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   background: none repeat scroll 0 0 #424242;
   display: block;
-  height: 0.1rem;
+  height: 0.0625rem;
   width: 0;
-  position: absolute;
+  /* position: absolute;
   top: 28px;
-  left: -70px;
+  left: -70px; */
 }
 
 main #news-list .button a:hover::after {
-  width: 500%;
+  /* width: 500%; */
+  width: 100%;
 }
+
 /*# sourceMappingURL=news-list.css.map */
