@@ -32,7 +32,7 @@
                 <div class="shop-title">Hastable 甘納許甜點蠟燭</div>
                 <div class="fee-and-cart">
                     <span class="fee">$13,000</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
             <div class="card">
@@ -41,7 +41,7 @@
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
             <div class="card">
@@ -50,7 +50,7 @@
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
             <div class="card">
@@ -59,7 +59,7 @@
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
             <div class="card">
@@ -68,7 +68,7 @@
                 <div class="shop-title">強韌耐熱 防水合成紙 A4 10張</div>
                 <div class="fee-and-cart">
                     <span class="fee">$400</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
             <div class="card">
@@ -77,7 +77,7 @@
                 <div class="shop-title">酒精墨水藝術用紙 強韌耐熱 防水合成紙 A4 10張</div>
                 <div class="fee-and-cart">
                     <span class="fee">$400</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
             <div class="card">
@@ -86,7 +86,7 @@
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
             <div class="card">
@@ -95,7 +95,7 @@
                 <div class="shop-title">酒精墨水藝術用紙</div>
                 <div class="fee-and-cart">
                     <span class="fee">$4,800</span>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
             </div>
         </div>

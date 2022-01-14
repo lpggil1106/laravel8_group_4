@@ -178,9 +178,6 @@ main .shop-list .cards .card .fee-and-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -190,6 +187,7 @@ main .shop-list .cards .card .fee-and-cart {
 
 main .shop-list .cards .card .fee-and-cart span {
   font-size: 1.3rem;
+  margin-right: 1rem;
 }
 
 main .shop-list .cards .card .fee-and-cart i {

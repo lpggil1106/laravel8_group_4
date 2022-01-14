@@ -98,7 +98,7 @@
                             </div>
                             <a href="" class="add-to-cart">
                                 <span>加入購物車</span>
-                                <i class="fas fa-cart-plus icon"></i>
+                                <i class="fas fa-shopping-cart icon"></i>
                             </a>
                         </div>
                         <div class="column-container">
