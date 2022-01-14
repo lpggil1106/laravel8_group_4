@@ -113,31 +113,6 @@
             </div>
         </section>
         {{-- <div class="banner"></div> --}}
-        <!-- course -->
-        {{-- <section id="course">
-            <div class="course-title">
-                <span>Courses</span>
-            </div>
-            <div class="course-info-end">
-                <div class="course-info">
-                    <div class="course-content">
-                        <h2><span>Hastable</span>甘納許甜點蠟燭證書課程</h2>
-                        <p>此課程整合甘納許經典技法、集結麵包/蛋糕發泡技法，無論放多久都能切片。</p>
-                        <p>自製巧克力裝飾也是課程中重要的技法，另外包含了真實甜點會用到的裝飾技巧，是市面上內容最豐富的甜點蠟燭證書課程。</p>
-                        <p>實體課程費用:<span>$13,000</span> / 2天</p>
-                        <a href="#">加入購物車 <i class="fas fa-cart-plus icon"></i></a>
-                    </div>
-                    <div class="course-img">
-                        <div class="course-image"></div>
-                        <div class="link">
-                            <a href="{{ route('front.course-list') }}">
-                            Learn more
-                            <i class="fas fa-chevron-right icon"></i>
-                        </a></div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
         <!-- shop -->
         <section id="shop">
             <div class="shop">
