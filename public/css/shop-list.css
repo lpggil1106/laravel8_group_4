@@ -131,6 +131,10 @@ main .shop-list .cards {
   padding: 5rem 0;
 }
 
+main .shop-list .cards a {
+  text-decoration: none;
+}
+
 main .shop-list .cards .card {
   margin-right: 1.4rem;
   margin-bottom: 5rem;
@@ -161,6 +165,7 @@ main .shop-list .cards .card .text-muted {
   color: #999999;
   font-size: 1rem;
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 main .shop-list .cards .card .shop-list-title {

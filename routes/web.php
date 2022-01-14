@@ -24,6 +24,7 @@ use App\Http\Controllers\NewsCategoriesController;
     Route::get('/course-list', [FrontController::class, 'courseList'])->name('front.course-list');
     Route::get('/course-content', [FrontController::class, 'courseContent'])->name('front.course-content');
     Route::get('/shop-list', [FrontController::class, 'shopList'])->name('front.shop-list');
+    Route::get('/shop-content', [FrontController::class, 'shopContent'])->name('front.shop-content');
     Route::get('/news-list', [FrontController::class, 'newsList'])->name('front.news-list');
     Route::get('/news-content', [FrontController::class, 'newsContent'])->name('front.news-content');
     Route::get('/notice', [FrontController::class, 'notice'])->name('front.notice');

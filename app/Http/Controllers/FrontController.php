@@ -26,6 +26,11 @@ class FrontController extends Controller
         return view('front.shop-list');
     }
 
+    public function shopContent()
+    {
+        return view('front.shop-content');
+    }
+
     public function newsList()
     {
         return view('front.news-list');
