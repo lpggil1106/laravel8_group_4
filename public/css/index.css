@@ -17,8 +17,6 @@ body {
 
 header {
   position: fixed;
-  /* top: 0;
-  left: 0; */
   width: 100vw;
   padding: 1.25rem 6.25rem;
   z-index: 10000;
@@ -142,10 +140,6 @@ header .navbar-right li .icon {
   background-image: url(/img/xmas_tree.jpeg);
   background-size: cover;
   background-position: center;
-  -webkit-transition: 5s;
-  transition: 5s;
-  -webkit-transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
-  transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
 }
 
 #home .imgs .left .big-text {
@@ -1001,3 +995,95 @@ footer .footer-down .follow a i.fa-instagram:hover {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+@media (max-width: 991px) {
+  .menu-toggle li {
+    list-style: none;
+  }
+
+  .menu-toggle li a {
+    text-decoration: none;
+  }
+
+  header {
+    padding: 1rem 8.5rem;
+    align-items: center;
+  }
+
+  header img {
+    width: 7.5vw;
+  }
+
+  header .logo {
+    z-index: 1000;
+  }
+
+  header .navbar-middle,
+  header .navbar-right .nav-item {
+    display: none;
+  }
+
+  header .navbar-right li {
+    margin-left: 0;
+  }
+
+  header .navbar-right {
+    align-items: center;
+  }
+
+  header .navbar-right .icon {
+    margin-left: 2rem;
+  }
+
+  header .navbar-right li .icon {
+    font-size: 1.6rem;
+  }
+
+  header .navbar-middle {
+    transition: 4s 1s;
+  }
+
+  header .navbar-middle.active {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #E7E7E7;
+    opacity: 0.95;
+    transition: all 10s;
+  }
+
+  header .navbar-middle li {
+    margin-left: 0;
+  }
+
+  header .navbar-middle li a {
+    font-size: 3rem;
+    line-height: 5rem;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  /* menu */
+  .menu-toggle {
+    width: 30px;
+    height: 30px;
+    background: url(/img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    cursor: pointer;
+  }
+
+  .menu-toggle.active {
+    background: url(/img/menu-cross.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    transition: all .2s;
+  }
+}

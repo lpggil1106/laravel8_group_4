@@ -37,7 +37,7 @@
         <!-- about us -->
         <section id="about-us">
             <div class="container">
-                <div class="left-img"></div>
+                <div class="left-img" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"></div>
                 <div class="about-us">
                     <div class="right-container">
                         <h2>About Us</h2>
@@ -73,7 +73,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right-img"></div>
+                    <div class="right-img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    </div>
                 </div>
             </div>
         </section>
@@ -178,7 +179,7 @@
         <!-- blog -->
         <section id="blog">
             <div class="left">
-                <div class="img"></div>
+                <div class="img" data-aos="fade-right" data-aos-duration="1500"></div>
             </div>
             <div class="right">
                 <div class="news">News</div>

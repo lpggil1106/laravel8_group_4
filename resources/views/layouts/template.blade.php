@@ -5,9 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>@yield('title')</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" width='500'>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- CSS -->
@@ -31,6 +35,7 @@
         <ul class="navbar-right">
             <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
             <li><a href="" class="icon"><i class="fas fa-shopping-cart"></i></a></li>
+            <ul class="menu-toggle icon" onclick="toggleMenu();"></ul>
             <li><a href="" class="nav-item">Contact Us</a></li>
         </ul>
     </header>
@@ -100,8 +105,13 @@
         </div>
     </footer>
 
+    <!-- aos JS cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JS -->
     <script>
+        // initialise aos
+        AOS.init();
+
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
@@ -111,6 +121,19 @@
                 document.querySelector('header').style.top = "-100px";
             }
             prevScrollpos = currentScrollPos;
+        }
+
+        // window.addEventListener('scroll', function() {
+        //     const header = document.querySelector('.header');
+        //     header.classList.toggle('sticky', window.scrollY > 0);
+        // })
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbarMiddle = document.querySelector('.navbar-middle');
+
+            menuToggle.classList.toggle('active');
+            navbarMiddle.classList.toggle('active');
         }
     </script>
     @yield('js')
