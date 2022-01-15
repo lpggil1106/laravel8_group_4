@@ -71,13 +71,10 @@ main .image .small-img {
   height: 34vh;
   margin-left: -17.5rem;
   margin-top: -9.5rem;
-  background-image: url(/img/pumpkin.jpeg);
-  background-position: center;
+  background-image: url(/img/candle-shower.jpeg);
+  background-position: 50% 70%;
   background-size: cover;
   z-index: 1;
-  /* position: absolute;
-  left: 33%;
-  bottom: 59%; */
 }
 
 main .shop-list .tabs {
