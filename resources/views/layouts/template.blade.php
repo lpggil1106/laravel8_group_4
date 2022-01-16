@@ -61,7 +61,7 @@
                     <p>台中市西區<br>華美西街一段142號1樓</p>
                 </div>
                 <div class="transport">
-                    <h3>Transportation</h3>
+                    <h3>Transport</h3>
                     <h2>高鐵台中站</h2>
                     <p>159 高鐵臺中站-中國醫藥大學-臺中公園: 於科學博物館-植物園下車,路線及時刻表請參考《高鐵快捷公車臺中站》。</p>
                     <h2 class="train">臺中火車站周圍轉乘公車</h2>
@@ -83,6 +83,54 @@
                 </div>
             </div>
         </div>
+        <div class="container-rwd">
+            <div class="footer-up-rwd">
+                <div class="container">
+                    <a href="javascript:showContact()" id="contact" class="button">Information +</a>
+                </div>
+            </div>
+            <div id="hide-contact" style="display: none" class="contact-hide-show">
+                {{-- <h2>聯絡資訊</h2> --}}
+                <p>0955-779-166</p>
+                <p>tingscandle@gmail.com</p>
+                <p>Line @goifprby</p>
+            </div>
+            <div class="footer-up-rwd">
+                <div class="container">
+                    <a href="javascript:showAddress()" id="address" class="button">Address +</a>
+                </div>
+            </div>
+            <div id="hide-address" style="display: none" class="address-hide-show">
+                <h2>TINGS Aroma</h2>
+                <p>台中市西區<br>華美西街一段142號1樓</p>
+            </div>
+            <div class="footer-up-rwd">
+                <div class="container">
+                    <a href="javascript:showTransport()" id="transport" class="button">Transport +</a>
+                </div>
+            </div>
+            <div id="hide-transport" style="display: none" class="transport-hide-show">
+                <h2>高鐵台中站</h2>
+                <p>159 高鐵臺中站-中國醫藥大學-臺中公園: 於科學博物館-植物園下車,路線及時刻表請參考《高鐵快捷公車臺中站》。</p>
+                <h2 class="train">臺中火車站周圍轉乘公車</h2>
+                <p>台中客運: 11 綠能街車、35、70、71、304、307、309、310、323、324、325</p>
+                <p>仁友客運: 45</p>
+                <p>統聯客運: 18、77、159、301、303、308、326</p>
+                <p>巨業交通: 300、305、306</p>
+                <p>豐榮客運: 48</p>
+                <p>中台灣客運: 37、302</p>
+                <br>
+                <p>下車站: 忠明國小或科博館</p>
+            </div>
+            <div class="img">
+                <img src="{{ asset('img/logo.jpg') }}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        </div>
         <div class="container">
             <div class="footer-mid">
                 <h3>Opening hours</h3>
@@ -103,6 +151,8 @@
                 </div>
             </div>
         </div>
+
+
     </footer>
 
     <!-- aos JS cdn -->
@@ -134,6 +184,69 @@
 
             menuToggle.classList.toggle('active');
             navbarMiddle.classList.toggle('active');
+        }
+
+        // function hideAndShowContact() {
+        //     var contact = document.querySelector('.contact-hide-show');
+        //     if (contact.style.display === 'none') {
+        //         contact.style.display = 'block';
+        //     } else {
+        //         contact.style.display = 'none';
+        //     }
+        // }
+
+        // function hideAndShowAddress() {
+        //     var address = document.querySelector('.address-hide-show');
+        //     if (address.style.display === 'none') {
+        //         address.style.display = 'block';
+        //     } else {
+        //         address.style.display = 'none';
+        //     }
+        // }
+
+        // function hideAndShowTransport() {
+        //     var transport = document.querySelector('.transport-hide-show');
+        //     if (transport.style.display === 'none') {
+        //         transport.style.display = 'block';
+        //     } else {
+        //         transport.style.display = 'none';
+        //     }
+        // }
+
+        // contact
+        function showContact() {
+            document.getElementById("hide-contact").style.display = "block";
+            document.getElementById("contact").innerHTML = "Information -";
+            document.getElementById("contact").href = "javascript:hideContact()";
+        }
+        function hideContact() {
+            document.getElementById("hide-contact").style.display = "none";
+            document.getElementById("contact").innerHTML = "Information +";
+            document.getElementById("contact").href = "javascript:showContact()";
+        }
+
+        // address
+        function showAddress() {
+            document.getElementById("hide-address").style.display = "block";
+            document.getElementById("address").innerHTML = "Address -";
+            document.getElementById("address").href = "javascript:hideAddress()";
+        }
+        function hideAddress() {
+            document.getElementById("hide-address").style.display = "none";
+            document.getElementById("address").innerHTML = "Address +";
+            document.getElementById("address").href = "javascript:showAddress()";
+        }
+
+        // transport
+        function showTransport() {
+            document.getElementById("hide-transport").style.display = "block";
+            document.getElementById("transport").innerHTML = "Transport -";
+            document.getElementById("transport").href = "javascript:hideTransport()";
+        }
+        function hideTransport() {
+            document.getElementById("hide-transport").style.display = "none";
+            document.getElementById("transport").innerHTML = "Transport +";
+            document.getElementById("transport").href = "javascript:showTransport()";
         }
     </script>
     @yield('js')

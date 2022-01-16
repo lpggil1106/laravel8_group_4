@@ -91,7 +91,7 @@
                                 <span class="english">Hastable</span> 甘納許甜點蠟燭證書課程
                             </div>
                             <div class="course-texts">
-                                <span style="margin-bottom: 1.5rem;">此課程整合甘納許經典技法、集結麵包/蛋糕發泡技法，無論放多久都能切片。</span>
+                                <span>此課程整合甘納許經典技法、集結麵包/蛋糕發泡技法，無論放多久都能切片。</span>
                                 <span>自製巧克力裝飾也是課程中重要的技法，另外包含了真實甜點會用到的裝飾技巧，是市面上內容最豐富的甜點蠟燭證書課程。</span>
                             </div>
                             <div class="course-fee">實體課程費用: $<span class="numbers">13,000</span> / <span
