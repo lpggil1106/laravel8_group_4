@@ -33,16 +33,17 @@
     <!-- News content -->
     <section id="news-content">
         <div class="news">
-            <div class="title">2021 年的最後一天</div>
-            <div class="date">2021.12.31</div>
+            <div class="title">{{$news->title}}</div>
+            <div class="date">{{$news->date}}</div>
             <div class="content">
-                <p>2021 年的最後一天，還是跟學員們渡過，結束最後一堂課。</p>
+                <p>{{$news->content}}</p>
+                {{-- <p>2021 年的最後一天，還是跟學員們渡過，結束最後一堂課。</p>
                 <p>感謝今年所有參與 TINGS Candle 課程的同學們，祝大家新年快樂！</p>
                 <p>新年假期一樣，跟大家一起過。</p>
                 <p>* 市集活動：台北捷運中山站 R9 出口 @心中山線型公園 1/1 (六)，1/2 (日) 12:00 - 20:00</p>
                 <p>* 小容量香氛蠟燭新登場，歡迎直接現場聞香選購</p>
                 <p>* 台中體驗課程：香氛製品調香體驗 1/2 (日) 上午 10:00</p>
-                <p>* 其他課程預約請私訊詢問</p>
+                <p>* 其他課程預約請私訊詢問</p> --}}
             </div>
             <div class="button">
                 <a class="prev">Previous</a>
