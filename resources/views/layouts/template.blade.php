@@ -122,11 +122,21 @@
                 <br>
                 <p>下車站: 忠明國小或科博館</p>
             </div>
+            <div class="footer-up-rwd">
+                <div class="container">
+                    <a href="javascript:showHours()" id="hours" class="button">Opening Hours +</a>
+                </div>
+            </div>
+            <div id="hide-hours" style="display: none" class="hours-hide-show">
+                <h2></h2>
+                <p class="weekdays">週一～週五 10am - 7pm</p>
+                <p class="weekends">週六、日請來信留言</p>
+            </div>
             <div class="img">
                 <img src="{{ asset('img/logo.jpg') }}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw"
-                    style="border:0;" allowfullscreen="" loading="lazy">
+                    style="border: 0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
         </div>
@@ -151,8 +161,6 @@
                 </div>
             </div>
         </div>
-
-
     </footer>
 
     <!-- aos JS cdn -->
@@ -186,39 +194,13 @@
             navbarMiddle.classList.toggle('active');
         }
 
-        // function hideAndShowContact() {
-        //     var contact = document.querySelector('.contact-hide-show');
-        //     if (contact.style.display === 'none') {
-        //         contact.style.display = 'block';
-        //     } else {
-        //         contact.style.display = 'none';
-        //     }
-        // }
-
-        // function hideAndShowAddress() {
-        //     var address = document.querySelector('.address-hide-show');
-        //     if (address.style.display === 'none') {
-        //         address.style.display = 'block';
-        //     } else {
-        //         address.style.display = 'none';
-        //     }
-        // }
-
-        // function hideAndShowTransport() {
-        //     var transport = document.querySelector('.transport-hide-show');
-        //     if (transport.style.display === 'none') {
-        //         transport.style.display = 'block';
-        //     } else {
-        //         transport.style.display = 'none';
-        //     }
-        // }
-
         // contact
         function showContact() {
             document.getElementById("hide-contact").style.display = "block";
             document.getElementById("contact").innerHTML = "Information -";
             document.getElementById("contact").href = "javascript:hideContact()";
         }
+
         function hideContact() {
             document.getElementById("hide-contact").style.display = "none";
             document.getElementById("contact").innerHTML = "Information +";
@@ -231,6 +213,7 @@
             document.getElementById("address").innerHTML = "Address -";
             document.getElementById("address").href = "javascript:hideAddress()";
         }
+
         function hideAddress() {
             document.getElementById("hide-address").style.display = "none";
             document.getElementById("address").innerHTML = "Address +";
@@ -243,10 +226,24 @@
             document.getElementById("transport").innerHTML = "Transport -";
             document.getElementById("transport").href = "javascript:hideTransport()";
         }
+
         function hideTransport() {
             document.getElementById("hide-transport").style.display = "none";
             document.getElementById("transport").innerHTML = "Transport +";
             document.getElementById("transport").href = "javascript:showTransport()";
+        }
+
+        // opening hours
+        function showHours() {
+            document.getElementById("hide-hours").style.display = "block";
+            document.getElementById("hours").innerHTML = "Opening hours -";
+            document.getElementById("hours").href = "javascript:hideHours()";
+        }
+
+        function hideHours() {
+            document.getElementById("hide-hours").style.display = "none";
+            document.getElementById("hours").innerHTML = "Opening hours +";
+            document.getElementById("hours").href = "javascript:showHours()";
         }
     </script>
     @yield('js')
