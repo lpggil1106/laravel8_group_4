@@ -184,26 +184,12 @@
             <div class="right">
                 <div class="news">News</div>
                 <div class="article">
+                    @foreach ($news as $item)
                     <div>
-                        <span>2021.12.31</span>
-                        <h2>2021年的最後一天</h2>
-                        {{-- <p>白日依山盡，黃河入海流，欲窮千里目，更上一層樓</p> --}}
+                        <span>{{$item->date}}</span>
+                        <h2>{{$item->title}}</h2>
                     </div>
-                    <div>
-                        <span>2021.12.29</span>
-                        <h2>調香體驗不只能做香水</h2>
-                        {{-- <p>哎呀~早上的早餐真是可口，像極了香水，香噴噴的氣息，勾引者我身上每個細胞，雙手抓住漢堡，大力地咬一口，啊哈!就是這個滋味！</p> --}}
-                    </div>
-                    <div>
-                        <span>2021.12.26</span>
-                        <h2>再過幾天就要迎接過年</h2>
-                        {{-- <p>千門明月，
-                    天如水，正是人間佳節。
-                    開盡小梅春氣透，花燭家家羅列。
-                    來往綺羅，喧闐簫鼓，達旦何曾歇。
-                    少年當此，風光真是殊絕。
-                </p> --}}
-                    </div>
+                    @endforeach
                     <a href="">View all<i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>

@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FrontController extends Controller
 {
     public function index()
     {
-        return view('front.index');
+        $news = DB::table('news')->get();
+
+        return view('front.index',compact('news'));
     }
 
     public function courseList()
@@ -33,12 +36,16 @@ class FrontController extends Controller
 
     public function newsList()
     {
-        return view('front.news-list');
+        $news = DB::table('news')->get();
+
+        return view('front.news-list',compact('news'));
     }
 
-    public function newsContent()
+    public function newsContent($id)
     {
-        return view('front.news-content');
+        $news = DB::table('news')->find($id);
+
+        return view('front.news-content',compact('news'));
     }
 
     public function notice()
