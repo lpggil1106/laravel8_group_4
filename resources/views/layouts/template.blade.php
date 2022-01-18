@@ -21,7 +21,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="header">
         <a href="#home" class="logo">
             <img src="/img/logo.png" alt="">
         </a>
@@ -37,6 +37,9 @@
             <li><a href="" class="icon"><i class="fas fa-shopping-cart"></i></a></li>
             <li class="menu-toggle icon" onclick="toggleMenu();"></li>
             <li><a href="{{ route('front.contact') }}" class="nav-item">Contact Us</a></li>
+            <li><a href="{{ route('shopping-cart.step01')}}" class="icon"><i class="fas fa-shopping-cart"></i></a></li>
+            <ul class="menu-toggle icon" onclick="toggleMenu();"></ul>
+            <li><a href="" class="nav-item">Contact Us</a></li>
         </ul>
     </header>
 

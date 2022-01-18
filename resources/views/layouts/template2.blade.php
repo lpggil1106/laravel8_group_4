@@ -17,7 +17,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="header">
         <a href="{{ route('front.index') }}" class="logo">
             <img src="/img/logo.png" alt="">
         </a>
