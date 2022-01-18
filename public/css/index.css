@@ -631,7 +631,7 @@ body {
 }
 
 /* news */
-#blog {
+#news {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -642,18 +642,18 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
-#blog .left {
+#news .left {
   width: 20vw;
   height: 46vh;
 }
 
-#blog .right {
+#news .right {
   width: 80vw;
   display: flex;
   justify-content: space-evenly;
 }
 
-#blog .left .img {
+#news .left .img {
   width: 21vw;
   height: 51vh;
   background-image: url(/img/vase-and-candles.jpeg);
@@ -666,48 +666,49 @@ body {
   transition-timing-function: ease-in;
 }
 
-#blog .article {
+#news .article {
   width: 42vw;
-  height: 40vh;
+  height: 55vh;
   font-family: sans-serif;
   letter-spacing: 0.0313rem;
+  overflow: hidden;
 }
 
-#blog .article div {
+#news .article div {
   padding: 2.5rem 0rem;
   border-bottom: 0.1rem solid #242426;
 }
 
-#blog .article div:first-child {
+#news .article div:first-child {
   border-top: 0.1rem solid #242426;
 }
 
-#blog .article div:last-child {
+#news .article div:last-child {
   margin-bottom: 6.25rem;
 }
 
-#blog .article div span {
+#news .article div span {
   color: #242426;
   margin-bottom: 1.5rem;
   font-size: 0.8rem;
 }
 
-#blog .article div h2 {
+#news .article div h2 {
   font-size: 1rem;
   font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
-#blog .article div p {
+#news .article div p {
   font-weight: 300;
 }
 
-#blog .article div:hover {
+#news .article div:hover {
   color: #777777;
 }
 
-#blog .article a {
+#news .article a {
   display: inline-block;
   margin-top: 5.25rem;
   color: #242426;
@@ -717,14 +718,14 @@ body {
   letter-spacing: 0.0313rem;
 }
 
-#blog .article i {
+#news .article i {
   display: inline-block;
   color: #242426;
   font-size: 0.8rem;
   margin-left: 0.3125rem;
 }
 
-#blog .article a:after {
+#news .article a:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -734,11 +735,11 @@ body {
   width: 0;
 }
 
-#blog .article a:hover:after {
+#news .article a:hover:after {
   width: 100%;
 }
 
-#blog .right .news {
+#news .right .news {
   font-weight: bolder;
   font-size: 4rem;
   letter-spacing: 0.0313rem;
@@ -1152,21 +1153,21 @@ footer .footer-down .follow a i.fa-instagram:hover {
     margin-left: 13rem;
   }
 
-  #blog {
+  #news {
     height: 100vh;
   }
 
-  #blog .left {
+  #news .left {
     display: none;
   }
 
-  #blog .right {
+  #news .right {
     width: 100vw;
     height: 55vh;
     padding: 0 4rem;
   }
 
-  #blog .article {
+  #news .article {
     width: 100vw;
     padding: 0 1.5rem;
     margin-top: 2rem;
@@ -1475,29 +1476,29 @@ footer .footer-down .follow a i.fa-instagram:hover {
     font-size: 4.5rem;
   }
 
-  #blog {
+  #news {
     height: 80vh;
     display: block;
     margin-top: 10rem;
   }
 
-  #blog .left {
+  #news .left {
     display: none;
   }
 
-  #blog .right {
+  #news .right {
     width: 100vw;
     height: 100vh;
     display: block;
   }
 
-  #blog .right .news {
+  #news .right .news {
     font-weight: 600;
     font-size: 3.5rem;
     text-align: center;
   }
 
-  #blog .article {
+  #news .article {
     width: 80vw;
     padding: 0 1.5rem;
     margin-top: 3rem;
@@ -1897,52 +1898,52 @@ footer .footer-down .follow a i.fa-instagram:hover {
     color: #424242;
   }
 
-  #blog {
+  #news {
     display: block;
     margin-top: 6rem;
   }
 
-  #blog .left {
+  #news .left {
     display: none;
   }
 
-  #blog .right {
+  #news .right {
     width: 100vw;
     height: 100vh;
     display: block;
   }
 
-  #blog .right .news {
+  #news .right .news {
     font-weight: 600;
     font-size: 3rem;
     padding: 0 2rem;
     text-align: center;
   }
 
-  #blog .article div {
+  #news .article div {
     padding: 1rem 0rem;
   }
 
-  #blog .article div h2 {
+  #news .article div h2 {
     font-size: 0.9rem;
   }
 
-  #blog .article div span {
+  #news .article div span {
     font-size: 0.7rem;
   }
 
-  #blog .article {
+  #news .article {
     width: 73vw;
     padding: 0;
     margin-top: 2rem;
   }
 
-  #blog .article a {
+  #news .article a {
     margin-top: 2.25rem;
     font-size: 1rem;
   }
 
-  #blog .article i {
+  #news .article i {
     color: #424242;
     font-size: 0.6rem;
     margin-left: 0.3rem;
