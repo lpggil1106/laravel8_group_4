@@ -33,6 +33,7 @@ use App\Http\Controllers\ServiceCategoriesController;
     Route::get('/news-list', [FrontController::class, 'newsList'])->name('front.news-list');
     Route::get('/news-content/{id}', [FrontController::class, 'newsContent'])->name('front.news-content');
     Route::get('/notice', [FrontController::class, 'notice'])->name('front.notice');
+    Route::get('/contact', [FrontController::class, 'contact'])->name('front.contact');
 // });
 
 

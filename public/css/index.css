@@ -61,7 +61,7 @@ header .navbar-middle li {
 
 header .navbar-right li {
   list-style: none;
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
 }
 
 header .navbar-middle li a {
@@ -93,24 +93,6 @@ header .navbar-middle li .nav-item:after {
 
 header .navbar-middle li .nav-item:hover:after {
   width: 100%;
-}
-
-header .navbar-right li .nav-item:after {
-  content: "";
-  -webkit-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
-  background: none repeat scroll 0 0 #424242;
-  display: block;
-  height: 0.0625rem;
-  width: 0;
-}
-
-header .navbar-right li .nav-item:hover:after {
-  width: 100%;
-}
-
-header .navbar-right li .icon {
-  font-size: 1.3rem;
 }
 
 /* home */
@@ -1271,6 +1253,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
+/* 839 */
 @media (max-width: 839px) {
   footer .container .footer-up {
     display: none;
@@ -1440,6 +1423,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
+/* 690px */
 @media (max-width: 690px) {
   #courses {
     margin-bottom: 24rem;
@@ -1613,6 +1597,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
+/* 517px */
 @media (max-width: 517px) {
   #about-us .right-img {
     margin-top: 48rem;

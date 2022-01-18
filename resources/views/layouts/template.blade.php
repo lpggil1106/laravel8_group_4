@@ -35,8 +35,8 @@
         <ul class="navbar-right">
             <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
             <li><a href="" class="icon"><i class="fas fa-shopping-cart"></i></a></li>
-            <ul class="menu-toggle icon" onclick="toggleMenu();"></ul>
-            <li><a href="" class="nav-item">Contact Us</a></li>
+            <li class="menu-toggle icon" onclick="toggleMenu();"></li>
+            <li><a href="{{ route('front.contact') }}" class="nav-item">Contact Us</a></li>
         </ul>
     </header>
 
@@ -186,6 +186,7 @@
         //     header.classList.toggle('sticky', window.scrollY > 0);
         // })
 
+        // menu
         function toggleMenu() {
             const menuToggle = document.querySelector('.menu-toggle');
             const navbarMiddle = document.querySelector('.navbar-middle');
