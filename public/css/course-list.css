@@ -172,6 +172,7 @@ main .course .cards .card .fee-and-cart i:hover {
   color: #424242;
 }
 
+/* 1490px */
 @media (max-width: 1490px) {
   main .title {
     padding-left: 6.5rem;
@@ -189,7 +190,7 @@ main .course .cards .card .fee-and-cart i:hover {
   }
 }
 
-
+/* 1096px */
 @media (max-width: 1096px) {
   main .image .banner {
     width: 76vw;
@@ -198,7 +199,7 @@ main .course .cards .card .fee-and-cart i:hover {
   main .image .small-img {
     width: 35vw;
     margin-top: -13rem;
-}
+  }
 }
 
 /* 991px */
@@ -228,6 +229,94 @@ main .course .cards .card .fee-and-cart i:hover {
   }
 }
 
+/* 936px */
+@media (max-width: 936px) {
+  main .section1 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  main .image .small-img {
+    display: none;
+  }
+
+  main .title {
+    padding-top: 17rem;
+    padding-left: 5.5rem;
+  }
+
+  main .course .tabs {
+    margin-top: 0rem;
+  }
+
+  main .image .banner {
+    height: 50vh;
+    width: 90vw;
+  }
+}
+
+/* 690px */
+@media (max-width: 690px) {
+  main .section1 {
+    display: block;
+    margin-bottom: 0;
+    height: 80vh;
+  }
+
+  main .title {
+    padding-top: 9rem;
+  }
+
+  main .image {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  main .image .banner {
+    width: 90vw;
+    height: 39vh;
+  }
+}
+
+/* 669px */
+@media (max-width: 669px) {
+  main .section1 {
+    height: 75vh;
+  }
+
+  main .course .tabs a {
+    font-size: 0.9rem;
+}
+
+main .course .tabs {
+  padding: 0 2rem;
+}
+
+.course .cards .row {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 0.8rem;
+}
+
+main .course .cards .card .fee-and-cart {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+main .course .cards .card .fee-and-cart i {
+  font-size: 0.7rem;
+}
+
+main .course .cards .card .text-muted {
+  font-size: 0.7rem;
+}
+}
+
+/* 375px */
 @media screen and (max-width: 375px) {
   .section1 {
     height: 100vh;
