@@ -1381,52 +1381,6 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
-/* 639px */
-@media (max-width: 639px) {
-  #about-us .right-img {
-    width: 52vw;
-    height: 26vh;
-    margin-left: -13rem;
-    margin-top: 45rem;
-  }
-
-  #about-us .about-us .right-container {
-    height: 73vh;
-  }
-
-  .shop .right .right-center .title h2 {
-    font-size: 4.5rem;
-  }
-
-  #blog {
-    height: 80vh;
-    display: block;
-    margin-top: 10rem;
-  }
-
-  #blog .left {
-    display: none;
-  }
-
-  #blog .right {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-  }
-
-  #blog .right .news {
-    font-weight: 600;
-    font-size: 3.5rem;
-    text-align: center;
-  }
-
-  #blog .article {
-    width: 80vw;
-    padding: 0 1.5rem;
-    margin-top: 3rem;
-  }
-}
-
 /* 690px */
 @media (max-width: 690px) {
   #courses {
@@ -1504,6 +1458,52 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
+/* 639px */
+@media (max-width: 639px) {
+  #about-us .right-img {
+    width: 52vw;
+    height: 26vh;
+    margin-left: -13rem;
+    margin-top: 45rem;
+  }
+
+  #about-us .about-us .right-container {
+    height: 73vh;
+  }
+
+  .shop .right .right-center .title h2 {
+    font-size: 4.5rem;
+  }
+
+  #blog {
+    height: 80vh;
+    display: block;
+    margin-top: 10rem;
+  }
+
+  #blog .left {
+    display: none;
+  }
+
+  #blog .right {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+
+  #blog .right .news {
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  #blog .article {
+    width: 80vw;
+    padding: 0 1.5rem;
+    margin-top: 3rem;
+  }
+}
+
 /* 544px */
 @media (max-width: 544px) {
   #header {
@@ -1525,6 +1525,10 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
   #header .navbar-right li {
     margin-left: 0.4375rem;
+  }
+
+  #header .navbar-middle li a {
+    font-size: 2rem;
   }
 
   .menu-toggle {
@@ -1665,6 +1669,11 @@ footer .footer-down .follow a i.fa-instagram:hover {
     margin-left: 0.4375rem;
   }
 
+  #header .navbar-middle li a {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
   .menu-toggle {
     background-size: 0.875rem;
   }
@@ -1674,7 +1683,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   #home {
-    height: 190vh;
+    height: 120vh;
   }
 
   #home .imgs .left .big-text {
@@ -1682,13 +1691,12 @@ footer .footer-down .follow a i.fa-instagram:hover {
     letter-spacing: 0.2rem;
     width: 65vw;
     margin-left: -15rem;
-    margin-top: -52rem;
+    margin-top: -51rem;
   }
 
   #home .imgs .left .img {
     width: 78vw;
-    height: 102vh;
-    margin-top: 16rem;
+    height: 70vh;
   }
 
   #home .imgs .left .small-texts {
@@ -1712,7 +1720,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   #home .imgs .right {
-    height: 190vh;
+    height: 120vh;
   }
 
   #home .imgs .right .top-img {
@@ -1721,7 +1729,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
   #home .imgs .right .bottom-img {
     width: 76vw;
-    height: 55vh;
+    height: 32vh;
     position: absolute;
     bottom: 0;
     transition: none;
@@ -1766,7 +1774,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   #about-us .right-img {
     width: 56vw;
     height: 34vh;
-    margin-top: 45rem;
+    margin-top: 56rem;
   }
 
   #about-us .about-us .right-container .numbers {
@@ -1776,8 +1784,8 @@ footer .footer-down .follow a i.fa-instagram:hover {
   .course-info .course {
     display: block;
     width: 95vw;
-    height: 79vh;
-    margin-top: 15rem;
+    height: 60vh;
+    margin-top: 18rem;
   }
 
   #courses .container .block {
@@ -1788,13 +1796,14 @@ footer .footer-down .follow a i.fa-instagram:hover {
     top: 34%;
     left: 0;
     margin-top: 0;
-    padding-bottom: 14rem;
+    padding-bottom: 30rem;
     padding-right: 8rem;
     font-weight: 600;
   }
 
   .course-info .course .course-img {
     width: 87vw;
+    margin-bottom: -6.3rem;
   }
 
   .course-info .course .course-content {
@@ -1844,7 +1853,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   #shop {
-    margin-top: 22rem;
+    margin-top: 0;
   }
 
   .shop .right .right-center .title h2 {
@@ -1890,7 +1899,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
   #blog {
     display: block;
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 
   #blog .left {
@@ -1929,7 +1938,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   #blog .article a {
-    margin-top: 4.25rem;
+    margin-top: 2.25rem;
     font-size: 1rem;
   }
 
