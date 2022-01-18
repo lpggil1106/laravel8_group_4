@@ -61,20 +61,38 @@
                             </div>
                         </div>
                         <div class="form-group row py-2">
-                            <label for="description" class="col-sm-2 col-form-label">簡介</label>
+                            <label for="product_categories_id" class="col-sm-2 col-form-label">類別</label>
                             <div class="col-sm-10">
-                                <input value="{{$products->description}}" type="text" class="form-control" id="description" name="description" required>
-                            </div>
-                        </div>
-                        <div class="form-group row py-2">
-                            <label for="product_category_id" class="col-sm-2 col-form-label">類別</label>
-                            <div class="col-sm-10">
-                                <select class="form-select" aria-label="Default select example" name="product_category_id" id="product_category_id">
+                                <select class="form-select" aria-label="Default select example" name="product_categories_id" id="product_categories_id" required>
                                     <option value="" hidden>請選擇類別</option>
                                     @foreach($product_categories as $item)
                                     <option value="{{$item->id}}">{{$item->name}}</option>
                                     @endforeach
                                 </select>
+                            </div>
+                        </div>
+                        <div class="form-group row py-2">
+                            <label for="content" class="col-sm-2 col-form-label">課程簡介</label>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" name="content" id="content"rows="5" required>{{$products->content}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row py-2">
+                            <label for="block1" class="col-sm-2 col-form-label">區塊一</label>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" name="block1" id="block1" rows="5" required>{{$products->block1}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row py-2">
+                            <label for="block2" class="col-sm-2 col-form-label">區塊二</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" name="block2" id="block2" rows="5" required>{{$products->block2}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row py-2">
+                            <label for="block3" class="col-sm-2 col-form-label">區塊三</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" name="block3" id="block3" rows="5" required>{{$products->block3}}</textarea>
                             </div>
                         </div>
                         <div class="form-group row py-2">
@@ -90,7 +108,7 @@
                             </div>
                         </div>
                         <div class="form-group row py-2">
-                            <label for="image_url" class="col-sm-2 col-form-label">新增圖片</label>
+                            <label for="image_url" class="col-sm-2 col-form-label">編輯圖片</label>
                             <div class="col-sm-10">
                                 <input type="file" accept="image/*" class="form-control" id="image_url" name="image_url" >
                             </div>

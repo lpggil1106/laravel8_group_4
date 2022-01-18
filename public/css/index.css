@@ -1632,6 +1632,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
+/* 486px */
 @media (max-width: 486px) {
   #home .imgs .left .big-text {
     font-size: 5rem;
