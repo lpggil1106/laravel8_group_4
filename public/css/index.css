@@ -15,7 +15,7 @@ body {
   background: #fafafa;
 }
 
-header {
+#header {
   position: fixed;
   width: 100vw;
   padding: 1.25rem 6.25rem;
@@ -35,11 +35,11 @@ header {
   transition: top 0.3s; */
 }
 
-header img {
+#header img {
   width: 4.5vw;
 }
 
-header .navbar-middle {
+#header .navbar-middle {
   /* position: relative; */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,24 +47,24 @@ header .navbar-middle {
   justify-content: space-between;
 }
 
-header .navbar-right {
+#header .navbar-right {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .navbar-middle li {
+#header .navbar-middle li {
   list-style: none;
   margin-left: 2.5rem;
 }
 
-header .navbar-right li {
+#header .navbar-right li {
   list-style: none;
   margin-left: 2.5rem;
 }
 
-header .navbar-middle li a {
+#header .navbar-middle li a {
   display: block;
   text-decoration: none;
   font-family: sans-serif;
@@ -73,7 +73,7 @@ header .navbar-middle li a {
   letter-spacing: 0.0313rem;
 }
 
-header .navbar-right li a {
+#header .navbar-right li a {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 1rem;
@@ -81,7 +81,7 @@ header .navbar-right li a {
   letter-spacing: 0.0313rem;
 }
 
-header .navbar-middle li .nav-item:after {
+#header .navbar-middle li .nav-item:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -91,11 +91,11 @@ header .navbar-middle li .nav-item:after {
   width: 0;
 }
 
-header .navbar-middle li .nav-item:hover:after {
+#header .navbar-middle li .nav-item:hover:after {
   width: 100%;
 }
 
-header .navbar-right li .nav-item:after {
+#header .navbar-right li .nav-item:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -105,11 +105,11 @@ header .navbar-right li .nav-item:after {
   width: 0;
 }
 
-header .navbar-right li .nav-item:hover:after {
+#header .navbar-right li .nav-item:hover:after {
   width: 100%;
 }
 
-header .navbar-right li .icon {
+#header .navbar-right li .icon {
   font-size: 1.3rem;
 }
 
