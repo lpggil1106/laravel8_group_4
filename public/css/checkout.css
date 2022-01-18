@@ -1,25 +1,59 @@
-#cart {
-  padding: 7.5rem 15rem;
-  background-color: #D1D5DB;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #242426;
+  letter-spacing: 1px;
 }
 
-#cart .card-body h2 {
-  font-weight: 900;
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 100vw;
+  padding: 5rem 0;
+}
+
+main {
+  background: url(/img/minimalist-candle.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 
 #cart .card {
-  background-color: #F3F4F6;
+  background-color: rgba(238, 238, 238, 0.5);
+  border: none;
+}
+
+#cart {
+  width: 100vw;
+  padding: 7.5rem 15rem;
+}
+
+#cart .card-body h2 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #242426;
+}
+
+#cart .card .progress-block span {
+  color: #242426;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
 }
 
 #cart .card .progress-block {
-  border-bottom: 2px solid rgba(59, 62, 68, 0.2);
+  border-bottom: 1px solid #E7E7E7;
+  padding-bottom: 4rem;
 }
 
 #cart .card .progress-block .progress {
   top: 16px;
   right: 0;
   -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  transform: translateX(50%);
   width: 65%;
   height: 10px;
 }
@@ -29,6 +63,7 @@
   height: 40px;
   border-radius: 50%;
   background-color: #FFFFFF;
+  color: #242426;
 }
 
 #cart .card .progress-block .step.active {
@@ -36,28 +71,23 @@
   color: #fff;
 }
 
-#cart .card .backToShop_btn:hover {
-  color: #0000008c;
-}
-
 #cart .card .backStep_btn {
-  background-color: #FFFFFF;
-  color: #3b82f6;
-  border: 2px solid #3b82f6;
+  background-color: transparent;
+  color: #424242;
 }
 
 #cart .card .backStep_btn:hover {
-  background-color: #2563eb;
+  background-color: #424242;
   color: #FFFFFF;
 }
 
 #cart .card .nextStep_btn {
-  background-color: #3b82f6;
+  background-color: #424242;
   color: #FFFFFF;
 }
 
 #cart .card .nextStep_btn:hover {
-  background-color: #2563eb;
+  background-color: #424242;
 }
 
 #cart .card .order-item .order-item-info img {
@@ -98,8 +128,32 @@
 }
 
 #cart .card .count_price, #cart .card .subtotal_price, #cart .card .freight_fee, #cart .card .total_price {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#cart .card .paymentMethod_form-group {
+  border-bottom: none;
+  padding: 1rem 2rem 0rem;
+}
+
+#cart .card .paymentMethod_form-group .form-group {
+  margin-bottom: 2rem;
+}
+
+#cart .card .paymentMethod_form-group input {
+  width: 60%;
+  padding: 0.625rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1.5px solid #d3d3d3;
+  color: #242426;
+  letter-spacing: 0.0313rem;
+  background: rgba(238, 238, 238, 0.6);
 }
 
 #cart .card .paymentMethod_form-group div {
@@ -112,17 +166,19 @@
 
 #cart .card .send_information label {
   width: 50px;
-  font-size: 20px;
-  margin-bottom: 0;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 #cart .card .send_information .infor_text {
   font-size: 20px;
 }
+
 /*# sourceMappingURL=checkout.css.map */
 body {
   font-size: 18px;
 }
+
 .img {
   width: 80px;
   height: 80px;
@@ -131,17 +187,86 @@ body {
   border-radius: 50%;
   margin-right: 10px;
 }
+
 .order-item-price>span {
   display: inline-block;
   text-align: end;
   min-width: 100px;
   font-size: 18px !important;
 }
+
 .order-item-price>.qty {
   width: 65px !important;
   text-align: center;
 }
+
 .delete-btn {
   margin-right: 10px;
   cursor: pointer;
+}
+
+.back-to-shop {
+  display: inline-block;
+  font-weight: 400;
+  color: #242426;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-radius: 0.5px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.back-to-shop .icon {
+  font-size: 1rem;
+  margin-right: 0.5em;
+}
+
+.cart-footer {
+  margin-top: 3rem;
+}
+
+.card-body h3 {
+  margin-bottom: 1.5rem;
+}
+
+.delivery-method {
+  margin-top: 5rem;
+}
+
+.form-check-label {
+  font-size: 1.3rem;
+}
+
+form {
+  border-bottom: 1px solid #E7E7E7;
+  padding: 2rem 2rem 3rem;
+}
+
+legend {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.btns {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.order-confirm {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.order-detail {
+  margin-top: 5rem;
+}
+
+.step04-card {
+  padding: 3rem 2rem 0;
 }

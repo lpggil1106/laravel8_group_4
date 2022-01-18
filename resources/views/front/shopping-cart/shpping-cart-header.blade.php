@@ -1,6 +1,6 @@
 <div class="cart_header">
-    <h2 class="card-title ">購物車</h2>
-    <div class="d-flex progress-block pb-4 mb-4">
+    <h2>購物車</h2>
+    <div class="d-flex progress-block mb-4">
         <!-- 進度條 -->
         <div class="d-flex flex-column align-items-center w-25 position-relative">
             <div class="progress position-absolute">

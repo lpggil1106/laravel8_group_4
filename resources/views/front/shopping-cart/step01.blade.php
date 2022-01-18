@@ -1,56 +1,63 @@
 @extends('layouts.template2')
-@section('title','確認購物車')
+
+@section('title', '確認購物車')
 
 @section('css')
-{{-- bootstrap Core CSS --}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-{{-- sweetalert Core CSS --}}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.min.css">
-{{-- checkout Core CSS --}}
-<link rel="stylesheet" href="{{asset('css/checkout.css')}}">
+    {{-- bootstrap Core CSS --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    {{-- sweetalert Core CSS --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.min.css">
+    {{-- checkout Core CSS --}}
+    <link rel="stylesheet" href="{{ asset('css/checkout.css') }}">
 @endsection
 
 
 @section('main')
-<section id="cart">
-    <div class="container">
-        <div class="card">
-            <div class="card-body p-5">
-                <!-- 購物車的header -->
-                @include('front.shopping-cart.shpping-cart-header',['step'=>1])
-                <!-- 訂單明細 -->
-                <div class="mt-4 pt-4">
-                    <h3 class="mb-4">訂單明細</h3>
-                    @foreach ($items as $item)
-                    <div class="d-flex justify-content-between align-items-center mt-4 pt-4 order-item">
-                        <div class="d-flex align-items-center order-item-info">
-                            <div class="delete-btn" data-id="{{$item->id}}">X</div>
-                            <div class="img" style="background-image: url({{Storage::url($item->attributes->image_url)}})"></div>
-                            <div>
-                                <p>{{$item->name}}</p>
+    <section id="cart">
+        <div class="container">
+            <div class="card">
+                <div class="card-body p-5">
+                    <!-- 購物車的header -->
+                    @include('front.shopping-cart.shpping-cart-header',['step'=>1])
+                    <!-- 訂單明細 -->
+                    <div class="mt-5">
+                        <h3 class="mb-4">訂單明細</h3>
+                        @foreach ($items as $item)
+                            <div class="d-flex justify-content-between align-items-center mt-4 pt-4 order-item">
+                                <div class="d-flex align-items-center order-item-info">
+                                    <div class="delete-btn" data-id="{{ $item->id }}">X</div>
+                                    <div class="img"
+                                        style="background-image: url({{ Storage::url($item->attributes->image_url) }})">
+                                    </div>
+                                    <div>
+                                        <p>{{ $item->name }}</p>
+                                    </div>
+                                </div>
+                                <div class="order-item-price item" data-id="{{ $item->id }}">
+                                    <button class="minus" type="button">-</button>
+                                    <input class="qty" type="number" value="{{ $item->quantity }}">
+                                    <button class="plus" type="button">+</button>
+                                    <span class="item-total"
+                                        data-single="{{ $item->price }}">${{ number_format($item->price * $item->quantity) }}</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="order-item-price item" data-id="{{$item->id}}">
-                            <button class="minus" type="button">-</button>
-                            <input class="qty" type="number" value="{{$item->quantity}}">
-                            <button class="plus" type="button">+</button>
-                            <span class="item-total" data-single="{{$item->price}}">${{number_format($item->price*$item->quantity)}}</span>
-                        </div>
+                        @endforeach
+                        <!-- 購物車的footer -->
+                        @include('front.shopping-cart.shopping-cart-footer',['step'=>1])
                     </div>
-                    @endforeach
-                <!-- 購物車的footer -->
-                @include('front.shopping-cart.shopping-cart-footer',['step'=>1])
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+    </section>
 @endsection
 
 @section('js')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.all.min.js" integrity="sha512-ZDaLH0jZny06ANbDr8eXL5xZJb3QwAiWIT1YJcQ3hdMeqv1LC+dwwD2484mqNa6mo1nb10EopYnWcGrPG244kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.all.min.js"
+        integrity="sha512-ZDaLH0jZny06ANbDr8eXL5xZJb3QwAiWIT1YJcQ3hdMeqv1LC+dwwD2484mqNa6mo1nb10EopYnWcGrPG244kg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-{{-- <script>
+    {{-- <script>
     function itemQtyCalc(element,compute){
         const itemElement = element.parentElement;
         const qtyElement = element.parentElement.querySelector('.qty');
@@ -161,7 +168,7 @@
     orderTotalCalc();
 </script> --}}
 
-{{-- <!-- jQuery JS CDN -->
+    {{-- <!-- jQuery JS CDN -->
     <!-- 通常jQuery都會放在最上面 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

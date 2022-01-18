@@ -16,22 +16,22 @@
                 <!-- 購物車的header -->
                 @include('front.shopping-cart.shpping-cart-header',['step'=>3])
                 <!-- 寄送資料 -->
-                <div class="mt-4 pt-4">
+                <div class="mt-5">
                     <form action="" method="post" id="step03-form" class="paymentMethod_form-group">
                         @csrf
                         <fieldset>
                             <legend>寄送資料</legend>
                             <div class="form-group">
                                 <label for="name">姓名</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="王小明" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="姓名" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone">電話</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="0912345678" required>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="電話" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="abc123@gmail.com" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
                                 <label for="address">地址</label>

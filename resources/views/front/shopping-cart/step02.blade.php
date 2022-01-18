@@ -16,7 +16,7 @@
                 <!-- 購物車的header -->
                 @include('front.shopping-cart.shpping-cart-header',['step'=>2])
                 <!-- 付款方式/運送方式 -->
-                <form action="" method="post" class="container" id="step02-form">
+                <form action="" method="post" class="mt-5" id="step02-form">
                     @csrf
                     <h3 class="fs-2">付款方式</h3>
                     <div class="form-group column py-2 px-4">
@@ -33,7 +33,7 @@
                             <label class="form-check-label fs-3" for="cvs-code">超商代碼</label>
                         </div>
                     </div>
-                    <h3 class="fs-2">運送方式</h3>
+                    <h3 class="fs-2 delivery-method">運送方式</h3>
                     <div class="form-group column py-2 px-4">
                         <div class="form-check">
                             <input class="form-check-input m-r-3" type="radio" name="shipment" id="b2c" value="0" checked>

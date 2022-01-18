@@ -43,10 +43,10 @@
                 <!-- 購物車的header -->
                 @include('front.shopping-cart.shpping-cart-header',['step'=>4])
                 <!-- 完成訂購 -->
-                <div class="mt-4 pt-4">
-                    <h1 class="text-center font-weight-bold">訂單成立</h1>
+                <div class="mt-4 step04-card">
+                    <h1 class="text-center order-confirm">訂單成立！</h1>
                     <!-- 訂單明細 -->
-                    <div class="order_detail">
+                    <div class="order-detail">
                         <h3 class="mb-4">訂單明細</h3>
                         {{-- @php
                             $totalQty = 0;
