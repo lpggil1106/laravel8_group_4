@@ -20,8 +20,6 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->longText('image_url');
             $table->longText('content');
-            $table->date('course_start_date');
-            $table->date('course_end_date');
             $table->timestamps();
         });
     }
