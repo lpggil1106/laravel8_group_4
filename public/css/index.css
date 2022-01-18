@@ -1181,45 +1181,37 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
 /* 991px header 為主 */
 @media (max-width: 991px) {
-  .menu-toggle li {
-    list-style: none;
-  }
-
-  .menu-toggle li a {
-    text-decoration: none;
-  }
-
-  header {
+  #header {
     padding: 1rem 4.5rem;
     align-items: center;
   }
 
-  header img {
+  #header img {
     width: 7.5vw;
   }
 
-  header .logo {
+  #header .logo {
     z-index: 1000;
   }
 
-  header .navbar-middle,
-  header .navbar-right .nav-item {
+  #header ul.navbar-middle,
+  #header .navbar-right .nav-item {
     display: none;
   }
 
-  header .navbar-right li {
+  #header .navbar-right li {
     margin-left: 0;
   }
 
-  header .navbar-right {
+  #header .navbar-right {
     align-items: center;
   }
 
-  header .navbar-right .icon {
+  #header .navbar-right .icon {
     margin-left: 2rem;
   }
 
-  header .navbar-right li .icon {
+  #header .navbar-right li .icon {
     font-size: 1.6rem;
   }
 
@@ -1227,7 +1219,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
     transition: 4s 1s;
   } */
 
-  header .navbar-middle.active {
+  #header .navbar-middle.active {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -1242,11 +1234,11 @@ footer .footer-down .follow a i.fa-instagram:hover {
     transition: all 10s;
   }
 
-  header .navbar-middle li {
+  #header .navbar-middle li {
     margin-left: 0;
   }
 
-  header .navbar-middle li a {
+  #header .navbar-middle li a {
     font-size: 3rem;
     line-height: 5rem;
     font-family: "Cormorant Garamond", serif;
@@ -1520,24 +1512,24 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
 /* 544px */
 @media (max-width: 544px) {
-  header {
+  #header {
     padding: 0.5rem 1rem;
   }
 
-  header img {
+  #header img {
     width: 12.5vw;
   }
 
-  header .navbar-right li .icon {
+  #header .navbar-right li .icon {
     font-size: 1rem;
   }
 
-  header .navbar-right .icon {
+  #header .navbar-right .icon {
     margin-left: 0.625rem;
     margin-top: -0.1875rem;
   }
 
-  header .navbar-right li {
+  #header .navbar-right li {
     margin-left: 0.4375rem;
   }
 
@@ -1654,24 +1646,24 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
 /* 375px */
 @media (max-width: 375px) {
-  header {
+  #header {
     padding: 0.5rem 1rem;
   }
 
-  header img {
+  #header img {
     width: 12.5vw;
   }
 
-  header .navbar-right li .icon {
+  #header .navbar-right li .icon {
     font-size: 1rem;
   }
 
-  header .navbar-right .icon {
+  #header .navbar-right .icon {
     margin-left: 0.625rem;
     margin-top: -0.1875rem;
   }
 
-  header .navbar-right li {
+  #header .navbar-right li {
     margin-left: 0.4375rem;
   }
 
