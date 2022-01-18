@@ -60,4 +60,10 @@ class FrontController extends Controller
     {
         return view('front.notice');
     }
+
+    public function contact()
+    {
+        return view('front.contact');
+    }
+
 }

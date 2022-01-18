@@ -15,7 +15,7 @@ body {
   background: #fafafa;
 }
 
-header {
+#header {
   position: fixed;
   width: 100vw;
   padding: 1.25rem 6.25rem;
@@ -35,36 +35,35 @@ header {
   transition: top 0.3s; */
 }
 
-header img {
+#header img {
   width: 4.5vw;
 }
 
-header .navbar-middle {
-  /* position: relative; */
+#header .navbar-middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
 }
 
-header .navbar-right {
+#header .navbar-right {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .navbar-middle li {
+#header .navbar-middle li {
   list-style: none;
   margin-left: 2.5rem;
 }
 
-header .navbar-right li {
+#header .navbar-right li {
   list-style: none;
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
 }
 
-header .navbar-middle li a {
+#header .navbar-middle li a {
   display: block;
   text-decoration: none;
   font-family: sans-serif;
@@ -73,7 +72,7 @@ header .navbar-middle li a {
   letter-spacing: 0.0313rem;
 }
 
-header .navbar-right li a {
+#header .navbar-right li a {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 1rem;
@@ -81,7 +80,7 @@ header .navbar-right li a {
   letter-spacing: 0.0313rem;
 }
 
-header .navbar-middle li .nav-item:after {
+#header .navbar-middle li .nav-item:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -91,11 +90,11 @@ header .navbar-middle li .nav-item:after {
   width: 0;
 }
 
-header .navbar-middle li .nav-item:hover:after {
+#header .navbar-middle li .nav-item:hover:after {
   width: 100%;
 }
 
-header .navbar-right li .nav-item:after {
+#header .navbar-right li .nav-item:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -105,11 +104,11 @@ header .navbar-right li .nav-item:after {
   width: 0;
 }
 
-header .navbar-right li .nav-item:hover:after {
+#header .navbar-right li .nav-item:hover:after {
   width: 100%;
 }
 
-header .navbar-right li .icon {
+#header .navbar-right li .icon {
   font-size: 1.3rem;
 }
 
@@ -632,7 +631,7 @@ header .navbar-right li .icon {
 }
 
 /* news */
-#blog {
+#news {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -643,18 +642,18 @@ header .navbar-right li .icon {
   font-family: "Cormorant Garamond", serif;
 }
 
-#blog .left {
+#news .left {
   width: 20vw;
   height: 46vh;
 }
 
-#blog .right {
+#news .right {
   width: 80vw;
   display: flex;
   justify-content: space-evenly;
 }
 
-#blog .left .img {
+#news .left .img {
   width: 21vw;
   height: 51vh;
   background-image: url(/img/vase-and-candles.jpeg);
@@ -665,51 +664,51 @@ header .navbar-right li .icon {
   transition: 5s;
   -webkit-transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
   transition-timing-function: ease-in;
-
 }
 
-#blog .article {
+#news .article {
   width: 42vw;
-  height: 40vh;
+  height: 55vh;
   font-family: sans-serif;
   letter-spacing: 0.0313rem;
+  overflow: hidden;
 }
 
-#blog .article div {
+#news .article div {
   padding: 2.5rem 0rem;
   border-bottom: 0.1rem solid #242426;
 }
 
-#blog .article div:first-child {
+#news .article div:first-child {
   border-top: 0.1rem solid #242426;
 }
 
-#blog .article div:last-child {
+#news .article div:last-child {
   margin-bottom: 6.25rem;
 }
 
-#blog .article div span {
+#news .article div span {
   color: #242426;
   margin-bottom: 1.5rem;
   font-size: 0.8rem;
 }
 
-#blog .article div h2 {
+#news .article div h2 {
   font-size: 1rem;
   font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
-#blog .article div p {
+#news .article div p {
   font-weight: 300;
 }
 
-#blog .article div:hover {
+#news .article div:hover {
   color: #777777;
 }
 
-#blog .article a {
+#news .article a {
   display: inline-block;
   margin-top: 5.25rem;
   color: #242426;
@@ -719,14 +718,14 @@ header .navbar-right li .icon {
   letter-spacing: 0.0313rem;
 }
 
-#blog .article i {
+#news .article i {
   display: inline-block;
   color: #242426;
   font-size: 0.8rem;
   margin-left: 0.3125rem;
 }
 
-#blog .article a:after {
+#news .article a:after {
   content: "";
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -736,11 +735,11 @@ header .navbar-right li .icon {
   width: 0;
 }
 
-#blog .article a:hover:after {
+#news .article a:hover:after {
   width: 100%;
 }
 
-#blog .right .news {
+#news .right .news {
   font-weight: bolder;
   font-size: 4rem;
   letter-spacing: 0.0313rem;
@@ -1154,21 +1153,21 @@ footer .footer-down .follow a i.fa-instagram:hover {
     margin-left: 13rem;
   }
 
-  #blog {
+  #news {
     height: 100vh;
   }
 
-  #blog .left {
+  #news .left {
     display: none;
   }
 
-  #blog .right {
+  #news .right {
     width: 100vw;
     height: 55vh;
     padding: 0 4rem;
   }
 
-  #blog .article {
+  #news .article {
     width: 100vw;
     padding: 0 1.5rem;
     margin-top: 2rem;
@@ -1181,53 +1180,41 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
 /* 991px header 為主 */
 @media (max-width: 991px) {
-  .menu-toggle li {
-    list-style: none;
-  }
-
-  .menu-toggle li a {
-    text-decoration: none;
-  }
-
-  header {
+  #header {
     padding: 1rem 4.5rem;
     align-items: center;
   }
 
-  header img {
+  #header img {
     width: 7.5vw;
   }
 
-  header .logo {
+  #header .logo {
     z-index: 1000;
   }
 
-  header .navbar-middle,
-  header .navbar-right .nav-item {
+  #header ul.navbar-middle,
+  #header .navbar-right .nav-item {
     display: none;
   }
 
-  header .navbar-right li {
+  #header .navbar-right li {
     margin-left: 0;
   }
 
-  header .navbar-right {
+  #header .navbar-right {
     align-items: center;
   }
 
-  header .navbar-right .icon {
+  #header .navbar-right .icon {
     margin-left: 2rem;
   }
 
-  header .navbar-right li .icon {
+  #header .navbar-right li .icon {
     font-size: 1.6rem;
   }
 
-  /* header .navbar-middle {
-    transition: 4s 1s;
-  } */
-
-  header .navbar-middle.active {
+  #header .navbar-middle.active {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -1239,15 +1226,15 @@ footer .footer-down .follow a i.fa-instagram:hover {
     flex-direction: column;
     background: #E7E7E7;
     opacity: 0.95;
-    transition: all 10s;
+    /* transition: all 2s; */
   }
 
-  header .navbar-middle li {
+  #header .navbar-middle li {
     margin-left: 0;
   }
 
-  header .navbar-middle li a {
-    font-size: 3rem;
+  #header .navbar-middle li a {
+    font-size: 2.5rem;
     line-height: 5rem;
     font-family: "Cormorant Garamond", serif;
   }
@@ -1267,10 +1254,11 @@ footer .footer-down .follow a i.fa-instagram:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1.5625rem;
-    transition: all .2s;
+    /* transition: all .2s; */
   }
 }
 
+/* 839 */
 @media (max-width: 839px) {
   footer .container .footer-up {
     display: none;
@@ -1278,7 +1266,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
   .container-rwd {
     display: block;
-    padding: 8rem 4.5rem;
+    padding: 8rem 2rem;
     color: #242426;
     background: #FFFFFF;
   }
@@ -1394,52 +1382,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
-/* 639px */
-@media (max-width: 639px) {
-  #about-us .right-img {
-    width: 52vw;
-    height: 26vh;
-    margin-left: -13rem;
-    margin-top: 45rem;
-  }
-
-  #about-us .about-us .right-container {
-    height: 73vh;
-  }
-
-  .shop .right .right-center .title h2 {
-    font-size: 4.5rem;
-  }
-
-  #blog {
-    height: 80vh;
-    display: block;
-    margin-top: 10rem;
-  }
-
-  #blog .left {
-    display: none;
-  }
-
-  #blog .right {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-  }
-
-  #blog .right .news {
-    font-weight: 600;
-    font-size: 3.5rem;
-    text-align: center;
-  }
-
-  #blog .article {
-    width: 80vw;
-    padding: 0 1.5rem;
-    margin-top: 3rem;
-  }
-}
-
+/* 690px */
 @media (max-width: 690px) {
   #courses {
     margin-bottom: 24rem;
@@ -1516,30 +1459,84 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
+/* 639px */
+@media (max-width: 639px) {
+  #about-us .right-img {
+    width: 52vw;
+    height: 26vh;
+    margin-left: -13rem;
+    margin-top: 45rem;
+  }
+
+  #about-us .about-us .right-container {
+    height: 73vh;
+  }
+
+  .shop .right .right-center .title h2 {
+    font-size: 4.5rem;
+  }
+
+  #news {
+    height: 80vh;
+    display: block;
+    margin-top: 10rem;
+  }
+
+  #news .left {
+    display: none;
+  }
+
+  #news .right {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+
+  #news .right .news {
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  #news .article {
+    width: 80vw;
+    padding: 0 1.5rem;
+    margin-top: 3rem;
+  }
+}
+
 /* 544px */
 @media (max-width: 544px) {
-  header {
+  #header {
     padding: 0.5rem 1rem;
   }
 
-  header img {
+  #header img {
     width: 12.5vw;
   }
 
-  header .navbar-right li .icon {
+  #header .navbar-right li .icon {
     font-size: 1rem;
   }
 
-  header .navbar-right .icon {
+  #header .navbar-right .icon {
     margin-left: 0.625rem;
     margin-top: -0.1875rem;
   }
 
-  header .navbar-right li {
+  #header .navbar-right li {
     margin-left: 0.4375rem;
   }
 
+  #header .navbar-middle li a {
+    font-size: 2rem;
+  }
+
   .menu-toggle {
+    background-size: 0.875rem;
+  }
+
+  .menu-toggle.active {
     background-size: 0.875rem;
   }
 
@@ -1613,6 +1610,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 }
 
+/* 517px */
 @media (max-width: 517px) {
   #about-us .right-img {
     margin-top: 48rem;
@@ -1651,33 +1649,42 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
 /* 375px */
 @media (max-width: 375px) {
-  header {
+  #header {
     padding: 0.5rem 1rem;
   }
 
-  header img {
+  #header img {
     width: 12.5vw;
   }
 
-  header .navbar-right li .icon {
+  #header .navbar-right li .icon {
     font-size: 1rem;
   }
 
-  header .navbar-right .icon {
+  #header .navbar-right .icon {
     margin-left: 0.625rem;
     margin-top: -0.1875rem;
   }
 
-  header .navbar-right li {
+  #header .navbar-right li {
     margin-left: 0.4375rem;
+  }
+
+  #header .navbar-middle li a {
+    font-size: 1.5rem;
+    line-height: 3rem;
   }
 
   .menu-toggle {
     background-size: 0.875rem;
   }
 
+  .menu-toggle.active {
+    background-size: 0.875rem;
+  }
+
   #home {
-    height: 190vh;
+    height: 120vh;
   }
 
   #home .imgs .left .big-text {
@@ -1685,13 +1692,12 @@ footer .footer-down .follow a i.fa-instagram:hover {
     letter-spacing: 0.2rem;
     width: 65vw;
     margin-left: -15rem;
-    margin-top: -52rem;
+    margin-top: -51rem;
   }
 
   #home .imgs .left .img {
     width: 78vw;
-    height: 102vh;
-    margin-top: 16rem;
+    height: 70vh;
   }
 
   #home .imgs .left .small-texts {
@@ -1715,7 +1721,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   #home .imgs .right {
-    height: 190vh;
+    height: 120vh;
   }
 
   #home .imgs .right .top-img {
@@ -1724,7 +1730,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
 
   #home .imgs .right .bottom-img {
     width: 76vw;
-    height: 55vh;
+    height: 32vh;
     position: absolute;
     bottom: 0;
     transition: none;
@@ -1769,7 +1775,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   #about-us .right-img {
     width: 56vw;
     height: 34vh;
-    margin-top: 45rem;
+    margin-top: 56rem;
   }
 
   #about-us .about-us .right-container .numbers {
@@ -1779,8 +1785,8 @@ footer .footer-down .follow a i.fa-instagram:hover {
   .course-info .course {
     display: block;
     width: 95vw;
-    height: 79vh;
-    margin-top: 15rem;
+    height: 60vh;
+    margin-top: 18rem;
   }
 
   #courses .container .block {
@@ -1791,13 +1797,14 @@ footer .footer-down .follow a i.fa-instagram:hover {
     top: 34%;
     left: 0;
     margin-top: 0;
-    padding-bottom: 14rem;
+    padding-bottom: 30rem;
     padding-right: 8rem;
     font-weight: 600;
   }
 
   .course-info .course .course-img {
     width: 87vw;
+    margin-bottom: -6.3rem;
   }
 
   .course-info .course .course-content {
@@ -1847,7 +1854,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   #shop {
-    margin-top: 22rem;
+    margin-top: 0;
   }
 
   .shop .right .right-center .title h2 {
@@ -1891,52 +1898,52 @@ footer .footer-down .follow a i.fa-instagram:hover {
     color: #424242;
   }
 
-  #blog {
+  #news {
     display: block;
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 
-  #blog .left {
+  #news .left {
     display: none;
   }
 
-  #blog .right {
+  #news .right {
     width: 100vw;
     height: 100vh;
     display: block;
   }
 
-  #blog .right .news {
+  #news .right .news {
     font-weight: 600;
     font-size: 3rem;
     padding: 0 2rem;
     text-align: center;
   }
 
-  #blog .article div {
+  #news .article div {
     padding: 1rem 0rem;
   }
 
-  #blog .article div h2 {
+  #news .article div h2 {
     font-size: 0.9rem;
   }
 
-  #blog .article div span {
+  #news .article div span {
     font-size: 0.7rem;
   }
 
-  #blog .article {
+  #news .article {
     width: 73vw;
     padding: 0;
     margin-top: 2rem;
   }
 
-  #blog .article a {
-    margin-top: 4.25rem;
+  #news .article a {
+    margin-top: 2.25rem;
     font-size: 1rem;
   }
 
-  #blog .article i {
+  #news .article i {
     color: #424242;
     font-size: 0.6rem;
     margin-left: 0.3rem;

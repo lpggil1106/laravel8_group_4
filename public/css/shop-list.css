@@ -205,3 +205,52 @@ main .shop-list .cards .card .fee-and-cart i:hover {
 }
 
 /*# sourceMappingURL=shop-list.css.map */
+@media screen and (max-width:375px){
+  .section1{
+      height: 100vh;
+      display: flex;
+      justify-content: none;
+      flex-direction: column;
+    }
+    .section1 .title{
+      padding: 4rem 0rem 0rem 1rem;
+    }
+    .section1 .title span{
+      font-size: 1rem;
+    }
+    .section1 .title .english{
+      font-size: 2rem;
+    }
+    .section1 .image{
+      padding-top: 3rem;
+    }
+    .image .banner{
+      width: 100vw;
+      z-index: 1;
+    }
+    .image .small-img{
+      display: none;
+    }
+    .shop-list .tabs{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 0.5rem;
+    }
+    .shop-list .tabs .tab{
+      margin-left: 0rem;
+    }
+    .shop-list .tabs a{
+      font-size: 1rem;
+    }
+    .shop-list .cards {
+      padding: 2rem 1rem;
+    }
+    .shop-list .cards .card{
+      margin-right: 0rem;
+      margin-bottom: 3rem;
+      width: 100vh;
+    }
+    .shop-list .cards .card .img{
+      width: 100%;
+    }
+}

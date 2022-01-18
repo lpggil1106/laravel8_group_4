@@ -21,7 +21,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="header">
         <a href="#home" class="logo">
             <img src="/img/logo.png" alt="">
         </a>
@@ -29,14 +29,15 @@
             <li><a href="#about-us" class="nav-item middle-nav">About Us</a></li>
             <li><a href="#courses" class="nav-item middle-nav">Courses</a></li>
             <li><a href="#shop" class="nav-item middle-nav">Shop</a></li>
-            <li><a href="#blog" class="nav-item middle-nav">News</a></li>
+            <li><a href="#news" class="nav-item middle-nav">News</a></li>
             <li><a href="{{ route('front.notice') }}" class="nav-item middle-nav">Notice</a></li>
         </ul>
         <ul class="navbar-right">
             <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
-            <li><a href="" class="icon"><i class="fas fa-shopping-cart"></i></a></li>
-            <ul class="menu-toggle icon" onclick="toggleMenu();"></ul>
-            <li><a href="" class="nav-item">Contact Us</a></li>
+            <li><a href="{{ route('shopping-cart.step01') }}" class="icon"><i
+                        class="fas fa-shopping-cart"></i></a></li>
+            <li class="menu-toggle icon" onclick="toggleMenu();"></li>
+            <li><a href="{{ route('front.contact') }}" class="nav-item">Contact Us</a></li>
         </ul>
     </header>
 
@@ -61,7 +62,7 @@
                     <p>台中市西區<br>華美西街一段142號1樓</p>
                 </div>
                 <div class="transport">
-                    <h3>Transport</h3>
+                    <h3>Transportation</h3>
                     <h2>高鐵台中站</h2>
                     <p>159 高鐵臺中站-中國醫藥大學-臺中公園: 於科學博物館-植物園下車,路線及時刻表請參考《高鐵快捷公車臺中站》。</p>
                     <h2 class="train">臺中火車站周圍轉乘公車</h2>
@@ -83,6 +84,7 @@
                 </div>
             </div>
         </div>
+        {{-- rwd --}}
         <div class="container-rwd">
             <div class="footer-up-rwd">
                 <div class="container">
@@ -136,10 +138,10 @@
                 <img src="{{ asset('img/logo.jpg') }}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw"
+                    style="border:0;" allowfullscreen="" loading="lazy">
                     style="border: 0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
-        </div>
         </div>
         <div class="container">
             <div class="footer-mid">
@@ -170,6 +172,7 @@
         // initialise aos
         AOS.init();
 
+        // header
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
@@ -181,11 +184,7 @@
             prevScrollpos = currentScrollPos;
         }
 
-        // window.addEventListener('scroll', function() {
-        //     const header = document.querySelector('.header');
-        //     header.classList.toggle('sticky', window.scrollY > 0);
-        // })
-
+        // menu
         function toggleMenu() {
             const menuToggle = document.querySelector('.menu-toggle');
             const navbarMiddle = document.querySelector('.navbar-middle');

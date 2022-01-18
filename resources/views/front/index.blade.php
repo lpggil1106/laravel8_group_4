@@ -176,8 +176,8 @@
             </div>
         </div> --}}
         </section>
-        <!-- blog -->
-        <section id="blog">
+        <!-- news -->
+        <section id="news">
             <div class="left">
                 <div class="img" data-aos="fade-right" data-aos-duration="1500"></div>
             </div>

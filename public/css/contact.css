@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  color: #424242;
+}
+
+main {
+  background-image: url(/img/minimalist-candle.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100v;
+  height: 100vh;
+}
+
+#contact-form {
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  max-width: 37.5rem;
+  height: 43.75rem;
+  width: 100%;
+  max-width: 37.5rem;
+  height: 43.75rem;
+  width: 100%;
+  background: rgba(238, 238, 238, 0.6);
+  padding: 2.5rem;
+  border-radius: 0.1875rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: 28%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.0938rem;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  color: #353535;
+}
+
+label {
+  display: block;
+  margin: 1.25rem 0;
+  color: #353535;
+  letter-spacing: 0.0313rem;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 0.625rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  /* border-bottom: 0.0625rem solid #d3d3d3; */
+  color: #353535;
+  letter-spacing: 0.0313rem;
+  background: rgba(230, 230, 230, 0.5);
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.9375rem;
+  margin-top: 1rem;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 0.0625rem solid #424242;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #424242;
+}
+
+.center {
+  text-align: center;
+}
+
+button[type="submit"] {
+  margin-top: 3rem;
+  width: 90%;
+  max-width: 12.5rem;
+  border-bottom: none;
+  background: -webkit-gradient(linear, left top, right top, from(#dfdfdf), to(#ececec));
+  background: linear-gradient(to right, #dfdfdf, #ececec);
+  background: rgba(230, 230, 230, 0.5);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.1875rem;
+}
+
+/*# sourceMappingURL=contact.css.map */
