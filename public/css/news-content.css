@@ -228,10 +228,11 @@ main #news-content .news .content {
   -ms-flex-align: center;
   align-items: center;
   font-size: 1.125rem;
+  text-align: center;
 }
 
 main #news-content .news .content p {
-  padding-bottom: 48px;
+  padding:0 300px 48px;
 }
 
 main #news-content .button {
