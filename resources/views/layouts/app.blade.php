@@ -54,13 +54,13 @@
                                     產品
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="{{route('service-categories.index')}}">
                                         服務類別管理
                                     </a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="{{route('product-categories.index')}}">
                                         產品類別管理
                                     </a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="{{route('products.index')}}">
                                         產品管理
                                     </a>
                                 </div>
