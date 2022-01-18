@@ -203,7 +203,7 @@ main #news-list .news .news-item {
   width: 74rem;
   height: 11rem;
   padding: 2rem 0;
-  border-top: 0.1rem solid #242426;
+  border-top: 0.0625rem solid #242426;
   font-family: sans-serif;
   color: #242426;
   letter-spacing: 0.5px;
@@ -238,10 +238,6 @@ main #news-list .news .news-item .title a {
 
 main #news-list .news .news-item .content {
   font-size: 1.1rem;
-}
-
-main #news-list .news .news-item:nth-last-child(1) {
-  border-bottom: 0.1rem solid #242426;
 }
 
 main #news-list .button {

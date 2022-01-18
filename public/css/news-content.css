@@ -232,7 +232,13 @@ main #news-content .news .content {
 }
 
 main #news-content .news .content p {
-  padding:0 300px 48px;
+  padding: 0 300px 48px;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    text-align: none;
+    display: flex;
+    /* text-align: left; */
+    text-align: justify;
 }
 
 main #news-content .button {
