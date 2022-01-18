@@ -29,8 +29,10 @@
         </ul>
         <ul class="navbar-right">
             <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
-            <li><a href="" class="icon"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="" class="nav-item">Contact Us</a></li>
+            <li><a href="{{ route('shopping-cart.step01') }}" class="icon"><i
+                        class="fas fa-shopping-cart"></i></a></li>
+            <li class="menu-toggle icon" onclick="toggleMenu();"></li>
+            <li><a href="{{ route('front.contact') }}" class="nav-item">Contact Us</a></li>
         </ul>
     </header>
 
@@ -102,6 +104,7 @@
 
     <!-- JS -->
     <script>
+        // header
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
@@ -111,6 +114,67 @@
                 document.querySelector('header').style.top = "-100px";
             }
             prevScrollpos = currentScrollPos;
+        }
+
+        // menu
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbarMiddle = document.querySelector('.navbar-middle');
+
+            menuToggle.classList.toggle('active');
+            navbarMiddle.classList.toggle('active');
+        }
+
+        // contact
+        function showContact() {
+            document.getElementById("hide-contact").style.display = "block";
+            document.getElementById("contact").innerHTML = "Information -";
+            document.getElementById("contact").href = "javascript:hideContact()";
+        }
+
+        function hideContact() {
+            document.getElementById("hide-contact").style.display = "none";
+            document.getElementById("contact").innerHTML = "Information +";
+            document.getElementById("contact").href = "javascript:showContact()";
+        }
+
+        // address
+        function showAddress() {
+            document.getElementById("hide-address").style.display = "block";
+            document.getElementById("address").innerHTML = "Address -";
+            document.getElementById("address").href = "javascript:hideAddress()";
+        }
+
+        function hideAddress() {
+            document.getElementById("hide-address").style.display = "none";
+            document.getElementById("address").innerHTML = "Address +";
+            document.getElementById("address").href = "javascript:showAddress()";
+        }
+
+        // transport
+        function showTransport() {
+            document.getElementById("hide-transport").style.display = "block";
+            document.getElementById("transport").innerHTML = "Transport -";
+            document.getElementById("transport").href = "javascript:hideTransport()";
+        }
+
+        function hideTransport() {
+            document.getElementById("hide-transport").style.display = "none";
+            document.getElementById("transport").innerHTML = "Transport +";
+            document.getElementById("transport").href = "javascript:showTransport()";
+        }
+
+        // opening hours
+        function showHours() {
+            document.getElementById("hide-hours").style.display = "block";
+            document.getElementById("hours").innerHTML = "Opening hours -";
+            document.getElementById("hours").href = "javascript:hideHours()";
+        }
+
+        function hideHours() {
+            document.getElementById("hide-hours").style.display = "none";
+            document.getElementById("hours").innerHTML = "Opening hours +";
+            document.getElementById("hours").href = "javascript:showHours()";
         }
     </script>
     @yield('js')
