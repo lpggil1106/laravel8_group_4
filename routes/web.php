@@ -1,10 +1,15 @@
 <?php
 
+use App\Models\ServiceCategories;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\NewsCategoriesController;
+use App\Http\Controllers\ProductCategoriesController;
+use App\Http\Controllers\ServiceCategoriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,5 +74,35 @@ Route::prefix('/admin')->group(function () {
         Route::delete('/{id}', [NewsController::class, 'destroy'])->name('news.destroy');
     });
 
+    Route::prefix('/service-categories')->group(function () {
+        Route::get('/',[ServiceCategoriesController::class,'index'])->name('service-categories.index');
+        Route::get('/create',[ServiceCategoriesController::class,'create'])->name('service-categories.create');
+        Route::post('/store',[ServiceCategoriesController::class,'store'])->name('service-categories.store');
+        Route::get('/edit/{id}',[ServiceCategoriesController::class,'edit'])->name('service-categories.edit');
+        Route::post('/edit/update/{id}',[ServiceCategoriesController::class,'update'])->name('service-categories.update');
+        Route::delete('/{id}',[ServiceCategoriesController::class,'destroy'])->name('service-categories.destroy');
+    });
+
+    Route::prefix('/products')->group(function(){
+        Route::get('/',[ProductsController::class,'index'])->name('products.index');
+        Route::get('/create',[ProductsController::class,'create'])->name('products.create');
+        Route::post('/store',[ProductsController::class,'store'])->name('products.store');
+        Route::get('/edit/{id}',[ProductsController::class,'edit'])->name('products.edit');
+        Route::post('/edit/update/{id}',[ProductsController::class,'update'])->name('products.update');
+        Route::delete('/{id}',[ProductsController::class,'destroy'])->name('products.destroy');
+        Route::post('/multi/{id}',[ProductsController::class,'multiDestroy'])->name('products.multi.destroy');
+    });
+
+    Route::prefix('/product-categories')->group(function(){
+        Route::get('/',[ProductCategoriesController::class,'index'])->name('product-categories.index');
+        Route::get('/create',[ProductCategoriesController::class,'create'])->name('product-categories.create');
+        Route::post('/store',[ProductCategoriesController::class,'store'])->name('product-categories.store');
+        Route::get('/edit/{id}',[ProductCategoriesController::class,'edit'])->name('product-categories.edit');
+        Route::post('/edit/update/{id}',[ProductCategoriesController::class,'update'])->name('product-categories.update');
+        Route::delete('/{id}',[ProductCategoriesController::class,'destroy'])->name('product-categories.destroy');
+    });
+
+    Route::delete('/products-image',[ProductsController::class,'imageDelete'])->name('product.image_delete');
+    Route::post('/image-upload',[ToolBoxController::class,'imageUpload'])->name('tool.image_upload');
 
 });
