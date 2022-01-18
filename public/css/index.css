@@ -40,7 +40,6 @@ body {
 }
 
 #header .navbar-middle {
-  /* position: relative; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1214,10 +1213,6 @@ footer .footer-down .follow a i.fa-instagram:hover {
     font-size: 1.6rem;
   }
 
-  /* header .navbar-middle {
-    transition: 4s 1s;
-  } */
-
   #header .navbar-middle.active {
     width: 100vw;
     height: 100vh;
@@ -1230,7 +1225,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
     flex-direction: column;
     background: #E7E7E7;
     opacity: 0.95;
-    transition: all 2s;
+    /* transition: all 2s; */
   }
 
   #header .navbar-middle li {
@@ -1238,7 +1233,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   #header .navbar-middle li a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 5rem;
     font-family: "Cormorant Garamond", serif;
   }
@@ -1258,7 +1253,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1.5625rem;
-    transition: all .2s;
+    /* transition: all .2s; */
   }
 }
 
@@ -1536,6 +1531,10 @@ footer .footer-down .follow a i.fa-instagram:hover {
     background-size: 0.875rem;
   }
 
+  .menu-toggle.active {
+    background-size: 0.875rem;
+  }
+
   #home {
     height: 140vh;
   }
@@ -1667,6 +1666,10 @@ footer .footer-down .follow a i.fa-instagram:hover {
   }
 
   .menu-toggle {
+    background-size: 0.875rem;
+  }
+
+  .menu-toggle.active {
     background-size: 0.875rem;
   }
 
