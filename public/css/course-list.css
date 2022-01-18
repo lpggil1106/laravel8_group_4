@@ -148,6 +148,10 @@ main .course .cards {
   /* padding: 0 6.25rem; */
 }
 
+main .course .cards a {
+  text-decoration: none;
+}
+
 main .course .cards .card {
   width: 28vw;
   height: 47vh;

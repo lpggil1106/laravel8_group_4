@@ -21,13 +21,6 @@
         </div>
         <div class="course">
             <div>
-                {{-- <span>證書課程</span>
-                <h3>Hestable</h3>
-                <h2>甘納許甜點蠟燭</h2>
-                <p>甘納許甜點蠟燭甘納許甜點蠟燭<br>
-                    甘納許甜點蠟燭甘納許甜點蠟燭甘納許甜點蠟燭甘<br>
-                    甘納許甜點蠟燭甘納許甜點蠟燭甘納許甜點蠟燭甘納許甜點蠟燭
-                </p> --}}
                 <span class="course-category">證書課程</span>
                 <h3>HAS Cake Candle</h3>
                 <h2>蛋糕蠟燭證書課程</h2>
@@ -47,7 +40,7 @@
     </section>
     <section id="about">
         <div class="tags">
-            <div class="tag  active">關於課程</div>
+            <div class="tag active">關於課程</div>
             <div class="tag">課程簡介</div>
             <div class="tag">課程內容</div>
             <div class="tag">留言發問</div>
@@ -124,15 +117,15 @@
                             <div class="card">
                                 <img src="" alt="">
                                 <div>
-                                    <h3>Eve Yao‧9小時</h3>
+                                    <h3>Eve Yao • 9 小時前</h3>
                                     <p>您好，希望材料容易購買，若不易買的，希望能在講義或課堂中說明何處可買得到。</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="" alt="">
                                 <div>
-                                    <h3>Eve Yao‧9小時</h3>
-                                    <p>您好，希望材料容易購買，若不易買的，希望能在講義或課堂中說明何處可買得到。</p>
+                                    <h3>Steven Yao • 30 分鐘前</h3>
+                                    <p>您好，請問現在報名還來得及嗎？</p>
                                 </div>
                             </div>
                         </div>

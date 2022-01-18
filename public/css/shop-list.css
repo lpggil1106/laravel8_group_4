@@ -71,13 +71,10 @@ main .image .small-img {
   height: 34vh;
   margin-left: -17.5rem;
   margin-top: -9.5rem;
-  background-image: url(/img/pumpkin.jpeg);
-  background-position: center;
+  background-image: url(/img/candle-shower.jpeg);
+  background-position: 50% 70%;
   background-size: cover;
   z-index: 1;
-  /* position: absolute;
-  left: 33%;
-  bottom: 59%; */
 }
 
 main .shop-list .tabs {
@@ -131,6 +128,10 @@ main .shop-list .cards {
   padding: 5rem 0;
 }
 
+main .shop-list .cards a {
+  text-decoration: none;
+}
+
 main .shop-list .cards .card {
   margin-right: 1.4rem;
   margin-bottom: 5rem;
@@ -161,6 +162,7 @@ main .shop-list .cards .card .text-muted {
   color: #999999;
   font-size: 1rem;
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 main .shop-list .cards .card .shop-list-title {
