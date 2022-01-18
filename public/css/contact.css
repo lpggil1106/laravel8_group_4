@@ -23,12 +23,12 @@ main {
 }
 
 form {
-  max-width: 600px;
-  height: 700px;
+  max-width: 37.5rem;
+  height: 43.75rem;
   width: 100%;
   background: #fff;
-  padding: 40px;
-  border-radius: 3px;
+  padding: 2.5rem;
+  border-radius: 0.1875rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
@@ -40,7 +40,7 @@ form {
 h1 {
   margin: 0;
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.0938rem;
   padding-bottom: 3rem;
   padding-top: 1rem;
   color: #242426;
@@ -48,24 +48,24 @@ h1 {
 
 label {
   display: block;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   color: #242426;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.0313rem;
 }
 
 input,
 textarea,
 button {
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
   resize: none;
   border: none;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 0.0625rem solid #d3d3d3;
   color: #242426;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.0313rem;
 }
 
 input {
@@ -73,17 +73,17 @@ input {
 }
 
 button {
-  padding: 15px;
+  padding: 0.9375rem;
   margin-top: 1rem;
 }
 
 input[type="text"]:focus,
 textarea:focus {
-  border-bottom: 1px solid #424242;
+  border-bottom: 0.0625rem solid #424242;
 }
 
 textarea::-webkit-scrollbar {
-  width: 4px;
+  width: 0.25rem;
 }
 
 textarea::-webkit-scrollbar-thumb {
@@ -97,13 +97,13 @@ textarea::-webkit-scrollbar-thumb {
 button[type="submit"] {
   margin-top: 3rem;
   width: 90%;
-  max-width: 200px;
+  max-width: 12.5rem;
   border-bottom: none;
   background: -webkit-gradient(linear, left top, right top, from(#dfdfdf), to(#ececec));
   background: linear-gradient(to right, #dfdfdf, #ececec);
-  font-size: 15px;
+  font-size: 0.9375rem;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
 }
 
 /*# sourceMappingURL=contact.css.map */
