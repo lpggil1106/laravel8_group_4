@@ -27,9 +27,9 @@
                             </div>
                         </div>
                         <div class="form-group row py-2">
-                            <label for="new_categories_id" class="col-sm-2 col-form-label">類別</label>
+                            <label for="service_id" class="col-sm-2 col-form-label">服務類別</label>
                             <div class="col-sm-10" >
-                                <select class="form-select" aria-label="Default select example" name="new_categories_id" id="new_categories_id">
+                                <select class="form-select" aria-label="Default select example" name="service_id" id="service_id">
                                     <option value="" hidden>請選擇類別</option>
                                     @foreach($service_categories as $item)
                                     <option value="{{$item->id}}">{{$item->name}}</option>

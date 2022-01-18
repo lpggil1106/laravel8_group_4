@@ -26,8 +26,15 @@ use App\Http\Controllers\ServiceCategoriesController;
 
 // Route::prefix('/tingsaroma')->group(function () {
     Route::get('/', [FrontController::class, 'index'])->name('front.index');
-    Route::get('/course-list', [FrontController::class, 'courseList'])->name('front.course-list');
-    Route::get('/course-content', [FrontController::class, 'courseContent'])->name('front.course-content');
+    // Route::get('/course-list', [FrontController::class, 'courseList'])->name('front.course-list');
+    // Route::get('/course-content', [FrontController::class, 'courseContent'])->name('front.course-content');
+    // Route::get('/course',[FrontController::class,'courseList'])->name('front.course-list');
+
+    Route::prefix('/course')->group(function (){
+        Route::get('/',[FrontController::class,'courseList'])->name('front.course-list');
+        Route::get('/{id}',[FrontController::class,'courseContent'])->name('front.course-content');
+    });
+
     Route::get('/shop-list', [FrontController::class, 'shopList'])->name('front.shop-list');
     Route::get('/shop-content', [FrontController::class, 'shopContent'])->name('front.shop-content');
     Route::get('/news-list', [FrontController::class, 'newsList'])->name('front.news-list');

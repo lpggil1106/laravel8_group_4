@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Products;
 use Illuminate\Http\Request;
+use App\Models\ProductCategories;
 use Illuminate\Support\Facades\DB;
 
 class FrontController extends Controller
@@ -14,9 +16,15 @@ class FrontController extends Controller
         return view('front.index',compact('news'));
     }
 
-    public function courseList()
+    public function courseList(Request $request)
     {
-        return view('front.course-list');
+        $courseCategories = ProductCategories::where('service_id','1')->get();
+        if($request->category_id){
+            $products = Products::where('product_categories_id',$request->category_id)->get();
+        }else{
+            $products = Products::get();
+        }
+        return view('front.course-list',compact('courseCategories','products'));
     }
 
     public function courseContent()
