@@ -665,7 +665,6 @@ body {
   transition: 5s;
   -webkit-transition-timing-function: cubic-bezier(0.48, 0.18, 0.47, 1);
   transition-timing-function: ease-in;
-
 }
 
 #blog .article {
@@ -1231,7 +1230,7 @@ footer .footer-down .follow a i.fa-instagram:hover {
     flex-direction: column;
     background: #E7E7E7;
     opacity: 0.95;
-    transition: all 10s;
+    transition: all 2s;
   }
 
   #header .navbar-middle li {
