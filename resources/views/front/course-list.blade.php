@@ -25,7 +25,6 @@
         <!-- course -->
         <div class="course">
             <ul class="tabs">
-
                 <a href="{{route('front.course-list','category_id=0')}}" class="tab">所有</a>
                 @foreach ($courseCategories as $courseCategory)
                     <a href="{{route('front.course-list','category_id='.$courseCategory->id)}}" class="tab">{{$courseCategory->name}}</a>
@@ -35,30 +34,27 @@
                 <li class="tab"><a href="">證書課程</a></li>
                 <li class="tab"><a href="">線上課程</a></li> --}}
             </ul>
-            <!-- cards -->
-            {{-- <div class="cards">
-                <div class="row">
-                    <div class="col">
-                        @foreach ($products as $product )
-                        <a href="{{route('front.course-content',['id' => $product->id])}}" class="card">
-                            <div class="img" style="background-image: url(/img/candles1.jpeg);"></div>
-                            <div class="text-muted">證書課程</div>
-                            <div class="course-title">Hastable 甘納許甜點蠟燭</div>
-                            <div class="fee-and-cart">
-                                <span class="fee">$13,000</span>
-                                <i class="fas fa-shopping-cart icon"></i>
-                            </div>
-                        </a>
-                        @endforeach
-                    </div>
-                </div>
-            </div> --}}
             <div class="cards">
                 <div class="row">
+                    @foreach ($products as $product )
                     <div class="col-4">
-                        <a href="{{ route('front.course-content') }}" class="card" style="border: none">
+                        <a href="{{route('front.course-content',['id' => $product->id])}}" class="card" style="border: none">
                             <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
                             {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
+                            <div class="card-body">
+                                <div class="text-muted">證書課程</div>
+                                <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                <div class="fee-and-cart">
+                                    <span class="fee">$13,000</span>
+                                    <i class="fas fa-shopping-cart icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    @endforeach
+                    {{-- <div class="col-4">
+                        <a href="{{ route('front.course-content') }}" class="card" style="border: none">
+                            <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="text-muted">證書課程</div>
                                 <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
@@ -72,7 +68,6 @@
                     <div class="col-4">
                         <a href="{{ route('front.course-content') }}" class="card" style="border: none">
                             <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
-                            {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
                             <div class="card-body">
                                 <div class="text-muted">證書課程</div>
                                 <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
@@ -86,7 +81,6 @@
                     <div class="col-4">
                         <a href="{{ route('front.course-content') }}" class="card" style="border: none">
                             <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
-                            {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
                             <div class="card-body">
                                 <div class="text-muted">證書課程</div>
                                 <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
@@ -100,7 +94,6 @@
                     <div class="col-4">
                         <a href="{{ route('front.course-content') }}" class="card" style="border: none">
                             <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
-                            {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
                             <div class="card-body">
                                 <div class="text-muted">證書課程</div>
                                 <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
@@ -110,21 +103,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="{{ route('front.course-content') }}" class="card" style="border: none">
-                            <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
-                            {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
-                            <div class="card-body">
-                                <div class="text-muted">證書課程</div>
-                                <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
-                                <div class="fee-and-cart">
-                                    <span class="fee">$13,000</span>
-                                    <i class="fas fa-shopping-cart icon"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
