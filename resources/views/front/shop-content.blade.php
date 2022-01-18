@@ -131,14 +131,14 @@
                             <div class="card">
                                 <img src="" alt="">
                                 <div>
-                                    <h3>Ray Ma • 5 小時前</h3>
+                                    <h3>Dwayne Johnson • 5 小時前</h3>
                                     <p>超喜歡無花果的味道！</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="" alt="">
                                 <div>
-                                    <h3>Kevin Yao • 10 小時前</h3>
+                                    <h3>Emma Watson • 10 小時前</h3>
                                     <p>客服態度很好！蠟燭也很香，天然的那種！</p>
                                 </div>
                             </div>

@@ -322,3 +322,115 @@ main {
 }
 
 /*# sourceMappingURL=shop.css.map */
+@media screen and (max-width:375px){
+  #shop-items{
+    display: flex;
+    flex-direction: column;
+  }
+  #shop-items .swiper{
+    width: 100vw;
+  }
+  #shop-items .swiper .swiper-slide {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  #shop-items .shop {
+    width: 100vw;
+    padding: 2rem;
+  }
+  #shop-items .shop div{
+    margin-left: 0rem;
+    margin-top: 4rem;
+  }
+  #shop-items .shop div .shop-category{
+    font-size: 1rem;
+  }
+  #shop-items .shop div h3{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  #shop-items .shop div h2{
+    margin-bottom: 2.5rem;
+    font-size: 1.45rem;
+  }
+  #shop-items .shop div .shop-description{
+    margin-bottom: 4rem;
+    font-size: 0.9rem;
+  }
+  #shop-items .shop div .scents {
+    margin: 0rem 1rem 2rem;
+    font-size: 1rem;
+  }
+  #shop-items .shop div .scents #scents{
+    width: none;
+    font-size: 1rem;
+  }
+  #shop-items .shop div .price{
+    font-size: 1.5rem;
+  }
+  #shop-items .shop div button{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  #shop-items .img-middle{
+    display: none;
+  }
+  #about .tags {
+    font-size: 1rem;
+    margin: 2rem 0rem;
+  }
+  #about .contents .content {
+    padding-left: 0rem;
+    display: flex;
+  }
+  #about .contents .content .content-title {
+    display: none;
+  }
+  #about .contents .content .content-items {
+    width:100vw;
+  }
+  #about .contents .content .content-items .content-item {
+    width: 100%;
+    height: 70vh;
+    font-size: 1rem;
+    line-height: 1.4em;
+    padding: 1rem;
+  }
+  #about .contents .content .content-items .content-item .content-01{
+    font-size: 0.8rem;
+    line-height: 1.5em;
+  }
+  #about .contents .content .content-items .content-item .content-02{
+    font-size: 1rem;
+  }
+  #about .contents .content .content-items .content-item .content-02 p{
+    margin-bottom: 1rem;
+  }
+  #about .contents .content .content-items .content-item .content-03 p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  #about .contents .content .content-items .content-item .content-04 {
+    font-size: 1rem;
+  }
+  #about .contents .content .content-items .content-item .content-04 .card{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 1.5rem;
+    border-bottom: none;
+  }
+  #about .contents .content .content-items .content-item .content-04 .card img{
+    width: 3rem;
+    height: 3rem;
+    margin: 0rem 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #about .contents .content .content-items .content-item .content-04 .card div h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -156,7 +156,7 @@ main .course .cards .card {
   width: 28vw;
   height: 47vh;
   margin-right: 1.4rem;
-  margin-bottom: 10em;
+  margin-bottom: 10rem;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.0313rem;
   color: #242426;
@@ -223,4 +223,58 @@ main .course .cards .card .fee-and-cart i:hover {
   color: #424242;
 }
 
-/*# sourceMappingURL=course-list.css.map */
+@media screen and (max-width:375px){
+  .section1{
+    height: 100vh;
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+  }
+  .section1 .title{
+    padding: 4rem 0rem 0rem 1rem;
+  }
+  .section1 .title span{
+    font-size: 1rem;
+  }
+  .section1 .title .english{
+    font-size: 2rem;
+  }
+  .section1 .image{
+    padding-top: 3rem;
+  }
+  .image .banner{
+    width: 100vw;
+    z-index: 1;
+  }
+  .image .small-img{
+    display: none;
+  }
+  .course .tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+  }
+  .course .tabs a{
+    font-size: 1rem;
+  }
+  .course .tabs .tab{
+    margin-left: 0rem;
+  }
+  .course .cards {
+    padding: 2rem 1rem;
+  }
+  .course .cards .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .course .cards .card {
+    width: 100vw;
+    height: 47vh;
+    margin-right: 0rem;
+    margin-bottom: 7rem;
+  }
+  .course .cards .card .img{
+    width: 100%;
+  }
+}

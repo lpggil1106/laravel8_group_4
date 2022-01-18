@@ -196,14 +196,10 @@ main {
 
 #about .contents .content {
   padding-left: 9rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #about .contents .content .content-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 25.25vh;
   margin-top: 13rem;
@@ -219,8 +215,6 @@ main {
 }
 
 #about .contents .content .content-title .content-title-sub {
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
   font-size: 1.5rem;
   letter-spacing: 0.3125rem;
@@ -228,8 +222,6 @@ main {
 }
 
 #about .contents .content .content-title .content-title-main {
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   font-size: 2.5rem;
@@ -248,10 +240,10 @@ main {
   background: #dddede;
   font-family: "Cormorant Garamond", serif;
   color: #242426;
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 3rem;
   letter-spacing: 0.1875rem;
-  padding: 6rem;
+  padding: 3rem 0rem 0rem 4rem;
   font-weight: 300;
 }
 
@@ -264,12 +256,9 @@ main {
   width: 60vw;
   height: 13vh;
   border-bottom: 0.0625rem solid #242426;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 #about .contents .content .content-items .content-item .content-04 .card:last-child {
@@ -277,8 +266,8 @@ main {
 }
 
 #about .contents .content .content-items .content-item .content-04 .card img {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 4rem;
+  height: 4rem;
   margin: 0rem 3rem;
   border-radius: 50%;
   border: 0.0625rem solid black;
@@ -287,7 +276,11 @@ main {
 
 #about .contents .content .content-items .content-item .content-04 .card div h3 {
   font-weight: 100;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+}
+#about .contents .content .content-items .content-item .content-04 .card div p {
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 .contents.active {
@@ -297,5 +290,107 @@ main {
 .contents {
   display: none;
 }
-
-/*# sourceMappingURL=shop.css.map */
+@media screen and (max-width:375px){
+  #shop-items{
+    display: flex;
+    flex-direction: column;
+  }
+  #shop-items .swiper{
+    width: 100vw;
+  }
+  #shop-items .swiper .swiper-slide {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  #shop-items .swiper .swiper-slide {
+    width: 100vw;
+    height: 100vh;
+  }
+  #shop-items .course {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    font-family: "Cormorant Garamond", serif;
+    color: #242426;
+  }
+  #shop-items .img-middle {
+    display: none;
+  }
+  #shop-items .course div {
+    margin: 0 auto;
+  }
+  #shop-items .course div .course-category {
+    font-size: 1rem;
+  }
+  #shop-items .course div h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+  }
+  #shop-items .course div h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  #shop-items .course div .course-description {
+    line-height: 1.4em;
+    margin-bottom: 2rem;
+  }
+  #shop-items .course div .price {
+    font-size: 1rem;
+    margin: 0rem 0rem 1rem;
+  }
+  #shop-items .course div button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  #shop-items .course div button i {
+    margin-left: 0.5rem;
+  }
+  #about .tags {
+    font-size: 1rem;
+    margin: 2rem 0rem;
+  }
+  #about .contents .content {
+    padding-left: 0rem;
+    display: flex;
+  }
+  #about .contents .content .content-title {
+    display: none;
+  }
+  #about .contents .content .content-items {
+    width:100vw;
+  }
+  #about .contents .content .content-items .content-item {
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    padding: 1rem;
+  }
+  #about .contents .content .content-items .content-item .content-03 {
+    letter-spacing: 0.375rem;
+    line-height: 1.4em;
+  }
+  #about .contents .content .content-items .content-item .content-04 .card {
+    width: 100%;
+    height: 25%;
+    
+  }
+  #about .contents .content .content-items .content-item .content-04 .card img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0rem 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #about .contents .content .content-items .content-item .content-04 .card p {
+    font-size: 0.75rem;
+  }
+  #about .contents .content .content-items .content-item .content-04 .card div h3 {
+    font-size: 1rem;
+  }
+}
