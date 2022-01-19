@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
-                <h2 class="card-header pt-2">產品類別管理</h2>
+                <h2 class="card-header pt-2">消息類別管理</h2>
                 <div class="form-group pt-4 px-3 m-0">
                     <a href="{{route('news-categories.create')}}" class="btn btn-success">新增產品類別</a>
                 </div>
