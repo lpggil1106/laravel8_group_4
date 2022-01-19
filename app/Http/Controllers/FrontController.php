@@ -42,14 +42,26 @@ class FrontController extends Controller
         return view('front.course-content', compact('course','images'));
     }
 
-    public function shopList()
+    public function shopList(Request $request)
     {
-        return view('front.shop-list');
+        $courseCategories = ProductCategories::where('service_id','2')->get();
+        $idArray = array();
+        foreach($courseCategories as $item){
+            array_push($idArray, $item->id);
+        }
+        if($request->category_id){
+            $products = Products::where('product_categories_id',$request->category_id)->get();
+        }else{
+                $products = Products::whereIn('product_categories_id',$idArray)->get();
+        }
+        return view('front.shop-list',compact('courseCategories','products'));
     }
 
-    public function shopContent()
+    public function shopContent($id)
     {
-        return view('front.shop-content');
+        $images = ProductImages::where('product_id',$id)->get();
+        $course = Products::find($id);
+        return view('front.shop-content', compact('course','images'));
     }
 
     public function newsList()

@@ -49,8 +49,8 @@
                                         <i class="fas fa-shopping-cart icon"></i>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
+                    </a>
+                    </div>
                     @endforeach
                 </div>
             </div>
