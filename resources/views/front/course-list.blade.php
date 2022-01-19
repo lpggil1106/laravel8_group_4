@@ -25,13 +25,18 @@
         <!-- course -->
         <div class="course">
             <ul class="tabs">
-                <a href="{{route('front.course-list','category_id=0')}}" class="tab">所有</a>
+                <a href="{{ route('front.course-list', 'category_id=0') }}" class="tab">所有</a>
                 @foreach ($courseCategories as $courseCategory)
-                    <a href="{{route('front.course-list','category_id='.$courseCategory->id)}}" class="tab">{{$courseCategory->name}}</a>
+                    <li class="tab">
+                        <a
+                            href="{{ route('front.course-list', 'category_id=' . $courseCategory->id) }}">{{ $courseCategory->name }}</a>
+                    </li>
+                    {{-- <a href="{{route('front.course-list','category_id='.$courseCategory->id)}}" class="tab">{{$courseCategory->name}}</a> --}}
                 @endforeach
             </ul>
             <div class="cards">
                 <div class="row">
+<<<<<<< HEAD
                     @foreach ($products as $product )
                     <div class="col-4">
                         <a href="{{route('front.course-content',['id' => $product->id])}}" class="card" style="border: none">
@@ -42,15 +47,84 @@
                                 <div class="fee-and-cart">
                                     <span class="fee">${{$product->price}}</span>
                                     <i class="fas fa-shopping-cart icon"></i>
+=======
+                    @foreach ($products as $product)
+                        <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12 col-12 mb-5">
+                            <a href="{{ route('front.course-content', ['id' => $product->id]) }}" class="card"
+                                style="border: none">
+                                <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
+                                {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
+                                <div class="card-body">
+                                    <div class="text-muted">證書課程</div>
+                                    <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                    <div class="fee-and-cart">
+                                        <span class="fee">$13,000</span>
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                    </div>
+>>>>>>> 584f091c61708b167e18ec65f07d841b89968232
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
                     @endforeach
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    {{-- <div class="col-4">
+                        <a href="{{ route('front.course-content') }}" class="card" style="border: none">
+                            <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="text-muted">證書課程</div>
+                                <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                <div class="fee-and-cart">
+                                    <span class="fee">$13,000</span>
+                                    <i class="fas fa-shopping-cart icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="{{ route('front.course-content') }}" class="card" style="border: none">
+                            <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="text-muted">證書課程</div>
+                                <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                <div class="fee-and-cart">
+                                    <span class="fee">$13,000</span>
+                                    <i class="fas fa-shopping-cart icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="{{ route('front.course-content') }}" class="card" style="border: none">
+                            <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="text-muted">證書課程</div>
+                                <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                <div class="fee-and-cart">
+                                    <span class="fee">$13,000</span>
+                                    <i class="fas fa-shopping-cart icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="{{ route('front.course-content') }}" class="card" style="border: none">
+                            <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="text-muted">證書課程</div>
+                                <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                <div class="fee-and-cart">
+                                    <span class="fee">$13,000</span>
+                                    <i class="fas fa-shopping-cart icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div> --}}
+>>>>>>> 584f091c61708b167e18ec65f07d841b89968232
 @endsection
 
 @section('js')

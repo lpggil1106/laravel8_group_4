@@ -3,6 +3,10 @@
 @section('title', 'TINGS Shop')
 
 @section('css')
+    {{-- bootstrap cdn --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {{-- css --}}
     <link rel="stylesheet" href="{{ asset('css/shop-list.css') }}">
 @endsection
 
@@ -26,84 +30,35 @@
             </ul>
             <!-- cards -->
             <div class="cards">
-                <a href="{{ route('front.shop-content') }}" class="card">
-                    <div class="img" style="background-image: url(/img/shop-item1.jpeg);"></div>
-                    <div class="text-muted">證書課程</div>
-                    <div class="shop-title">Hastable 甘納許甜點蠟燭</div>
-                    <div class="fee-and-cart">
-                        <span class="fee">$13,000</span>
-                        <i class="fas fa-shopping-cart icon"></i>
+                <div class="cards">
+                    <div class="row">
+                        {{-- @foreach ($products as $product) --}}
+                        <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-12 col-12 mb-5">
+                            <a href="{{ route('front.shop-content') }}" class="card" style="border: none">
+                                <img src="{{ asset('/img/shop-item1.jpeg') }}" class="card-img-top" alt="...">
+                                {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
+                                <div class="card-body">
+                                    <div class="text-muted">證書課程</div>
+                                    <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                    <div class="fee-and-cart">
+                                        <span class="fee">$13,000</span>
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {{-- @endforeach --}}
                     </div>
-                </a>
-                <a href="{{ route('front.shop-content') }}" class="card">
-                    <div class="img" style="background-image: url(/img/shop-item2.jpeg);"></div>
-                    <div class="text-muted">酒精墨水藝術</div>
-                    <div class="shop-title">酒精墨水藝術用紙</div>
-                    <div class="fee-and-cart">
-                        <span class="fee">$4,800</span>
-                        <i class="fas fa-shopping-cart icon"></i>
-                    </div>
-                </a>
-                <a href="{{ route('front.shop-content') }}" class="card">
-                    <div class="img" style="background-image: url(/img/shop-item3-1.jpeg);"></div>
-                    <div class="text-muted">酒精墨水藝術</div>
-                    <div class="shop-title">酒精墨水藝術用紙</div>
-                    <div class="fee-and-cart">
-                        <span class="fee">$4,800</span>
-                        <i class="fas fa-shopping-cart icon"></i>
-                    </div>
-                </a>
-                <a href="{{ route('front.shop-content') }}" class="card">
-                <div class="img" style="background-image: url(/img/shop-item4.jpeg);"></div>
-                <div class="text-muted">酒精墨水藝術</div>
-                <div class="shop-title">酒精墨水藝術用紙</div>
-                <div class="fee-and-cart">
-                    <span class="fee">$4,800</span>
-                    <i class="fas fa-shopping-cart icon"></i>
                 </div>
-            </a>
-            <a href="{{ route('front.shop-content') }}" class="card">
-                <div class="img" style="background-image: url(/img/shop-item-paper.jpeg);"></div>
-                <div class="text-muted">酒精墨水藝術</div>
-                <div class="shop-title">強韌耐熱 防水合成紙 A4 10張</div>
-                <div class="fee-and-cart">
-                    <span class="fee">$400</span>
-                    <i class="fas fa-shopping-cart icon"></i>
-                </div>
-            </a>
-            <a href="{{ route('front.shop-content') }}" class="card">
-                <div class="img" style="background-image: url(/img/shop-item-04.jpg);"></div>
-                <div class="text-muted">酒精墨水藝術</div>
-                <div class="shop-title">酒精墨水藝術用紙 強韌耐熱 防水合成紙 A4 10張</div>
-                <div class="fee-and-cart">
-                    <span class="fee">$400</span>
-                    <i class="fas fa-shopping-cart icon"></i>
-                </div>
-            </a>
-            <a href="{{ route('front.shop-content') }}" class="card">
-                <div class="img" style="background-image: url(/img/flower.jpg);"></div>
-                <div class="text-muted">酒精墨水藝術</div>
-                <div class="shop-title">酒精墨水藝術用紙</div>
-                <div class="fee-and-cart">
-                    <span class="fee">$4,800</span>
-                    <i class="fas fa-shopping-cart icon"></i>
-                </div>
-            </a>
-            <a href="{{ route('front.shop-content') }}" class="card">
-                <div class="img" style="background-image: url(/img/bath-candle.jpeg);"></div>
-                <div class="text-muted">酒精墨水藝術</div>
-                <div class="shop-title">酒精墨水藝術用紙</div>
-                <div class="fee-and-cart">
-                    <span class="fee">$4,800</span>
-                    <i class="fas fa-shopping-cart icon"></i>
-                </div>
-            </a>
+            </div>
         </div>
-    </div>
     </div>
 @endsection
 
 @section('js')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script>
         // hides header when scrolling down; shows header when up
         var prevScrollpos = window.pageYOffset;
