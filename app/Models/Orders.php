@@ -9,13 +9,17 @@ class Orders extends Model
 {
     use HasFactory;
     protected $table = 'orders';
-    protected $fillable = ['user_id','phone','address','payment','shipment'];
+    protected $fillable = ['phone','address','payment','shipment','order_no','name','email'];
+
+    const ISPAID = ['未付款','已付款'];
+    const PAYMENT = ['信用卡付款','網路ATM','超商代碼'];
+    const SHIPMENT = ['黑貓宅配','超商店到店'];
 
     public function orderProducts(){
-        return $this->hasmany(OrdersProducts::class,'product_id','id');
+        return $this->hasmany(OrderProducts::class,'product_id','id');
     }
 
     public function user(){
-        return $this->belongsTo(OrdersProducts::class,'product_id','id');
+        return $this->belongsTo(OrderProducts::class,'product_id','id');
     }
 }

@@ -27,7 +27,7 @@
                     <span>{!!$course->content!!}</span>
                 </span>
                 <div class="price">$ {{$course->price}}</div>
-                <button>加入購物車 <i class="fas fa-shopping-cart"></i></button>
+                <button data-id='{{$course->id}}' class='add-cart'>加入購物車 <i class="fas fa-shopping-cart"></i></button>
             </div>
         </div>
         <div class="img-middle" style="background-image: url({{Storage::url($course->image_url)}})">
@@ -51,11 +51,6 @@
                     <div class="content-item">
                         <div class="content-01">
                             {!!$course->block1!!}
-                            {{-- <p>預計課程時長 <span>2天</span> </p>
-                            <p>預計單元數 <span>2天</span> </p>
-                            <p>目前購買數 <span>3</span> 位同學</p>
-                            <p>預計作品數 <span>4</span> 個作品</p>
-                            <p>課程結束後可申請電子證書。</p> --}}
                         </div>
                     </div>
                 </div>
@@ -71,8 +66,6 @@
                     <div class="content-item">
                         <div class="content-02">
                             {!!$course->block2!!}
-                            {{-- <p>此課程整合甘納許 1 與 2 的經典技法，集結麵包 / 蛋糕發泡技法，無論放多久都還能切片。</p>
-                            <p>自製巧克力裝飾也是課程中很重要的技法，另外包含了真實甜點會用到的裝飾技巧，是市面上內容最豐富的甜點蠟燭證書課程。</p> --}}
                         </div>
                     </div>
                 </div>
@@ -158,5 +151,24 @@
                 contentElements[index].classList.add('active');
             })
         })
+
+        const addCartElement = document.querySelector('.add-cart');
+            addCartElement.addEventListener('click',function () {
+                let productId = this.getAttribute('data-id');
+                let formData = new FormData();
+                formData.append('_token','{{csrf_token()}}');
+                formData.append('id',productId);
+                let url = '{{route('shopping-cart.add')}}';
+                fetch(url,{
+                    'method':'post',
+                    'body':formData
+                }).then(function (response) {
+                    return response.text();
+                }).then(function (data) {
+                    if(data == 'success'){
+                        alert('加入成功');
+                    }
+                });
+            });
     </script>
 @endsection

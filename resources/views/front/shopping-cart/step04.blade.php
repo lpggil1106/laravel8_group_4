@@ -48,69 +48,65 @@
                     <!-- 訂單明細 -->
                     <div class="order-detail">
                         <h3 class="mb-4">訂單明細</h3>
-                        {{-- @php
+                        @php
                             $totalQty = 0;
                             $subtotal = 0;
-                        @endphp --}}
-                        {{-- @foreach ($order->orderDetails as $orderDetail) --}}
-                        {{-- @php
+                        @endphp
+                        @foreach ($order->orderProducts as $orderDetail)
+                        @php
                             $totalQty += $orderDetail->qty;
                             $totalPrice = $orderDetail->qty*$orderDetail->price;
                             $subtotal += $totalPrice;
-                        @endphp --}}
+                        @endphp
                         <div class="d-flex justify-content-between align-items-center mt-4 pt-4 order-item">
                             <div class="d-flex align-items-center order-item-info">
                                 <div class="img"
-                                    style="background-image: url('')"></div>
+                                    style="background-image: url('{{Storage::url($orderDetail->image_url)}}')"></div>
                                 <div>
-                                    <p></p>
+                                    <p>{{$orderDetail->name}}</p>
                                 </div>
                             </div>
                             <div class="order-item-price d-flex align-items-center">
-                                <h5>x</h5>
-                                <span>$</span>
+                                <h5>x{{$orderDetail->qty}}</h5>
+                                <span>${{number_format($totalPrice)}}</span>
                             </div>
                         </div>
-                        {{-- @endforeach --}}
+                        @endforeach
                     </div>
                     <!-- 寄送資料 -->
                     <div class="mt-4 pt-4 send_information">
                         <h3>寄送資料</h3>
                         <div class="d-flex ml-2 mt-2 pt-3">
                             <label class="name">姓名:</label>
-                            <div class="checkout4_name infor_text"></div>
+                            <div class="checkout4_name infor_text">{{$order->name}}</div>
                         </div>
                         <div class="d-flex ml-2 mt-2 pt-3">
                             <label class="phoneNumber">電話:</label>
-                            <div class="checkout4_phoneNumber infor_text"></div>
+                            <div class="checkout4_phoneNumber infor_text">{{$order->phone}}</div>
 
                         </div>
                         <div class="d-flex ml-2 mt-2 pt-3">
                             <label class="email">Email:</label>
-                            <div class="checkout4_email infor_text"></div>
+                            <div class="checkout4_email infor_text">{{$order->email}}</div>
                         </div>
                         <div class="d-flex ml-2 mt-2 pt-3">
                             <label class="city">地址:</label>
-                            <div class="checkout4_city infor_text"></div>
+                            <div class="checkout4_city infor_text">{{$order->address}}</div>
                         </div>
 
                     </div>
                     <div class="mt-4 pt-4 send_information">
                         <h3>付款及運送方式</h3>
-                        {{-- @php
-                            use App\Models\Order;
-                        @endphp --}}
+                        @php
+                            use App\Models\Orders;
+                        @endphp
                         <div class="d-flex ml-2 mt-2 pt-3">
                             <label class="city">付款方式:</label>
-                            <div class="checkout4_city infor_text"></div>
-                        </div>
-                        <div class="d-flex ml-2 mt-2 pt-3">
-                            <label class="city">付款狀態:</label>
-                            <div class="checkout4_city infor_text"></div>
+                            <div class="checkout4_city infor_text">{{Orders::PAYMENT[$order->payment]}}</div>
                         </div>
                         <div class="d-flex ml-2 mt-2 pt-3">
                             <label class="city">運送方式:</label>
-                            <div class="checkout4_city infor_text"></div>
+                            <div class="checkout4_city infor_text">{{Orders::SHIPMENT[$order->shipment]}}</div>
                         </div>
                     </div>
                 </div>
@@ -124,5 +120,5 @@
 @endsection
 
 @section('js')
-    
+
 @endsection

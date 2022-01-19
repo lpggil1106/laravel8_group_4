@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     {{-- css --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.css" integrity="sha512-fSWkjL6trYj6KvdwIga30e8V4h9dgeLxTF2q2waiwwafEXD+GXo5LmPw7jmrSDqRun9gW5KBR+DjvWD+5TVr8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ asset('css/shop-list.css') }}">
 @endsection
 
@@ -40,7 +41,7 @@
                     <div class="row">
                         @foreach ($products as $product)
                         <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <a href="{{ route('front.course-content', ['id' => $product->id]) }}" class="card"
+                            <a href="{{ route('front.shop-content', ['id' => $product->id]) }}" class="card"
                                 style="border: none">
                                 <img src="{{ Storage::url($product->image_url) }}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -65,7 +66,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.min.js" integrity="sha512-GDiDlK2vvO6nYcNorLUit0DSRvcfd7Vc0VRg7e3PuZcsTwQrJQKp5hf8bCaad+BNoBq7YMH6QwWLPQO3Xln0og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        @if (session('message'))
+        Swal.fire({
+            icon: 'error',
+            title: '{{session('message')}}',
+        })
+        @endif
         // hides header when scrolling down; shows header when up
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {

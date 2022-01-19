@@ -57,15 +57,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    {{-- <script>
+    <script>
     function itemQtyCalc(element,compute){
         const itemElement = element.parentElement;
         const qtyElement = element.parentElement.querySelector('.qty');
-        
+
         let productId = itemElement.getAttribute('data-id');
         let qty = Number(qtyElement.value) + compute;
         qty = qty < 1 ? 1 : qty;
-        
+
         let formData = new FormData();
         formData.append('_token','{{csrf_token()}}');
         formData.append('id',productId);
@@ -113,7 +113,7 @@
         orderSubtotalElement.textContent = `\$${subtotal.toLocaleString()}`;
         orderTotalElement.textContent = `\$${total.toLocaleString()}`;
     }
-    
+
     const minusElements = document.querySelectorAll('.minus');
     const plusElements = document.querySelectorAll('.plus');
     const deleteElements = document.querySelectorAll('.delete-btn');
@@ -161,14 +161,14 @@
                     });
                 }
             })
-            
+
         });
     });
 
     orderTotalCalc();
-</script> --}}
+</script>
 
-    {{-- <!-- jQuery JS CDN -->
+    <!-- jQuery JS CDN -->
     <!-- 通常jQuery都會放在最上面 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -178,5 +178,5 @@
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <!-- bootstrap Core JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 @endsection

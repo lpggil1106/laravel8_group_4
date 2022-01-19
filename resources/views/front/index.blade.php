@@ -4,6 +4,7 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.css" integrity="sha512-fSWkjL6trYj6KvdwIga30e8V4h9dgeLxTF2q2waiwwafEXD+GXo5LmPw7jmrSDqRun9gW5KBR+DjvWD+5TVr8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 @endsection
 
 @section('main')
@@ -97,10 +98,10 @@
                             <div class="course-fee">實體課程費用: $<span class="numbers">13,000</span> / <span
                                     class="numbers">2</span>天
                             </div>
-                            <a href="" class="add-to-cart">
+                            <button data-id='9' href="" class="add-to-cart">
                                 <span>加入購物車</span>
                                 <i class="fas fa-shopping-cart icon"></i>
-                            </a>
+                            </button>
                         </div>
                         <div class="column-container">
                             <div class="course-img"></div>
@@ -202,5 +203,33 @@
 @endsection
 
 @section('js')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.min.js" integrity="sha512-GDiDlK2vvO6nYcNorLUit0DSRvcfd7Vc0VRg7e3PuZcsTwQrJQKp5hf8bCaad+BNoBq7YMH6QwWLPQO3Xln0og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    @if (session('message'))
+        Swal.fire({
+            icon: 'error',
+            title: '{{session('message')}}',
+        })
+    @endif
+    const addCartElement = document.querySelector('.add-to-cart');
+            addCartElement.addEventListener('click',function () {
+                let productId = this.getAttribute('data-id');
+                let formData = new FormData();
+                formData.append('_token','{{csrf_token()}}');
+                formData.append('id',productId);
+                let url = '{{route('shopping-cart.add')}}';
+                fetch(url,{
+                    'method':'post',
+                    'body':formData
+                }).then(function (response) {
+                    return response.text();
+                }).then(function (data) {
+                    if(data == 'success'){
+                        alert('加入成功');
+                    }
+                });
+            });
+</script>
 
 @endsection

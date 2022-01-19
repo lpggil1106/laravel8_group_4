@@ -37,6 +37,9 @@ main {
   background-position: center;
   background-size: cover;
 }
+.add-cart{
+    width: 32%;
+}
 
 #shop-items .shop {
   width: 50vw;

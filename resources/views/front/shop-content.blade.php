@@ -6,6 +6,11 @@
     <!-- swiper CSS cdn  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{ asset('css/shop-content.css') }}">
+    <style>
+        .add-cart{
+            width: 31%;
+        }
+    </style>
 @endsection
 
 @section('main')
@@ -41,8 +46,8 @@
                     </select>
                     <input type="submit" value="Submit"> --}}
                 </form>
-                <div class="price">$ 220 </div>
-                <button>加入購物車 <i class="fas fa-shopping-cart"></i></button>
+                <div class="price">${{$course->price}} </div>
+                <button data-id='{{$course->id}}' class='add-cart'>加入購物車 <i class="fas fa-shopping-cart"></i></button>
             </div>
         </div>
         <div class="img-middle" style="background-image: url({{Storage::url($course->image_url)}})">
@@ -165,5 +170,24 @@
                 contentElements[index].classList.add('active');
             })
         })
+
+        const addCartElement = document.querySelector('.add-cart');
+            addCartElement.addEventListener('click',function () {
+                let productId = this.getAttribute('data-id');
+                let formData = new FormData();
+                formData.append('_token','{{csrf_token()}}');
+                formData.append('id',productId);
+                let url = '{{route('shopping-cart.add')}}';
+                fetch(url,{
+                    'method':'post',
+                    'body':formData
+                }).then(function (response) {
+                    return response.text();
+                }).then(function (data) {
+                    if(data == 'success'){
+                        alert('加入成功');
+                    }
+                });
+            });
     </script>
 @endsection
