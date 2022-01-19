@@ -36,6 +36,11 @@ use App\Http\Controllers\ServiceCategoriesController;
         Route::get('/{id}',[FrontController::class,'courseContent'])->name('front.course-content');
     });
 
+    Route::prefix('/shop')->group(function (){
+        Route::get('/',[FrontController::class,'shopList'])->name('front.shop-list');
+        Route::get('/{id}',[FrontController::class,'shopContent'])->name('front.shop-content');
+    });
+
     Route::prefix('/news')->group(function (){
         Route::get('/', [FrontController::class, 'newsList'])->name('front.news-list');
         Route::get('/{id}', [FrontController::class, 'newsContent'])->name('front.news-content');
@@ -43,9 +48,6 @@ use App\Http\Controllers\ServiceCategoriesController;
 
     Route::post('/contact', [FrontController::class, 'contact'])->name('contact');
 
-    Route::get('/shop-list', [FrontController::class, 'shopList'])->name('front.shop-list');
-    Route::get('/shop-content', [FrontController::class, 'shopContent'])->name('front.shop-content');
-    
     Route::get('/notice', [FrontController::class, 'notice'])->name('front.notice');
     Route::get('/contact-page', [FrontController::class, 'contactPage'])->name('front.contact');
 // });

@@ -25,29 +25,35 @@
         <!-- shop -->
         <div class="shop-list">
             <ul class="tabs">
-                <li class="tab"><a href="">酒精墨水藝術</a></li>
-                <li class="tab"><a href="">手工香氛蠟燭</a></li>
+                <a href="{{ route('front.shop-list', 'category_id=0') }}" class="tab">所有</a>
+                @foreach ($courseCategories as $courseCategory)
+                    <li class="tab">
+                        <a
+                            href="{{ route('front.shop-list', 'category_id=' . $courseCategory->id) }}">{{ $courseCategory->name }}</a>
+                    </li>
+                    {{-- <a href="{{route('front.course-list','category_id='.$courseCategory->id)}}" class="tab">{{$courseCategory->name}}</a> --}}
+                @endforeach
             </ul>
             <!-- cards -->
             <div class="cards">
                 <div class="cards">
                     <div class="row">
-                        {{-- @foreach ($products as $product) --}}
-                        <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-12 col-12 mb-5">
-                            <a href="{{ route('front.shop-content') }}" class="card" style="border: none">
-                                <img src="{{ asset('/img/shop-item1.jpeg') }}" class="card-img-top" alt="...">
-                                {{-- <div class="img" style="background-image: url(/img/candles1.jpeg);"></div> --}}
+                        @foreach ($products as $product)
+                        <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12 col-12 mb-5">
+                            <a href="{{ route('front.course-content', ['id' => $product->id]) }}" class="card"
+                                style="border: none">
+                                <img src="{{ Storage::url($product->image_url) }}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <div class="text-muted">證書課程</div>
-                                    <h5 class="card-title">Hastable 甘納許甜點蠟燭</h5>
+                                    <div class="text-muted">{{ $product->productCategories->name }}</div>
+                                    <h5 class="card-title">{{ $product->name }}</h5>
                                     <div class="fee-and-cart">
-                                        <span class="fee">$13,000</span>
+                                        <span class="fee">${{ $product->price }}</span>
                                         <i class="fas fa-shopping-cart icon"></i>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        {{-- @endforeach --}}
+                    @endforeach
                     </div>
                 </div>
             </div>
