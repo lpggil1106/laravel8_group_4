@@ -15,8 +15,7 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $news = DB::table('news')->get();
-
+        $news = DB::table('news')->where('id','<=',3)->get();
         return view('front.index',compact('news'));
     }
 
