@@ -18,7 +18,6 @@
         <div class="col-md-12">
             <div class="card">
                 <h2 class="card-header pt-3 pb-2">產品 - 新增</h2>
-
                 <div class="card-body">
                     <form method="POST" action="{{route('products.store')}}" enctype="multipart/form-data">
                         @csrf

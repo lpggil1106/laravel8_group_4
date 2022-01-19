@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Products;
+use App\Models\Customers;
+use App\Mail\ContactNotify;
 use Illuminate\Http\Request;
 use App\Models\ProductImages;
 use App\Models\ProductCategories;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
@@ -68,7 +71,20 @@ class FrontController extends Controller
         return view('front.notice');
     }
 
-    public function contact()
+    public function contact(Request $request)
+    {
+        $contact = Customers::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message,
+        ]);
+
+        Mail::to($contact->email)->send(new ContactNotify($contact));
+
+        return redirect()->route('front.index');
+    }
+
+    public function contactPage()
     {
         return view('front.contact');
     }

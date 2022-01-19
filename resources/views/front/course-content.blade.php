@@ -30,7 +30,7 @@
                 <button>加入購物車 <i class="fas fa-shopping-cart"></i></button>
             </div>
         </div>
-        <div class="img-middle" style="background-image: url({{ asset('img/garnish.jpeg') }})">
+        <div class="img-middle" style="background-image: url({{Storage::url($course->image_url)}})">
             {{-- <img src="{{ asset('img/garnish.jpeg') }}" alt="middle-image"> --}}
         </div>
     </section>

@@ -36,12 +36,14 @@ use App\Http\Controllers\ServiceCategoriesController;
         Route::get('/{id}',[FrontController::class,'courseContent'])->name('front.course-content');
     });
 
+    Route::post('/contact', [FrontController::class, 'contact'])->name('contact');
+
     Route::get('/shop-list', [FrontController::class, 'shopList'])->name('front.shop-list');
     Route::get('/shop-content', [FrontController::class, 'shopContent'])->name('front.shop-content');
     Route::get('/news-list', [FrontController::class, 'newsList'])->name('front.news-list');
     Route::get('/news-content/{id}', [FrontController::class, 'newsContent'])->name('front.news-content');
     Route::get('/notice', [FrontController::class, 'notice'])->name('front.notice');
-    Route::get('/contact', [FrontController::class, 'contact'])->name('front.contact');
+    Route::get('/contact-page', [FrontController::class, 'contactPage'])->name('front.contact');
 // });
 
 // 購物車
