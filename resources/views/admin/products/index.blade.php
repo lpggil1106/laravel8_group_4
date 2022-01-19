@@ -37,7 +37,7 @@
                             @foreach ($products as $item)
                                 <tr>
                                     <td>{{$item->name}}</td>
-                                    <td><img src="http://127.0.0.1:8000/storage/{{$item->image_url}}" alt="" width="200"></td>
+                                    <td><img src="{{Storage::url($items->image_url)}}" alt="" width="200"></td>
                                     <td>
                                         <a href="{{route('products.edit', ['id'=>$item->id])}}" class="btn btn-primary">編輯</a>
                                         <button class="btn btn-danger delete-btn">刪除</button>

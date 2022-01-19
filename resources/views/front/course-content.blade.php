@@ -21,7 +21,7 @@
         </div>
         <div class="course">
             <div>
-                <span class="course-category">證書課程</span>
+                <span class="course-category">{{$course->productCategories->name}}</span>
                 <h3>HAS Cake Candle</h3>
                 <h2>蛋糕蠟燭證書課程</h2>
                 <span class="course-description">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="content-items">
                     <div class="content-item">
-                        <div class=" ontent-01">
+                        <div class="content-01">
                             <p>預計課程時長 <span>2天</span> </p>
                             <p>預計單元數 <span>2天</span> </p>
                             <p>目前購買數 <span>3</span> 位同學</p>

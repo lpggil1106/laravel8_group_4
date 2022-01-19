@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Products;
 use Illuminate\Http\Request;
+use App\Models\ProductImages;
 use App\Models\ProductCategories;
 use Illuminate\Support\Facades\DB;
 
@@ -19,17 +20,23 @@ class FrontController extends Controller
     public function courseList(Request $request)
     {
         $courseCategories = ProductCategories::where('service_id','1')->get();
+        $idArray = array();
+        foreach($courseCategories as $item){
+            array_push($array, $item->id);
+        }
         if($request->category_id){
             $products = Products::where('product_categories_id',$request->category_id)->get();
         }else{
-            $products = Products::get();
+                $products = Products::whereIn('product_categories_id',$idArray)->get();
         }
         return view('front.course-list',compact('courseCategories','products'));
     }
 
-    public function courseContent()
+    public function courseContent($id)
     {
-        return view('front.course-content');
+        $images = ProductImages::where('product_id',$id)->get();
+        $course = Products::find($id);
+        return view('front.course-content', compact('course'));
     }
 
     public function shopList()
