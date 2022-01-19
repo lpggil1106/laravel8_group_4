@@ -26,6 +26,7 @@
                     <div class="photo"></div>
                 </div>
             </div>
+            <div class="scroll-2">Scroll</div>
             <div class="background-logo"></div>
         </div>
     </section>
