@@ -5,9 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  font-family: "Cormorant Garamond", serif;
-  color: #424242;
 }
 
 main {
@@ -28,9 +25,6 @@ form {
   max-width: 37.5rem;
   height: 43.75rem;
   width: 100%;
-  max-width: 37.5rem;
-  height: 43.75rem;
-  width: 100%;
   background: rgba(238, 238, 238, 0.6);
   padding: 2.5rem;
   border-radius: 0.1875rem;
@@ -40,6 +34,7 @@ form {
   left: 28%;
   top: 52%;
   transform: translate(-50%, -50%);
+  font-family: "Cormorant Garamond", serif;
 }
 
 h1 {
@@ -72,6 +67,7 @@ button {
   color: #353535;
   letter-spacing: 0.0313rem;
   background: rgba(230, 230, 230, 0.5);
+  font-family: "Cormorant Garamond", serif;
 }
 
 input {
@@ -114,3 +110,30 @@ button[type="submit"] {
 }
 
 /*# sourceMappingURL=contact.css.map */
+
+/* 1191px */
+@media (max-width: 1191px) {
+  form {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+/* 787px */
+@media (max-width: 787px) {
+  form {
+    max-width: 34.5rem;
+    height: 42.75rem;
+    width: 100%;
+  }
+}
+
+/* 650px */
+@media (max-width: 650px) {
+  form {
+    height: 42.75rem;
+    width: 90%;
+    background: rgba(238, 238, 238, 0.6);
+    padding: 0 1rem;
+  }
+}

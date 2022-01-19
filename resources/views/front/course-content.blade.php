@@ -9,7 +9,7 @@
 @endsection
 
 @section('main')
-    <section id="shop-items">
+    <section id="course-items">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 @foreach($images as $item)
