@@ -28,7 +28,8 @@
                 <a href="{{ route('front.course-list', 'category_id=0') }}" class="tab">所有</a>
                 @foreach ($courseCategories as $courseCategory)
                     <li class="tab">
-                        <a href="{{ route('front.course-list', 'category_id=' . $courseCategory->id) }}">{{ $courseCategory->name }}</a>
+                        <a
+                            href="{{ route('front.course-list', 'category_id=' . $courseCategory->id) }}">{{ $courseCategory->name }}</a>
                     </li>
                     {{-- <a href="{{route('front.course-list','category_id='.$courseCategory->id)}}" class="tab">{{$courseCategory->name}}</a> --}}
                 @endforeach
@@ -40,7 +41,7 @@
             <div class="cards">
                 <div class="row">
                     @foreach ($products as $product)
-                        <div class="col-4">
+                        <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12 col-12 mb-5">
                             <a href="{{ route('front.course-content', ['id' => $product->id]) }}" class="card"
                                 style="border: none">
                                 <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
@@ -56,7 +57,11 @@
                             </a>
                         </div>
                     @endforeach
-                    {{-- <div class="col-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- <div class="col-4">
                         <a href="{{ route('front.course-content') }}" class="card" style="border: none">
                             <img src="{{ asset('/img/candles1.jpeg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -108,10 +113,6 @@
                             </div>
                         </a>
                     </div> --}}
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
 
 @section('js')
