@@ -26,26 +26,14 @@ main {
   display: flex;
   position: relative;
 }
-
 #shop-items .swiper {
   width: 50vw;
   height: 100vh;
 }
 
 #shop-items .swiper .swiper-slide {
-  /* text-align: center;
-  font-size: 1.125rem;
-  background: #fff; */
-}
-
-#shop-items .swiper .swiper-slide {
-  /* display: block; */
   width: 50vw;
   height: 100vh;
-  /* width: 100%;
-  height: 100%; */
-  /* -o-object-fit: cover;
-  object-fit: cover; */
   background-position: center;
   background-size: cover;
 }

@@ -33,19 +33,8 @@ main {
 }
 
 #course-items .swiper .swiper-slide {
-  /* text-align: center;
-  font-size: 1.125rem;
-  background: #fff; */
-}
-
-#course-items .swiper .swiper-slide {
-  /* display: block; */
   width: 50vw;
   height: 100vh;
-  /* width: 100%;
-  height: 100%; */
-  /* -o-object-fit: cover;
-  object-fit: cover; */
   background-position: center;
   background-size: cover;
 }
@@ -291,6 +280,22 @@ main {
 .contents {
   display: none;
 }
+/* 1820px */
+@media (max-width: 1820px) {
+  #about .contents .content .content-items .content-item {
+    height: 53vh;
+    padding: 4rem;
+  }
+}
+
+/* 1641px */
+@media (max-width: 1641px) {
+  #about .contents .content .content-items .content-item {
+    height: 54vh;
+    padding: 3rem;
+    font-size: 1.2rem;
+  }
+}
 
 /* 1621px */
 @media (max-width: 1621px) {
@@ -304,6 +309,14 @@ main {
   #course-items .course {
     width: 55vw;
     padding: 0 0rem;
+  }
+}
+
+/* 1441px */
+@media (max-width: 1441px) {
+  #about .contents .content .content-items .content-item {
+    height: 56vh;
+    font-size: 1rem;
   }
 }
 
@@ -606,6 +619,13 @@ main {
 @media (max-width: 437px) {
   #about .contents .content .content-items .content-item {
     font-size: 0.9rem;
+  }
+}
+
+/* 404px */
+@media (max-width: 404px) {
+  #course-items .course div button {
+    width: 86%;
   }
 }
 

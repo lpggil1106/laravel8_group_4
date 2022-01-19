@@ -36,12 +36,14 @@ use App\Http\Controllers\ServiceCategoriesController;
         Route::get('/{id}',[FrontController::class,'courseContent'])->name('front.course-content');
     });
 
+    Route::post('/contact', [FrontController::class, 'contact'])->name('contact');
+
     Route::get('/shop-list', [FrontController::class, 'shopList'])->name('front.shop-list');
     Route::get('/shop-content', [FrontController::class, 'shopContent'])->name('front.shop-content');
     Route::get('/news-list', [FrontController::class, 'newsList'])->name('front.news-list');
     Route::get('/news-content/{id}', [FrontController::class, 'newsContent'])->name('front.news-content');
     Route::get('/notice', [FrontController::class, 'notice'])->name('front.notice');
-    Route::get('/contact', [FrontController::class, 'contact'])->name('front.contact');
+    Route::get('/contact-page', [FrontController::class, 'contactPage'])->name('front.contact');
 // });
 
 // 購物車
@@ -66,23 +68,19 @@ Route::prefix('/shopping-cart')->group(function ()
 
 
 // 後台
-Route::get('/admin', function () {
-    return view('.admin.index.index');
-});
+// Route::get('/admin', function () {
+//     return view('.admin.index.index');
+// });
 
-Route::get('/admin/login', function () {
-    return view('.layouts.master');
-});
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/admin/login', function () {
+//     return view('master');
+// });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::prefix('/admin')->group(function () {
+Route::prefix('/admin')->middleware(['auth'])->group(function () {
     Route::prefix('/news-categories')->group(function () {
         Route::get('/',[NewsCategoriesController::class,'index'])->name('news-categories.index');
         Route::get('/create',[NewsCategoriesController::class,'create'])->name('news-categories.create');

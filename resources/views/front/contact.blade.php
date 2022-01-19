@@ -8,8 +8,8 @@
 
 @section('main')
     <div id="contact-form">
-        <form action="" method="">
-            {{-- @csrf --}}
+        <form action="{{route('contact')}}" method="POST">
+            @csrf
             <h1>Contact Us</h1>
             <label for="name">Name</label>
             <input type="text" id="name" name="name" value="" placeholder="Name">
