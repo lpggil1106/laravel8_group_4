@@ -26,6 +26,7 @@
                     <div class="photo"></div>
                 </div>
             </div>
+            <div class="scroll-2">Scroll</div>
             <div class="background-logo"></div>
         </div>
     </section>
@@ -39,7 +40,7 @@
                 <a class="title" href="/news-content/{{$item->id}}">
                     {{$item->title}}
                 </a>
-                <div class="content">{{ Str::limit($item->content, 120, $end = '...') }}</div>
+                <div class="content ellipsis2">{{ Str::limit($item->content, 120, $end = '...') }}</div>
             </div>
         </div>
         @endforeach

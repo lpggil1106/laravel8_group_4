@@ -22,7 +22,7 @@ class FrontController extends Controller
         $courseCategories = ProductCategories::where('service_id','1')->get();
         $idArray = array();
         foreach($courseCategories as $item){
-            array_push($array, $item->id);
+            array_push($idArray, $item->id);
         }
         if($request->category_id){
             $products = Products::where('product_categories_id',$request->category_id)->get();
@@ -36,7 +36,7 @@ class FrontController extends Controller
     {
         $images = ProductImages::where('product_id',$id)->get();
         $course = Products::find($id);
-        return view('front.course-content', compact('course'));
+        return view('front.course-content', compact('course','images'));
     }
 
     public function shopList()
