@@ -20,25 +20,25 @@ main {
   background-color: white;
 }
 
-#shop-items {
+#course-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-#shop-items .swiper {
+#course-items .swiper {
   width: 50vw;
   height: 100vh;
 }
 
-#shop-items .swiper .swiper-slide {
+#course-items .swiper .swiper-slide {
   /* text-align: center;
   font-size: 1.125rem;
   background: #fff; */
 }
 
-#shop-items .swiper .swiper-slide {
+#course-items .swiper .swiper-slide {
   /* display: block; */
   width: 50vw;
   height: 100vh;
@@ -50,7 +50,7 @@ main {
   background-size: cover;
 }
 
-#shop-items .course {
+#course-items .course {
   width: 50vw;
   height: 100vh;
   display: -webkit-box;
@@ -71,31 +71,31 @@ main {
   color: #242426;
 }
 
-#shop-items .course div {
+#course-items .course div {
   margin-left: 3rem;
 }
 
-#shop-items .course div .course-category {
+#course-items .course div .course-category {
   color: #242426;
   font-size: 1.2rem;
   letter-spacing: 0.0437rem;
 }
 
-#shop-items .course div h3 {
+#course-items .course div h3 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5rem;
 }
 
-#shop-items .course div h2 {
+#course-items .course div h2 {
   font-size: 2.5rem;
   font-weight: 100;
   margin-bottom: 3rem;
   letter-spacing: 0.1rem;
 }
 
-#shop-items .course div .course-description {
+#course-items .course div .course-description {
   line-height: 1.7em;
   font-weight: 500;
   margin-bottom: 5rem;
@@ -103,14 +103,14 @@ main {
   flex-direction: column;
 }
 
-#shop-items .course div .price {
+#course-items .course div .price {
   font-size: 2rem;
   margin: 0rem 0rem 4rem;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.125rem;
 }
 
-#shop-items .course div button {
+#course-items .course div button {
   background: #242426;
   display: inline-block;
   padding: 0.9375rem 1.5625rem;
@@ -126,15 +126,15 @@ main {
   cursor: pointer;
 }
 
-#shop-items .course div button:hover {
+#course-items .course div button:hover {
   letter-spacing: 0.1875rem;
 }
 
-#shop-items .course div button i {
+#course-items .course div button i {
   margin-left: 1rem;
 }
 
-#shop-items .img-middle {
+#course-items .img-middle {
   width: 20vw;
   height: 20vw;
   z-index: 1;
@@ -278,6 +278,7 @@ main {
   font-weight: 100;
   font-size: 1.5rem;
 }
+
 #about .contents .content .content-items .content-item .content-04 .card div p {
   font-weight: 100;
   font-size: 1rem;
@@ -290,107 +291,380 @@ main {
 .contents {
   display: none;
 }
-@media screen and (max-width:375px){
-  #shop-items{
-    display: flex;
-    flex-direction: column;
+
+/* 1621px */
+@media (max-width: 1621px) {
+  #course-items .course div h2 {
+    font-size: 2rem;
   }
-  #shop-items .swiper{
+}
+
+/* 1559px */
+@media (max-width: 1559px) {
+  #course-items .course {
+    width: 55vw;
+    padding: 0 0rem;
+  }
+}
+
+/* 1309px */
+@media (max-width: 1309px) {
+  #course-items {
+    display: block;
+    margin-top: 10rem;
+  }
+
+  #course-items .swiper {
+    width: 86vw;
+    height: 90vh;
+    border-radius: 0.1875rem;
+  }
+
+  #course-items .img-middle {
+    width: 31vw;
+    height: 21vw;
+    border-radius: 0.1875rem;
+  }
+
+  #course-items .course {
     width: 100vw;
+    padding: 20rem 6.25rem 3rem 6.25rem;
+    display: block;
   }
-  #shop-items .swiper .swiper-slide {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+
+  #course-items .course div button {
+    width: 31%;
   }
-  #shop-items .swiper .swiper-slide {
-    width: 100vw;
-    height: 100vh;
+
+  #course-items .course div .course-description {
+    font-size: 1.5rem;
   }
-  #shop-items .course {
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    font-family: "Cormorant Garamond", serif;
-    color: #242426;
+
+  #course-items .course div .scents #scents {
+    width: 15vw;
   }
-  #shop-items .img-middle {
-    display: none;
-  }
-  #shop-items .course div {
-    margin: 0 auto;
-  }
-  #shop-items .course div .course-category {
-    font-size: 1rem;
-  }
-  #shop-items .course div h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.25rem;
-    font-size: 1rem;
-  }
-  #shop-items .course div h2 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  #shop-items .course div .course-description {
-    line-height: 1.4em;
-    margin-bottom: 2rem;
-  }
-  #shop-items .course div .price {
-    font-size: 1rem;
-    margin: 0rem 0rem 1rem;
-  }
-  #shop-items .course div button {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.75rem;
-  }
-  #shop-items .course div button i {
-    margin-left: 0.5rem;
-  }
+
   #about .tags {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  #about .contents .content .content-items .content-item {
+    height: 71vh;
+    font-size: 1.2rem;
+    padding: 5rem;
+  }
+
+  .content-04 .card div h3 {
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+
+  .content-04 .card {
+    width: 51vw;
+    height: 17vh;
+  }
+
+  #about .contents .content .content-items .content-item .content-01 {
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* 1080px */
+@media (max-width: 1080px) {
+  #about .tags {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #about .contents .content .content-items .content-item {
+    padding: 4rem 3rem;
+  }
+
+  #about .contents .content .content-items .content-item .content-04 .card div h3 {
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+}
+
+/* 969px */
+@media (max-width: 969px) {
+  #about .contents .content .content-items .content-item {
     font-size: 1rem;
-    margin: 2rem 0rem;
+    padding: 3rem 3rem;
   }
+
   #about .contents .content {
-    padding-left: 0rem;
-    display: flex;
+    padding-left: 3rem;
   }
+
+  #course-items .course div .scents #scents {
+    width: 22vw;
+  }
+
+  #course-items .course div button {
+    width: 40%;
+  }
+
+  #about .contents .content .content-items .content-item .content-04 .card {
+    height: 17vh;
+  }
+
+  #about .contents .content .content-items .content-item .content-04 .card div h3 {
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+}
+
+/* 849px */
+@media (max-width: 849px) {
   #about .contents .content .content-title {
     display: none;
   }
+
   #about .contents .content .content-items {
-    width:100vw;
+    width: 100%;
   }
+
   #about .contents .content .content-items .content-item {
-    width: 100%;
-    font-size: 1.25rem;
-    line-height: 1.4em;
-    padding: 1rem;
+    height: 58vh;
   }
-  #about .contents .content .content-items .content-item .content-03 {
-    letter-spacing: 0.375rem;
-    line-height: 1.4em;
+
+  #about {
+    width: 100vw;
+    height: 90vh;
   }
+
   #about .contents .content .content-items .content-item .content-04 .card {
-    width: 100%;
-    height: 25%;
-    
+    width: 60vw;
+    height: 20vh;
   }
-  #about .contents .content .content-items .content-item .content-04 .card img {
-    width: 3rem;
-    height: 3rem;
-    margin: 0rem 1rem;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  #about .contents .content .content-items .content-item .content-04 .card p {
-    font-size: 0.75rem;
-  }
+
   #about .contents .content .content-items .content-item .content-04 .card div h3 {
     font-size: 1rem;
+  }
+
+  .swiper {
+    display: none;
+  }
+
+  #course-items .img-middle {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  #course-items {
+    margin-top: 0;
+  }
+
+  #course-items .img-middle {
+    top: 40%;
+  }
+
+  #course-items .course div {
+    margin-left: 0;
+  }
+
+  #course-items .course {
+    padding: 50rem 6.25rem 3rem 3.25rem;
+  }
+
+  #about .tags {
+    margin-top: 29rem;
+  }
+}
+
+/* 782px */
+@media (max-width: 782px) {
+  #course-items .course div button {
+    width: 51%;
+  }
+
+  #about .contents .content .content-items .content-item .content-04 .card {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  #about .contents .content .content-items .content-item {
+    height: 66vh;
+  }
+
+  #about .contents .content .content-items .content-item .content-04 .card div h3 {
+    font-size: 1rem;
+  }
+}
+
+/* 702px */
+@media (max-width: 702px) {
+  #course-items .course {
+    padding: 15rem 2.25rem 5rem 2.25rem;
+  }
+
+  #about {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #about .tags {
+    margin-top: 0;
+  }
+
+  #about .tags .tag {
+    padding: 0;
+  }
+}
+
+/* 698px */
+@media (max-width: 698px) {
+  #about {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 34rem;
+  }
+
+  #course-items .course {
+    padding: 49rem 4.25rem 5rem 3.25rem;
+  }
+}
+
+/* 692px */
+@media (max-width: 692px) {
+  #course-items .course div button {
+    width: 62%;
+  }
+
+  #about .tags {
+    font-size: 1rem;
+  }
+
+  #about .tags .tag {
+    padding: 3rem 1rem;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  #about .contents .content .content-items .content-item {
+    height: 71vh;
+  }
+
+  #course-items .course div .scents #scents {
+    width: 30vw;
+  }
+
+  #about {
+    margin-top: 29rem;
+  }
+}
+
+/* 592px */
+@media (max-width: 592px) {
+  #about .contents .content .content-items .content-item {
+    height: 75vh;
+    padding: 2rem 2rem;
+  }
+}
+
+/* 532px */
+@media (max-width: 532px) {
+  #course-items .course div .course-description {
+    font-size: 1rem;
+  }
+
+  #course-items .course div h2 {
+    font-size: 1.5rem;
+  }
+
+  #course-items .course div h3 {
+    font-size: 1rem;
+  }
+
+  #about {
+    margin-top: 26rem;
+  }
+
+  #course-items .course div {
+    margin-left: 0;
+  }
+}
+
+/* 472px */
+@media (max-width: 472px) {
+  #about .contents .content .content-items .content-item {
+    padding: 1rem 1rem;
+  }
+
+  #about .contents .content .content-items .content-item .content-04 .card {
+    width: 79vw;
+  }
+
+  #course-items .course div button {
+    width: 76%;
+  }
+}
+
+/* 437px */
+@media (max-width: 437px) {
+  #about .contents .content .content-items .content-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* 402px */
+@media (max-width: 402px) {
+  #about .contents .content .content-items .content-item {
+    font-size: 0.8rem;
+  }
+
+  #about .tags {
+    font-size: 0.8rem;
+  }
+
+  #about .tags .tag {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+}
+
+/* 375px */
+@media (max-width:375px) {
+
+  #course-items .img-middle {
+    top: 21%;
+  }
+
+  #course-items .img-middle {
+    width: 90vw;
+    height: 22vh;
+  }
+
+  #course-items .course {
+    padding: 25rem 1.25rem 0rem 1.5rem;
+  }
+
+  #course-items .course div .scents #scents {
+    width: 42vw;
+  }
+
+  #course-items .course div button {
+    width: 68%;
+  }
+
+  #about {
+    margin-top: 0rem;
+  }
+
+  .content-04 .card div h3 {
+    font-size: 0.9rem;
+  }
+
+  .content-04 .card img {
+    width: 6.375rem;
+  }
+
+  #course-items .course div button:hover {
+    letter-spacing: 0.1rem;
+  }
+
+  #course-items .course div .price {
+    margin: 0rem 0rem 2rem;
   }
 }
