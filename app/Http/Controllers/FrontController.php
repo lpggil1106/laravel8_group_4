@@ -36,7 +36,7 @@ class FrontController extends Controller
     {
         $images = ProductImages::where('product_id',$id)->get();
         $course = Products::find($id);
-        return view('front.course-content', compact('course'));
+        return view('front.course-content', compact('course','images'));
     }
 
     public function shopList()
