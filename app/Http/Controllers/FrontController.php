@@ -22,7 +22,7 @@ class FrontController extends Controller
         $courseCategories = ProductCategories::where('service_id','1')->get();
         $idArray = array();
         foreach($courseCategories as $item){
-            array_push($array, $item->id);
+            array_push($idArray, $item->id);
         }
         if($request->category_id){
             $products = Products::where('product_categories_id',$request->category_id)->get();
