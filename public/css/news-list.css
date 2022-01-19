@@ -271,10 +271,10 @@ main #news-list .news .news-item .title a {
 main #news-list .news .news-item .content {
   font-size: 1.1rem;
 }
-
+/* 
 main #news-list .news .news-item:nth-last-child(1) {
   border-bottom: 0.1rem solid #242426;
-}
+} */
 
 main #news-list .button {
   display: -webkit-box;
