@@ -323,6 +323,23 @@ main {
 
 /*# sourceMappingURL=shop.css.map */
 
+/* 1820px */
+@media (max-width: 1820px) {
+  #about .contents .content .content-items .content-item {
+    height: 53vh;
+    padding: 4rem;
+  }
+}
+
+/* 1641px */
+@media (max-width: 1641px) {
+  #about .contents .content .content-items .content-item {
+    height: 54vh;
+    padding: 3rem;
+    font-size: 1.2rem;
+  }
+}
+
 /* 1621px */
 @media (max-width: 1621px) {
   #shop-items .shop div h2 {
@@ -335,6 +352,14 @@ main {
   #shop-items .shop {
     width: 55vw;
     padding: 0 0rem;
+  }
+}
+
+/* 1441px */
+@media (max-width: 1441px) {
+  #about .contents .content .content-items .content-item {
+    height: 56vh;
+    font-size: 1rem;
   }
 }
 
@@ -637,6 +662,13 @@ main {
 @media (max-width: 437px) {
   #about .contents .content .content-items .content-item {
     font-size: 0.9rem;
+  }
+}
+
+/* 404px */
+@media (max-width: 404px) {
+  #shop-items .shop div button {
+    width: 86%;
   }
 }
 

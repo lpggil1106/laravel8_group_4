@@ -75,10 +75,9 @@
                 </div>
                 <div class="img">
                     <img src="{{ asset('img/logo.jpg') }}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
-                    <iframe
-                        style="border:0;filter: grayscale(1) contrast(1.2) opacity(0.5)"
+                    <iframe style="border:0; filter: grayscale(1) contrast(1) opacity(0.9);"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw"
-                        style="border:0;" allowfullscreen="" loading="lazy">
+                        allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
@@ -135,10 +134,9 @@
             </div>
             <div class="img">
                 <img src="{{ asset('img/logo.jpg') }}" alt="TINGS AROMA LOGO" title="TINGS AROMA LOGO">
-                <iframe
+                <iframe style="border:0; filter: grayscale(1) contrast(1) opacity(0.9);"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3877053937354!2d120.6605140616589!3d24.158132084390033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2e1730dcb5%3A0x9f1a3f6807feee9e!2sTINGS%20AROMA!5e0!3m2!1szh-TW!2stw!4v1641476021219!5m2!1szh-TW!2stw"
-                    style="border:0;" allowfullscreen="" loading="lazy">
-                    style="border: 0;" allowfullscreen="" loading="lazy">
+                    allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
         </div>
