@@ -1050,6 +1050,127 @@ footer .footer-down .follow a i.fa-instagram:hover {
     height: 60vh;
     padding: 0px 2rem;
   }
+
+  footer .container .footer-up {
+    display: none;
+  }
+
+  .container-rwd {
+    display: block;
+    padding: 8rem 2rem;
+    color: #242426;
+    background: #FFFFFF;
+  }
+
+  .container-rwd .footer-up-rwd .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C9C9C9;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #242426;
+    padding: 1rem 0 1rem 0;
+    letter-spacing: 0.5px;
+  }
+
+  .container-rwd .footer-up-rwd .container a {
+    text-decoration: none;
+    color: #242426;
+    font-size: 1.3rem;
+  }
+
+  .container-rwd .footer-up-rwd .container span {
+    font-size: 0.8rem;
+  }
+
+  .container-rwd h2 {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color: #242426;
+  }
+
+  .container-rwd p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    color: #242426;
+  }
+
+  .container-rwd .address-hide-show h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+  }
+
+  footer .container-rwd .img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .container-rwd .img img {
+    width: 50vw;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+  }
+
+  footer .container-rwd .img iframe {
+    width: 50vw;
+    height: 24vh;
+    margin-bottom: 6rem;
+  }
+
+  footer .footer-mid {
+    display: none;
+  }
+
+  footer .footer-down {
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  footer .footer-down .follow {
+    width: 80vw;
+    position: absolute;
+    bottom: 70%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  footer .footer-down .follow h4 {
+    color: #242426;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  footer .footer-down h3 {
+    font-size: 1rem;
+  }
+
+  footer .footer-down .top {
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer .footer-down .follow a i {
+    font-size: 2rem;
+    color: #888888;
+  }
+
+  .container-rwd p:last-child {
+    margin-bottom: 3rem;
+  }
 }
 
 /* 1022px */

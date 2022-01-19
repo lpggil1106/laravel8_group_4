@@ -47,7 +47,6 @@
             </div>
         </div>
         <div class="img-middle" style="background-image: url({{ asset('img/shop-item3-1.jpeg') }})">
-            {{-- <img src="{{ asset('img/garnish.jpeg') }}" alt="middle-image"> --}}
         </div>
     </section>
     <section id="about">
@@ -131,15 +130,15 @@
                             <div class="card">
                                 <img src="" alt="">
                                 <div>
-                                    <h3>Dwayne Johnson • 5 小時前</h3>
+                                    <h3>Vincent • 5 小時前</h3>
                                     <p>超喜歡無花果的味道！</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="" alt="">
                                 <div>
-                                    <h3>Emma Watson • 10 小時前</h3>
-                                    <p>客服態度很好！蠟燭也很香，天然的那種！</p>
+                                    <h3>Gemma • 10 小時前</h3>
+                                    <p>客服態度很好！蠟燭也很香！</p>
                                 </div>
                             </div>
                         </div>
