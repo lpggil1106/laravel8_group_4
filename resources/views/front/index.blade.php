@@ -187,10 +187,14 @@
                     @foreach ($news as $item)
                     <div>
                         <span>{{$item->date}}</span>
-                        <h2>{{$item->title}}</h2>
+                        <h2>
+                            <a href="/news/{{$item->id}}">
+                                {{$item->title}}
+                            </a>
+                        </h2>
                     </div>
                     @endforeach
-                    <a href="">View all<i class="fas fa-chevron-right"></i></a>
+                    <a href="{{ route('front.news-list') }}">View all<i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </section>

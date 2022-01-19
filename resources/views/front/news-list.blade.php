@@ -37,7 +37,7 @@
         <div class="news">
             <div class="news-item">
                 <div class="date">{{$item->date}}</div>
-                <a class="title" href="/news-content/{{$item->id}}">
+                <a class="title" href="/news/{{$item->id}}">
                     {{$item->title}}
                 </a>
                 <div class="content ellipsis2">{{ Str::limit($item->content, 120, $end = '...') }}</div>

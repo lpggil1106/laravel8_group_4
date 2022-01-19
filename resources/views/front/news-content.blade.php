@@ -47,9 +47,9 @@
                 <p>* 其他課程預約請私訊詢問</p> --}}
             </div>
             <div class="button">
-                <a class="prev">Previous</a>
+                <a class="prev" href="/news/{{$news->id - 1}}">Previous</a>
                 <a href="{{ route('front.news-list') }}" class="back-to-list">Back to list</a>
-                <a class="next">Next</a>
+                <a class="next" href="/news/{{$news->id + 1}}">Next</a>
             </div>
         </div>
     </section>
