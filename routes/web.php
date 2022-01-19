@@ -66,23 +66,19 @@ Route::prefix('/shopping-cart')->group(function ()
 
 
 // 後台
-Route::get('/admin', function () {
-    return view('.admin.index.index');
-});
+// Route::get('/admin', function () {
+//     return view('.admin.index.index');
+// });
 
 Route::get('/admin/login', function () {
-    return view('.layouts.master');
+    return view('master');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::prefix('/admin')->group(function () {
+Route::prefix('/admin')->middleware(['auth'])->group(function () {
     Route::prefix('/news-categories')->group(function () {
         Route::get('/',[NewsCategoriesController::class,'index'])->name('news-categories.index');
         Route::get('/create',[NewsCategoriesController::class,'create'])->name('news-categories.create');
