@@ -12,6 +12,6 @@ class ServiceCategories extends Model
     protected $fillable = ['name'];
 
     public function productCategories(){
-        return $this->hasmany(ProductCategories::class,'service_id','id');
+        return $this->hasMany(ProductCategories::class,'service_id','id');
     }
 }

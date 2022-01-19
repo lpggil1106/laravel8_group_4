@@ -36,16 +36,18 @@
             </ul>
             <div class="cards">
                 <div class="row">
-                    @foreach ($products as $product )
-                    <div class="col-4">
-                        <a href="{{route('front.course-content',['id' => $product->id])}}" class="card" style="border: none">
-                            <img src="{{Storage::url($product->image_url)}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="text-muted">{{$product->productCategories->name}}</div>
-                                <h5 class="card-title">{{$product->name}}</h5>
-                                <div class="fee-and-cart">
-                                    <span class="fee">${{$product->price}}</span>
-                                    <i class="fas fa-shopping-cart icon"></i>
+                    @foreach ($products as $product)
+                        <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12 col-12 mb-5">
+                            <a href="{{ route('front.course-content', ['id' => $product->id]) }}" class="card"
+                                style="border: none">
+                                <img src="{{ Storage::url($product->image_url) }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="text-muted">{{ $product->productCategories->name }}</div>
+                                    <h5 class="card-title">{{ $product->name }}</h5>
+                                    <div class="fee-and-cart">
+                                        <span class="fee">${{ $product->price }}</span>
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                    </div>
                                 </div>
                             </div>
                         </a>
