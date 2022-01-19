@@ -172,7 +172,7 @@
                             title: '成功加入購物車!',
                             showConfirmButton: false,
                             timer: 1500
-                            })
+                        })
                     }
                 });
             });

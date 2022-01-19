@@ -185,7 +185,13 @@
                     return response.text();
                 }).then(function (data) {
                     if(data == 'success'){
-                        alert('加入成功');
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: '成功加入購物車!',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
                     }
                 });
             });
