@@ -70,9 +70,9 @@ Route::prefix('/shopping-cart')->group(function ()
 //     return view('.admin.index.index');
 // });
 
-Route::get('/admin/login', function () {
-    return view('master');
-});
+// Route::get('/admin/login', function () {
+//     return view('master');
+// });
 
 Auth::routes();
 
