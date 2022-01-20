@@ -66,7 +66,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a class="nav-link" href="{{route('news.index')}}">最新消息管理</a>
+                                <a class="nav-link" href="{{route('orders.index')}}">訂單</a>
                             </li>
 
                         @endguest
