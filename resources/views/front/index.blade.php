@@ -195,7 +195,7 @@
                         </h2>
                     </div>
                     @endforeach
-                    <a href="{{ route('front.news-list') }}">View all<i class="fas fa-chevron-right"></i></a>
+                    <a class="news-link" href="{{ route('front.news-list') }}">View all<i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </section>
