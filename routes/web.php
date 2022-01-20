@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\NewsCategoriesController;
@@ -87,6 +88,10 @@ Auth::routes();
 Route::post('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::prefix('/admin')->middleware(['auth'])->group(function () {
+    Route::prefix('/orders')->group(function () {
+        Route::get('/',[OrdersController::class,'index'])->name('orders.index');
+
+    });
     Route::prefix('/news-categories')->group(function () {
         Route::get('/',[NewsCategoriesController::class,'index'])->name('news-categories.index');
         Route::get('/create',[NewsCategoriesController::class,'create'])->name('news-categories.create');

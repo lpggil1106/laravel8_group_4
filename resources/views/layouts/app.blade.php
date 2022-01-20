@@ -65,6 +65,9 @@
                                     </a>
                                 </div>
                             </li>
+                            <li>
+                                <a class="nav-link" href="{{route('news.index')}}">最新消息管理</a>
+                            </li>
 
                         @endguest
                     </ul>
