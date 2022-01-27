@@ -35,7 +35,7 @@
             <li><a href="{{ route('front.notice') }}" class="nav-item middle-nav">Notice</a></li>
         </ul>
         <ul class="navbar-right">
-            <li><a href="" class="icon"><i class="far fa-user-circle"></i></a></li>
+            <li><a href="{{route('home')}}" class="icon"><i class="far fa-user-circle"></i></a></li>
             <li><a href="{{ route('shopping-cart.step01') }}" class="icon"><i
                         class="fas fa-shopping-cart"></i></a></li>
             <li class="menu-toggle icon" onclick="toggleMenu();"></li>
